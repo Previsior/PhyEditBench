@@ -84,11 +84,15 @@ We evaluate representative image editing models on **PhyEditBench** using a unif
 ## ⚙️ Usage
 The benchmark data are stored in [`bench`](bench). Normal samples are organized by physical category and subclass; each `meta.json` item contains four trajectory states (`input`, `intermediate_1`, `intermediate_2`, `output`), three step-wise instructions, one global instruction, physical explanations, and invariants. Anti-Physics samples are stored in `bench/anti-physic` with `meta.jsonl`, `input_data/`, and the provided `checklists.jsonl`.
 
+### Requirements
+
 Use Python 3.10 or newer and install the evaluation dependencies:
 
 ```bash
 pip install openai pillow tqdm
 ```
+
+### Evaluation
 
 Set your OpenAI API key:
 
@@ -156,5 +160,8 @@ python gpt_eval_anti.py --model_name <ModelName> --limit 1 --output ./tmp_eval
 ```
 
 The code uses the official OpenAI Python SDK. For local debugging with an OpenAI-compatible endpoint, you may set `OPENAI_BASE_URL` or pass `--base_url`; leave it unset for the official OpenAI API. -->
+
+### PhyWorld
+<!-- 可以单独写一个说明 md 文件 -->
 
 ## Citation
