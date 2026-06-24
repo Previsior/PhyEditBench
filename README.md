@@ -8,7 +8,7 @@
 <sup>* equal contribution &nbsp;&nbsp; † corresponding author</sup>
 
 <p align="center">
-    📖 <a href=""><b>Project Page</b></a> &nbsp&nbsp  | &nbsp&nbsp🤗 <a href="">PhyEditBench</a> &nbsp&nbsp | &nbsp&nbsp 📑 <a href="">Arxiv</a>
+    📖 <a href="https://github.com/Previsior/PhyEditBench"><b>Project Page</b></a> &nbsp&nbsp  | &nbsp&nbsp 🤗 <a href="https://huggingface.co/datasets/Previsior-PhyEdit/phyedit-bench">PhyEditBench</a> &nbsp&nbsp | &nbsp&nbsp 🤗 <a href="https://huggingface.co/datasets/Previsior-PhyEdit/phyedit-video">PhyEditVideo</a> &nbsp&nbsp | &nbsp&nbsp 📑 <a href="">Arxiv</a>
 </p>
 
 </div>
