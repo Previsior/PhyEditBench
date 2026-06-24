@@ -3,14 +3,77 @@ from __future__ import annotations
 
 import base64
 import json
+import os
 import re
 from dataclasses import dataclass
 from io import BytesIO
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, Iterable, List, Optional, Tuple, Union
 
-import requests
-from PIL import Image
+
+# -----------------------------
+# Evaluation constants
+# -----------------------------
+DIMENSIONS = ["consistency", "instruction_following", "physical_plausibility", "image_quality"]
+TYPE_ORDER = ["TypeA", "TypeB", "TypeC", "TypeD", "TypeE"]
+
+DIMENSION_WEIGHTS = {
+    "consistency": 0.2,
+    "instruction_following": 0.3,
+    "physical_plausibility": 0.4,
+    "image_quality": 0.1,
+}
+
+ANTI_DIMENSIONS = ["Consistency", "Instruction_Following", "Physical_Plausibility", "Image_Quality"]
+ANTI_DIMENSION_WEIGHTS = {
+    "Consistency": 0.2,
+    "Instruction_Following": 0.3,
+    "Physical_Plausibility": 0.4,
+    "Image_Quality": 0.1,
+}
+
+
+# -----------------------------
+# OpenAI client helpers
+# -----------------------------
+def make_openai_client(
+    api_key: Optional[str] = None,
+    base_url: Optional[str] = None,
+    timeout_sec: int = 180,
+):
+    """
+    Create an official OpenAI Python SDK client.
+
+    By default the SDK talks to the official OpenAI API. Set OPENAI_BASE_URL, or
+    pass base_url, only when using an OpenAI-compatible endpoint for local tests.
+    """
+    try:
+        from openai import OpenAI
+    except ImportError as exc:
+        raise RuntimeError("Missing dependency: install the `openai` package.") from exc
+
+    resolved_api_key = api_key or os.environ.get("OPENAI_API_KEY")
+    resolved_base_url = base_url or os.environ.get("OPENAI_BASE_URL")
+
+    kwargs: Dict[str, Any] = {"timeout": timeout_sec}
+    if resolved_api_key:
+        kwargs["api_key"] = resolved_api_key
+    if resolved_base_url:
+        kwargs["base_url"] = resolved_base_url.rstrip("/")
+    return OpenAI(**kwargs)
+
+
+def response_to_jsonable(resp: Any) -> Any:
+    if isinstance(resp, (dict, list, str, int, float, bool)) or resp is None:
+        return resp
+    if hasattr(resp, "model_dump"):
+        return resp.model_dump()
+    if hasattr(resp, "to_dict"):
+        return resp.to_dict()
+    if hasattr(resp, "model_dump_json"):
+        return json.loads(resp.model_dump_json())
+    return str(resp)
+
 
 # -----------------------------
 # Prompts
@@ -22,11 +85,13 @@ CONSTRAINTS_BLOCK = """Constraints (must follow):
 - Preserve the overall realism and natural appearance.
 """
 
+
 def format_bullets(items: List[str], title: str) -> str:
     if not items:
         return f"{title}:\n- (none)\n"
     lines = "\n".join([f"- {x}" for x in items])
     return f"{title}:\n{lines}\n"
+
 
 def prompt_consistency(instruction: str, invariants: List[str]) -> str:
     """
@@ -55,6 +120,7 @@ Instruction (for allowed changes):
 
 Return ONLY JSON matching the schema.
 """
+
 
 def prompt_instruction_following(instruction: str) -> str:
     """
@@ -86,6 +152,7 @@ Instruction:
 Return ONLY JSON matching the schema.
 """
 
+
 def prompt_physical_plausibility(instruction: str, explain: str) -> str:
     """
     Input: input_img + ref_img(GT) + pred_img + instruction + explain
@@ -116,6 +183,7 @@ Physical explanation of what should happen:
 Return ONLY JSON matching the schema.
 """
 
+
 def prompt_image_quality() -> str:
     """
     Input: pred_img + ref_img(GT)
@@ -143,8 +211,6 @@ Scoring rubric (1-10):
 Return ONLY JSON matching the schema.
 """
 
-DIMENSIONS = ["consistency", "instruction_following", "physical_plausibility", "image_quality"]
-
 
 # -----------------------------
 # JSON schema for structured output
@@ -167,12 +233,88 @@ def score_json_schema(name: str = "score_response") -> Dict[str, Any]:
 
 
 # -----------------------------
-# Image encoding helpers
+# Image helpers
 # -----------------------------
+NEUTRAL_GRAY = (128, 128, 128)
+
+
+def _to_srgb(img: Any) -> Any:
+    from PIL import ImageCms
+
+    icc = img.info.get("icc_profile", None)
+    if not icc:
+        return img.convert("RGB")
+
+    try:
+        src = ImageCms.ImageCmsProfile(BytesIO(icc))
+        dst = ImageCms.createProfile("sRGB")
+        return ImageCms.profileToProfile(img, src, dst, outputMode="RGB")
+    except Exception:
+        return img.convert("RGB")
+
+
+def normalize_image(
+    in_path: Union[str, Path],
+    out_path: Union[str, Path],
+    long_side: int = 1024,
+    force_square: bool = False,
+    pad_color: Tuple[int, int, int] = NEUTRAL_GRAY,
+) -> Path:
+    """
+    Normalize image:
+      1) sRGB
+      2) PNG
+      3) resize so that max(width, height) == long_side, keep aspect ratio
+      4) if force_square: pad to square with neutral gray (no cropping)
+
+    Returns output path.
+    """
+    from PIL import Image, ImageOps
+
+    in_path = Path(in_path)
+    out_path = Path(out_path)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+
+    img = Image.open(in_path)
+
+    try:
+        img = ImageOps.exif_transpose(img)
+    except Exception:
+        pass
+
+    img = _to_srgb(img)
+
+    w, h = img.size
+    cur_long = max(w, h)
+    if cur_long != long_side:
+        scale = long_side / float(cur_long)
+        new_w = max(1, int(round(w * scale)))
+        new_h = max(1, int(round(h * scale)))
+        resample = Image.Resampling.LANCZOS if scale < 1.0 else Image.Resampling.BICUBIC
+        img = img.resize((new_w, new_h), resample=resample)
+
+    if force_square:
+        w, h = img.size
+        s = max(w, h)
+        canvas = Image.new("RGB", (s, s), pad_color)
+        x = (s - w) // 2
+        y = (s - h) // 2
+        canvas.paste(img, (x, y))
+        img = canvas
+
+    if img.mode != "RGB":
+        img = img.convert("RGB")
+
+    img.save(out_path, format="PNG", optimize=True)
+    return out_path
+
+
 def load_image_as_data_url(path: Path, max_side: int = 768, fmt: str = "PNG") -> str:
     """
     For VLM input only: shrink the image to reduce token/cost, keep aspect ratio.
     """
+    from PIL import Image
+
     img = Image.open(path).convert("RGB")
     w, h = img.size
     scale = min(1.0, float(max_side) / float(max(w, h)))
@@ -186,17 +328,29 @@ def load_image_as_data_url(path: Path, max_side: int = 768, fmt: str = "PNG") ->
     return f"data:{mime};base64,{b64}"
 
 
-def extract_output_text(resp: Dict[str, Any]) -> str:
-    """
-    NewAPI Responses: resp["output"] is a list; find message->content->output_text.
-    """
+def encode_image_base64(image_path: Union[str, Path]) -> str:
+    with Path(image_path).open("rb") as image_file:
+        return base64.b64encode(image_file.read()).decode("utf-8")
+
+
+# -----------------------------
+# Responses API client
+# -----------------------------
+def extract_output_text(resp: Any) -> str:
+    if hasattr(resp, "output_text") and isinstance(resp.output_text, str):
+        return resp.output_text.strip()
+
+    resp_dict = response_to_jsonable(resp)
+    if not isinstance(resp_dict, dict):
+        return ""
+
     parts: List[str] = []
-    for item in resp.get("output", []) or []:
+    for item in resp_dict.get("output", []) or []:
         if item.get("type") != "message":
             continue
-        for c in item.get("content", []) or []:
-            if c.get("type") == "output_text" and isinstance(c.get("text"), str):
-                parts.append(c["text"])
+        for content in item.get("content", []) or []:
+            if content.get("type") == "output_text" and isinstance(content.get("text"), str):
+                parts.append(content["text"])
     return "\n".join(parts).strip()
 
 
@@ -206,6 +360,9 @@ def safe_json_loads(text: str) -> Dict[str, Any]:
     This is a robust fallback if the platform ever returns extra text.
     """
     t = text.strip()
+    if t.startswith("```"):
+        t = re.sub(r"^```(?:json)?\s*", "", t)
+        t = re.sub(r"\s*```$", "", t)
     try:
         return json.loads(t)
     except Exception:
@@ -215,47 +372,36 @@ def safe_json_loads(text: str) -> Dict[str, Any]:
         return json.loads(m.group(1))
 
 
-# -----------------------------
-# Responses API client (yinli.one / NewAPI)
-# -----------------------------
 @dataclass
 class ResponsesClient:
-    base_url: str
-    api_key: str
+    api_key: Optional[str] = None
+    base_url: Optional[str] = None
     model: str = "gpt-4o"
     timeout_sec: int = 180
 
-    def __post_init__(self):
-        self.session = requests.Session()
-        # avoid system proxy surprises
-        self.session.trust_env = False
-
-    @property
-    def url(self) -> str:
-        return f"{self.base_url.rstrip('/')}/v1/responses"
+    def __post_init__(self) -> None:
+        self.client = make_openai_client(
+            api_key=self.api_key,
+            base_url=self.base_url,
+            timeout_sec=self.timeout_sec,
+        )
 
     def create_response(
         self,
         prompt_text: str,
-        images: List[Tuple[str, Path]],  # (label, path)
+        images: List[Tuple[str, Path]],
         temperature: float = 0.0,
         max_output_tokens: int = 256,
         schema_name: str = "score_response",
         extra_instructions: Optional[str] = None,
         save_raw_path: Optional[Path] = None,
-    ) -> Dict[str, Any]:
+    ) -> Any:
         """
-        Build a single Responses request with text + images, force json_schema output.
+        Build one official Responses API request with text + images and json_schema output.
         """
         content_items: List[Dict[str, Any]] = [{"type": "input_text", "text": prompt_text}]
-
-        for _, p in images:
-            content_items.append(
-                {
-                    "type": "input_image",
-                    "image_url": load_image_as_data_url(p),
-                }
-            )
+        for _, path in images:
+            content_items.append({"type": "input_image", "image_url": load_image_as_data_url(path)})
 
         payload: Dict[str, Any] = {
             "model": self.model,
@@ -267,19 +413,14 @@ class ResponsesClient:
         if extra_instructions:
             payload["instructions"] = extra_instructions
 
-        headers = {
-            "Authorization": f"Bearer {self.api_key}",
-            "Content-Type": "application/json",
-        }
-
-        r = self.session.post(self.url, headers=headers, json=payload, timeout=(10, self.timeout_sec))
-        if r.status_code >= 400:
-            raise RuntimeError(f"HTTP {r.status_code}: {r.text[:1200]}")
-        resp = r.json()
+        resp = self.client.responses.create(**payload)
 
         if save_raw_path:
             save_raw_path.parent.mkdir(parents=True, exist_ok=True)
-            save_raw_path.write_text(json.dumps(resp, ensure_ascii=False, indent=2), encoding="utf-8")
+            save_raw_path.write_text(
+                json.dumps(response_to_jsonable(resp), ensure_ascii=False, indent=2),
+                encoding="utf-8",
+            )
 
         return resp
 
@@ -320,7 +461,6 @@ def score_one_dimension(
     """
     prompt = build_dimension_prompt(dimension, instruction, explain, invariants)
 
-    # Choose images per your spec
     images: List[Tuple[str, Path]] = []
     if dimension == "consistency":
         assert input_img is not None
@@ -350,9 +490,247 @@ def score_one_dimension(
     text = extract_output_text(resp)
     data = safe_json_loads(text)
 
-    # defensive cast
     score = int(data["score"])
     score = max(1, min(10, score))
     reason = str(data["reason"]).strip()
 
     return {"score": score, "reason": reason}
+
+
+# -----------------------------
+# JSONL and summary helpers
+# -----------------------------
+def write_jsonl(path: Path, row: Dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(row, ensure_ascii=False) + "\n")
+
+
+def read_jsonl(path: Path) -> List[Dict[str, Any]]:
+    rows: List[Dict[str, Any]] = []
+    if not path.exists():
+        return rows
+    with path.open("r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            rows.append(json.loads(line))
+    return rows
+
+
+def load_existing_keys(jsonl_path: Path) -> set:
+    keys = set()
+    for obj in read_jsonl(jsonl_path):
+        key = obj.get("_key")
+        if key:
+            keys.add(key)
+    return keys
+
+
+def load_existing_by_field(jsonl_path: Path, field: str) -> Dict[Any, Dict[str, Any]]:
+    data: Dict[Any, Dict[str, Any]] = {}
+    for obj in read_jsonl(jsonl_path):
+        if field in obj:
+            data[obj[field]] = obj
+    return data
+
+
+def mean(xs: List[float]) -> Optional[float]:
+    return (sum(xs) / len(xs)) if xs else None
+
+
+def normalized_weights(weights: Dict[str, float], dimensions: Iterable[str]) -> Dict[str, float]:
+    dimensions = list(dimensions)
+    total = sum(weights.get(d, 0.0) for d in dimensions)
+    if total <= 0:
+        raise ValueError("dimension weights sum must be > 0")
+    return {d: weights.get(d, 0.0) / total for d in dimensions}
+
+
+def row_edit_type(row: Dict[str, Any]) -> str:
+    edit_type = row.get("type")
+    if edit_type:
+        return str(edit_type)
+    return "UNKNOWN"
+
+
+def weighted_mean_over_dimensions(
+    rows: List[Dict[str, Any]],
+    dimensions: List[str] = DIMENSIONS,
+    weights: Dict[str, float] = DIMENSION_WEIGHTS,
+) -> Dict[str, Any]:
+    """
+    Compute per-dimension mean first, then weighted sum across dimensions.
+    Renormalize weights over dimensions that are present (have >=1 sample).
+    """
+    w = normalized_weights(weights, dimensions)
+    dim_means: Dict[str, Dict[str, Any]] = {}
+    present: List[str] = []
+
+    for dimension in dimensions:
+        xs = [r["score"] for r in rows if r.get("dimension") == dimension and r.get("score") is not None]
+        m = mean(xs)
+        dim_means[dimension] = {"count": len(xs), "mean": m}
+        if m is not None:
+            present.append(dimension)
+
+    if not present:
+        return {"count": 0, "weighted_mean": None, "dim_means": dim_means}
+
+    wsum = sum(w[d] for d in present)
+    weighted = sum(dim_means[d]["mean"] * (w[d] / wsum) for d in present)
+    return {"count": len(rows), "weighted_mean": weighted, "dim_means": dim_means}
+
+
+def summarize_normal_scores(jsonl_path: Path) -> Dict[str, Any]:
+    rows = [row for row in read_jsonl(jsonl_path) if "score" in row]
+
+    by_dimension = {}
+    for dimension in DIMENSIONS:
+        xs = [r["score"] for r in rows if r.get("dimension") == dimension]
+        by_dimension[dimension] = {"count": len(xs), "mean": mean(xs)}
+
+    overall_pack = weighted_mean_over_dimensions(rows)
+    overall = {"count": overall_pack["count"], "weighted_mean": overall_pack["weighted_mean"]}
+
+    by_type = {}
+    for edit_type in TYPE_ORDER:
+        sub = [r for r in rows if row_edit_type(r) == edit_type]
+        pack = weighted_mean_over_dimensions(sub)
+        by_type[edit_type] = {"count": pack["count"], "weighted_mean": pack["weighted_mean"]}
+
+    primary_map: Dict[str, List[Dict[str, Any]]] = {}
+    for row in rows:
+        primary = row.get("primary", "UNKNOWN")
+        primary_map.setdefault(primary, []).append(row)
+
+    by_primary = {}
+    for primary, subrows in sorted(primary_map.items()):
+        pack = weighted_mean_over_dimensions(subrows)
+        by_primary[primary] = {"count": pack["count"], "weighted_mean": pack["weighted_mean"]}
+
+    primary_sub_map: Dict[str, List[Dict[str, Any]]] = {}
+    for row in rows:
+        key = f"{row.get('primary','UNKNOWN')}/{row.get('sub','UNKNOWN')}"
+        primary_sub_map.setdefault(key, []).append(row)
+
+    by_primary_sub = {}
+    for key, subrows in sorted(primary_sub_map.items()):
+        pack = weighted_mean_over_dimensions(subrows)
+        by_primary_sub[key] = {"count": pack["count"], "weighted_mean": pack["weighted_mean"]}
+
+    return {
+        "source": str(jsonl_path),
+        "weights": normalized_weights(DIMENSION_WEIGHTS, DIMENSIONS),
+        "overall": overall,
+        "by_dimension": by_dimension,
+        "by_type": by_type,
+        "by_primary": by_primary,
+        "by_primary_sub": by_primary_sub,
+        "overall_dim_means": overall_pack["dim_means"],
+    }
+
+
+def write_summary(summary: Dict[str, Any], out_path: Path) -> None:
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def weighted_average_from_wide_rows(
+    rows: List[Dict[str, Any]],
+    dimensions: List[str],
+    weights: Dict[str, float],
+) -> Dict[str, Any]:
+    dim_means = {}
+    for dimension in dimensions:
+        xs = [row[dimension] for row in rows if row.get(dimension) is not None]
+        dim_means[dimension] = {"count": len(xs), "mean": mean(xs)}
+
+    present = [d for d in dimensions if dim_means[d]["mean"] is not None]
+    if not present:
+        return {"count": len(rows), "weighted_mean": None, "dim_means": dim_means}
+
+    w = normalized_weights(weights, dimensions)
+    wsum = sum(w[d] for d in present)
+    weighted = sum(dim_means[d]["mean"] * (w[d] / wsum) for d in present)
+    return {"count": len(rows), "weighted_mean": weighted, "dim_means": dim_means}
+
+
+def summarize_anti_scores(jsonl_path: Path) -> Dict[str, Any]:
+    rows = [
+        row
+        for row in read_jsonl(jsonl_path)
+        if any(row.get(dimension) is not None for dimension in ANTI_DIMENSIONS)
+    ]
+
+    overall_pack = weighted_average_from_wide_rows(rows, ANTI_DIMENSIONS, ANTI_DIMENSION_WEIGHTS)
+    by_dimension = overall_pack["dim_means"]
+
+    type_map: Dict[str, List[Dict[str, Any]]] = {}
+    for row in rows:
+        data_type = row.get("data_type", "UNKNOWN")
+        type_map.setdefault(data_type, []).append(row)
+
+    by_data_type = {}
+    for data_type, subrows in sorted(type_map.items()):
+        pack = weighted_average_from_wide_rows(subrows, ANTI_DIMENSIONS, ANTI_DIMENSION_WEIGHTS)
+        by_data_type[data_type] = {
+            "count": pack["count"],
+            "weighted_mean": pack["weighted_mean"],
+            "by_dimension": pack["dim_means"],
+        }
+
+    return {
+        "source": str(jsonl_path),
+        "weights": normalized_weights(ANTI_DIMENSION_WEIGHTS, ANTI_DIMENSIONS),
+        "overall": {"count": overall_pack["count"], "weighted_mean": overall_pack["weighted_mean"]},
+        "by_dimension": by_dimension,
+        "by_data_type": by_data_type,
+    }
+
+
+def parse_anti_score_content(score_content: str) -> Dict[str, Any]:
+    """
+    Parse the anti-physics judge response, preserving the original wide score format.
+    """
+    try:
+        score_data = safe_json_loads(score_content)
+        scores = score_data.get("scores", {})
+        explanations = score_data.get("explanations", {})
+        return {
+            "Instruction_Following": _coerce_score(scores.get("Instruction_Following")),
+            "Physical_Plausibility": _coerce_score(scores.get("Physical_Plausibility")),
+            "Consistency": _coerce_score(scores.get("Consistency")),
+            "Image_Quality": _coerce_score(scores.get("Image_Quality")),
+            "summary": explanations.get("summary", ""),
+            "issues": explanations.get("issues", []),
+        }
+    except Exception:
+        parsed_data: Dict[str, Any] = {}
+        for field in ["Instruction_Following", "Physical_Plausibility", "Consistency", "Image_Quality"]:
+            match = re.search(rf'"{field}"\s*:\s*(\d+)', score_content)
+            parsed_data[field] = _coerce_score(match.group(1)) if match else None
+
+        summary_match = re.search(r'"summary"\s*:\s*"([^"]*)"', score_content)
+        parsed_data["summary"] = summary_match.group(1) if summary_match else ""
+
+        issues_matches = re.findall(
+            r'\{\s*"issue_name"\s*:\s*"([^"]+)"\s*,\s*"score_explanation"\s*:\s*"([^"]*)"',
+            score_content,
+        )
+        parsed_data["issues"] = [
+            {"issue_name": issue_name, "score_explanation": explanation}
+            for issue_name, explanation in issues_matches
+        ]
+        return parsed_data
+
+
+def _coerce_score(value: Any) -> Optional[int]:
+    if value is None:
+        return None
+    try:
+        score = int(value)
+    except Exception:
+        return None
+    return max(0, min(10, score))

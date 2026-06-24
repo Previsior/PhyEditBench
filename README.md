@@ -82,8 +82,79 @@ We evaluate representative image editing models on **PhyEditBench** using a unif
 
 
 ## ⚙️ Usage
+The benchmark data are stored in [`bench`](bench). Normal samples are organized by physical category and subclass; each `meta.json` item contains four trajectory states (`input`, `intermediate_1`, `intermediate_2`, `output`), three step-wise instructions, one global instruction, physical explanations, and invariants. Anti-Physics samples are stored in `bench/anti-physic` with `meta.jsonl`, `input_data/`, and the provided `checklists.jsonl`.
 
+Use Python 3.10 or newer and install the evaluation dependencies:
+
+```bash
+pip install openai pillow tqdm
+```
+
+Set your OpenAI API key:
+
+```bash
+export OPENAI_API_KEY="YOUR_API_KEY"
+```
+
+Generated outputs should be saved in the following structure. Use the numeric sample id as the filename, without the `data_` prefix.
+
+```text
+bench_generated/
+    <ModelName>/
+        <PrimaryClass>/
+            <SubClass>/
+                TypeA/<id>.png
+                TypeB/<id>.png
+                TypeC/<id>.png
+                TypeD/<id>.png
+                TypeE/<id>.png
+        anti-physic/
+            <id>.png
+```
+
+- `<ModelName>`: The name of the image editing model being evaluated, such as `BAGEL`.
+- `<PrimaryClass>`: One of the four primary physical categories in `bench`: `Deformation_&_Fracture`, `Fluid_Dynamics`, `Rigid_Body_&_Interaction`, or `State_Change_&_Environment`.
+- `<SubClass>`: The subclass folder under each primary category, such as `brittle_fracture`, `Pouring_&_Flow`, or `Gravity_&_Fall`.
+- `<id>`: The numeric sample id from the benchmark metadata. Generated filenames should be `<id>.png`, for example `12.png`.
+
+The five normal evaluation types correspond to the paper settings:
+
+| Type | Input state | Target state | Instruction |
+|:---:|:---|:---|:---|
+| TypeA | input | intermediate_1 | step 1 |
+| TypeB | intermediate_1 | intermediate_2 | step 2 |
+| TypeC | intermediate_2 | output | step 3 |
+| TypeD | input | output | concatenated step instructions |
+| TypeE | input | output | global instruction |
+
+Run the normal benchmark evaluation:
+
+```bash
+python gpt_eval.py --model_name <ModelName> --output ./bench_scores
+```
+
+Run the Anti-Physics evaluation:
+
+```bash
+python gpt_eval_anti.py --model_name <ModelName> --output ./bench_scores
+```
+
+The normal script writes `bench_scores/<ModelName>_normal_scores.jsonl` and `bench_scores/<ModelName>_normal_summary.json`. The Anti-Physics script writes `bench_scores/<ModelName>_anti_scores.jsonl` and `bench_scores/<ModelName>_anti_summary.json`. The normal summary reports `overall`, `by_dimension`, `by_type`, `by_primary`, and `by_primary_sub`; the Anti-Physics summary reports `overall`, `by_dimension`, and `by_data_type`.
+
+<!-- For a no-cost path check, run a dry run:
+
+```bash
+python gpt_eval.py --model_name <ModelName> --limit 1 --types TypeA --dimensions consistency --dry_run
+python gpt_eval_anti.py --model_name <ModelName> --limit 1 --dry_run
+```
+
+For a minimal API smoke test, evaluate one normal image on one dimension and one Anti-Physics image:
+
+```bash
+python gpt_eval.py --model_name <ModelName> --limit 1 --types TypeA --dimensions consistency --output ./tmp_eval
+python gpt_eval_anti.py --model_name <ModelName> --limit 1 --output ./tmp_eval
+```
+
+The code uses the official OpenAI Python SDK. For local debugging with an OpenAI-compatible endpoint, you may set `OPENAI_BASE_URL` or pass `--base_url`; leave it unset for the official OpenAI API. -->
 
 ## Citation
-
-
