@@ -1,0 +1,424 @@
+[
+  {
+    "id": "61",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Buoyancy & Tension"
+    },
+    "frames": {
+      "input": "input/data_61.png",
+      "intermediate_1": "intermediate_1/data_61.png",
+      "intermediate_2": "intermediate_2/data_61.png",
+      "output": "output/data_61.png"
+    },
+    "instruction": {
+      "global": "Dissolve an effervescent tablet in a glass of water until the liquid becomes cloudy and opaque.",
+      "steps": [
+        "Drop an effervescent tablet into the glass of water so it sinks to the bottom and begins releasing a stream of bubbles.",
+        "Increase the intensity of the effervescence, filling the volume of the water with a dense cloud of rising bubbles.",
+        "Allow the tablet to fully dissolve, resulting in a uniformly cloudy liquid with a thin layer of foam at the surface."
+      ]
+    },
+    "explain": [
+      "The tablet reacts with the water upon immersion, initiating a chemical reaction that releases carbon dioxide gas as bubbles.",
+      "As the tablet continues to dissolve, the rapid release of gas and suspended particles creates a turbulent, milky appearance due to light scattering.",
+      "The solid mass of the tablet is fully integrated into the solution, leaving the water opaque with residual fine bubbles at the top."
+    ],
+    "invariants": [
+      "Camera viewpoint and framing",
+      "Glass shape and position",
+      "Neutral gray background",
+      "Reflective surface beneath the glass",
+      "Ambient lighting conditions"
+    ]
+  },
+  {
+    "id": "62",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Buoyancy & Tension"
+    },
+    "frames": {
+      "input": "input/data_62.png",
+      "intermediate_1": "intermediate_1/data_62.png",
+      "intermediate_2": "intermediate_2/data_62.png",
+      "output": "output/data_62.png"
+    },
+    "instruction": {
+      "global": "The paper boat floats downstream through the reeds and exits the frame to the bottom right.",
+      "steps": [
+        "Move the paper boat slightly forward and to the right, maintaining its orientation on the water surface.",
+        "Shift the paper boat further towards the bottom right corner, increasing its scale to show it approaching the camera.",
+        "Remove the paper boat from the scene as it floats completely out of the camera's field of view."
+      ]
+    },
+    "explain": [
+      "The water current carries the buoyant paper boat forward through the narrow channel between the reeds.",
+      "The boat continues to drift with the flow, moving into the foreground and appearing larger due to perspective.",
+      "The boat's trajectory takes it past the camera lens and out of the frame as it continues downstream."
+    ],
+    "invariants": [
+      "Static camera viewpoint",
+      "Position and structure of the surrounding reeds",
+      "Dim, natural lighting conditions",
+      "Water surface texture and dark reflections"
+    ]
+  },
+  {
+    "id": "63",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Buoyancy & Tension"
+    },
+    "frames": {
+      "input": "input/data_63.png",
+      "intermediate_1": "intermediate_1/data_63.png",
+      "intermediate_2": "intermediate_2/data_63.png",
+      "output": "output/data_63.png"
+    },
+    "instruction": {
+      "global": "Show the continuous process of effervescent tablets dissolving in a glass of water with bubbles rising to the surface.",
+      "steps": [
+        "Increase the density of the bubble trail rising from the tablets at the bottom of the glass.",
+        "Slightly reduce the volume of the white tablets as they dissolve and shift the pattern of the rising bubbles higher in the water column.",
+        "Further erode the tablets' edges and maintain the steady stream of carbon dioxide bubbles reaching the top of the glass."
+      ]
+    },
+    "explain": [
+      "The chemical reaction between the tablet and water produces carbon dioxide gas, creating buoyant bubbles that rise through the liquid.",
+      "As the tablets continue to react, their solid mass decreases while the gas release creates a dynamic, upward-moving bubble distribution.",
+      "The tablets become smaller over the course of the dissolution process while the gas bubbles continue to travel to the air-water interface."
+    ],
+    "invariants": [
+      "Static camera viewpoint",
+      "Solid black background",
+      "Cylindrical glass shape and position",
+      "Water level in the glass",
+      "Dramatic side-lighting and reflections on the glass"
+    ]
+  },
+  {
+    "id": "64",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Buoyancy & Tension"
+    },
+    "frames": {
+      "input": "input/data_64.png",
+      "intermediate_1": "intermediate_1/data_64.png",
+      "intermediate_2": "intermediate_2/data_64.png",
+      "output": "output/data_64.png"
+    },
+    "instruction": {
+      "global": "Simulate the fluid motion of a soap film, causing the iridescent interference patterns to swirl and shift across the surface.",
+      "steps": [
+        "Shift the central blue and yellow bands slightly to the left and downward, creating a more pronounced curve in the color boundaries.",
+        "Continue the swirling motion, stretching the yellow and orange bands further into the blue region and introducing more intricate ripples in the pink and green areas.",
+        "Further deform the color bands, causing the central blue area to narrow and the surrounding warm tones to wrap around it."
+      ]
+    },
+    "explain": [
+      "Gravity and surface tension cause the soap solution to flow, changing the local thickness of the film and thus shifting the constructive interference wavelengths.",
+      "Fluid dynamics within the thin film create Marangoni flows, leading to more complex swirling patterns as the liquid redistributes.",
+      "Continued drainage and evaporation further alter the film's thickness profile, resulting in the evolution of the colorful interference fringes."
+    ],
+    "invariants": [
+      "Camera viewpoint and macro perspective",
+      "Diffuse lighting conditions",
+      "General iridescent color palette",
+      "Smooth fluid texture"
+    ]
+  },
+  {
+    "id": "65",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Buoyancy & Tension"
+    },
+    "frames": {
+      "input": "input/data_65.png",
+      "intermediate_1": "intermediate_1/data_65.png",
+      "intermediate_2": "intermediate_2/data_65.png",
+      "output": "output/data_65.png"
+    },
+    "instruction": {
+      "global": "Drop three ice cubes into a container of water and allow them to float to the surface.",
+      "steps": [
+        "Submerge three ice cubes into the water, generating a cluster of air bubbles around them.",
+        "Shift the ice cubes upward as they begin to rise through the water column, with bubbles starting to disperse.",
+        "Position the ice cubes at the water's surface so they are partially submerged and floating, showing the surface ripples."
+      ]
+    },
+    "explain": [
+      "The ice cubes enter the water with momentum, displacing the liquid and trapping air to create bubbles.",
+      "Buoyancy acts on the ice cubes because they are less dense than water, causing them to ascend.",
+      "The ice cubes reach equilibrium at the surface, floating due to the density difference between ice and liquid water."
+    ],
+    "invariants": [
+      "Light blue water color",
+      "Side-view camera perspective",
+      "Consistent lighting and shadows",
+      "Material properties of the ice cubes"
+    ]
+  },
+  {
+    "id": "66",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Buoyancy & Tension"
+    },
+    "frames": {
+      "input": "input/data_66.png",
+      "intermediate_1": "intermediate_1/data_66.png",
+      "intermediate_2": "intermediate_2/data_66.png",
+      "output": "output/data_66.png"
+    },
+    "instruction": {
+      "global": "Freeze the double soap bubble sitting on the snow until it is completely covered in crystalline frost patterns.",
+      "steps": [
+        "Add small, sharp ice crystals starting from the base of the bubbles and the intersection line where they meet.",
+        "Expand the frost patterns upward and across the surface of both bubbles, creating larger feather-like crystalline structures.",
+        "Fill in the remaining transparent areas of the bubbles with dense frost until the entire surface is opaque and crystalline."
+      ]
+    },
+    "explain": [
+      "Ice nucleation begins at the contact points with the cold snow and the junction between the bubbles, where the liquid film starts to solidify.",
+      "Crystalline structures propagate across the spherical surface of the soap film as the water within the film freezes due to the sub-zero environment.",
+      "The freezing process reaches completion, transforming the transparent liquid membrane into a solid, opaque shell of dendritic ice patterns."
+    ],
+    "invariants": [
+      "Camera viewpoint and framing",
+      "Solid black background",
+      "Shape and position of the snow pile",
+      "Double-bubble geometry and placement",
+      "Direction and intensity of the light source"
+    ]
+  },
+  {
+    "id": "67",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Buoyancy & Tension"
+    },
+    "frames": {
+      "input": "input/data_67.png",
+      "intermediate_1": "intermediate_1/data_67.png",
+      "intermediate_2": "intermediate_2/data_67.png",
+      "output": "output/data_67.png"
+    },
+    "instruction": {
+      "global": "Show the bubbles rising from the bottom of the frame, dispersing and thinning out as they move upwards until they nearly disappear.",
+      "steps": [
+        "Move the central cluster of bubbles upwards and begin spreading them across the frame.",
+        "Continue the upward ascent of the bubbles, increasing their dispersion and breaking larger bubbles into smaller ones.",
+        "Shift the remaining bubbles toward the top of the frame and reduce their density until only fine, sparse particles remain."
+      ]
+    },
+    "explain": [
+      "Buoyancy forces the air bubbles to rise through the water, causing the initial cluster to move vertically.",
+      "As the bubbles rise, fluid resistance and turbulence cause them to fragment and scatter horizontally.",
+      "The bubbles reach the surface or dissipate, leaving behind only the smallest micro-bubbles as the upward momentum fades."
+    ],
+    "invariants": [
+      "Solid black background",
+      "Static camera viewpoint",
+      "Consistent blue-white lighting on the bubbles",
+      "Absence of any external objects or containers"
+    ]
+  },
+  {
+    "id": "69",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Buoyancy & Tension"
+    },
+    "frames": {
+      "input": "input/data_69.png",
+      "intermediate_1": "intermediate_1/data_69.png",
+      "intermediate_2": "intermediate_2/data_69.png",
+      "output": "output/data_69.png"
+    },
+    "instruction": {
+      "global": "Freeze the soap bubble until it is completely covered in intricate frost patterns.",
+      "steps": [
+        "Initiate crystallization by adding small, scattered ice flakes onto the bubble's surface.",
+        "Expand the ice crystals across the surface, making them larger and more interconnected.",
+        "Complete the freezing process until the entire bubble surface is covered in dense, white frost patterns."
+      ]
+    },
+    "explain": [
+      "Nucleation begins as water molecules in the soap film start to crystallize into ice due to the freezing temperature.",
+      "The ice crystals grow outward across the thin liquid film, following dendritic patterns as the latent heat is released.",
+      "The crystallization front covers the remaining liquid areas, turning the transparent film into an opaque, solid ice shell."
+    ],
+    "invariants": [
+      "Camera viewpoint and focal depth",
+      "Blurred background landscape and pine branches",
+      "Snowy surface at the base of the bubble",
+      "Spherical shape and position of the bubble",
+      "Overall cool-toned lighting"
+    ]
+  },
+  {
+    "id": "70",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Buoyancy & Tension"
+    },
+    "frames": {
+      "input": "input/data_70.png",
+      "intermediate_1": "intermediate_1/data_70.png",
+      "intermediate_2": "intermediate_2/data_70.png",
+      "output": "output/data_70.png"
+    },
+    "instruction": {
+      "global": "Freeze the soap bubble completely by growing intricate ice crystals across its entire surface.",
+      "steps": [
+        "Add more frost crystals to the top and sides of the soap bubble's surface.",
+        "Expand the existing frost patterns and add new feather-like crystals across the middle section of the bubble.",
+        "Fill in the remaining clear areas of the bubble with dense frost patterns until the surface is fully crystallized."
+      ]
+    },
+    "explain": [
+      "Nucleation occurs as water molecules in the soap film begin to crystallize due to the freezing temperature.",
+      "Dendritic growth causes the ice crystals to spread rapidly across the thin liquid film of the bubble.",
+      "The crystallization process nears completion as the remaining liquid water in the soap film turns into solid ice patterns."
+    ],
+    "invariants": [
+      "Camera viewpoint and focal length",
+      "Blurred background of trees and sky",
+      "The snow and ice base the bubble is resting on",
+      "The overall spherical shape and position of the bubble",
+      "Ambient lighting and color temperature"
+    ]
+  },
+  {
+    "id": "71",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Buoyancy & Tension"
+    },
+    "frames": {
+      "input": "input/data_71.png",
+      "intermediate_1": "intermediate_1/data_71.png",
+      "intermediate_2": "intermediate_2/data_71.png",
+      "output": "output/data_71.png"
+    },
+    "instruction": {
+      "global": "Freeze the soap bubble until it is completely covered in intricate ice crystals.",
+      "steps": [
+        "Begin the freezing process by forming small ice crystals at the base of the bubble where it touches the surface.",
+        "Spread the frost patterns upward along the sides of the bubble, increasing the opacity of the lower half.",
+        "Continue the crystallization until the entire surface of the bubble is covered in frost patterns, making it fully opaque."
+      ]
+    },
+    "explain": [
+      "Nucleation begins at the contact point with the cold surface, causing ice crystals to grow on the thin liquid film.",
+      "The freezing front propagates across the surface of the bubble as the liquid water in the soap solution turns to ice.",
+      "The remaining liquid film freezes completely, resulting in a solid, frosted sphere with high surface detail."
+    ],
+    "invariants": [
+      "Camera viewpoint and framing",
+      "Solid black background",
+      "The wooden surface the bubble rests on",
+      "The spherical shape and position of the bubble",
+      "The position of the light source reflections"
+    ]
+  },
+  {
+    "id": "72",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Buoyancy & Tension"
+    },
+    "frames": {
+      "input": "input/data_72.png",
+      "intermediate_1": "intermediate_1/data_72.png",
+      "intermediate_2": "intermediate_2/data_72.png",
+      "output": "output/data_72.png"
+    },
+    "instruction": {
+      "global": "Show a soap bubble freezing from the base upwards until it pops, leaving behind frozen remnants on the snow.",
+      "steps": [
+        "Increase the size and density of the frost crystals at the base of the bubble.",
+        "Extend the feather-like ice patterns further up the surface of both the inner and outer bubbles.",
+        "Pop the bubble, replacing the spherical structure with a small cluster of jagged ice shards and frozen film."
+      ]
+    },
+    "explain": [
+      "Crystallization begins at the contact point with the cold surface, spreading through the liquid film via nucleation.",
+      "As the water in the soap film freezes, dendritic ice patterns grow across the sphere's surface due to the sub-zero temperatures.",
+      "The structural integrity of the bubble fails as the film becomes brittle or thin, causing it to burst and leave frozen fragments behind."
+    ],
+    "invariants": [
+      "Camera viewpoint and focal length",
+      "Background bokeh of trees and blue sky",
+      "The snowy ledge in the foreground",
+      "Direction and intensity of the natural lighting"
+    ]
+  },
+  {
+    "id": "73",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Buoyancy & Tension"
+    },
+    "frames": {
+      "input": "input/data_73.png",
+      "intermediate_1": "intermediate_1/data_73.png",
+      "intermediate_2": "intermediate_2/data_73.png",
+      "output": "output/data_73.png"
+    },
+    "instruction": {
+      "global": "Fill the glass containing ice cubes with a dark carbonated beverage until it is full.",
+      "steps": [
+        "Start pouring a stream of dark liquid into the glass, filling the bottom half and coating the ice cubes.",
+        "Continue pouring the liquid until it reaches near the rim, causing the ice cubes to shift and float.",
+        "Stop the pour and allow a layer of carbonation bubbles to settle at the top of the liquid surface."
+      ]
+    },
+    "explain": [
+      "Gravity pulls the liquid into the voids between the ice cubes, filling the glass from the bottom up.",
+      "The rising liquid level increases the buoyant force on the ice, while the continuous stream adds volume and creates small bubbles.",
+      "The cessation of the pour allows the liquid surface to stabilize, with surface tension and carbonation forming a foamy head at the rim."
+    ],
+    "invariants": [
+      "Camera viewpoint and framing",
+      "Background color and lighting",
+      "Glass position and geometry",
+      "Presence and general shape of ice cubes"
+    ]
+  },
+  {
+    "id": "68",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Buoyancy & Tension"
+    },
+    "frames": {
+      "input": "input/data_68.png",
+      "intermediate_1": "intermediate_1/data_68.png",
+      "intermediate_2": "intermediate_2/data_68.png",
+      "output": "output/data_68.png"
+    },
+    "instruction": {
+      "global": "Simulate the thinning of a soap bubble film, showing the progression of interference colors until the film reaches a near-transparent state.",
+      "steps": [
+        "Shift the interference patterns on the bubble surface, increasing the yellow and orange hues at the top while the pink and blue bands migrate downwards.",
+        "Intensify the blue and purple bands in the center of the frame and allow the green hues to expand at the bottom as the liquid continues to drain.",
+        "Transition the vibrant colors into a pale, golden-white appearance with dark spots, representing the final thinning stage of the soap film."
+      ]
+    },
+    "explain": [
+      "Gravity causes the liquid in the soap film to drain downwards, changing the local thickness and thus the wavelength of light that constructively interferes.",
+      "Further drainage results in a thinner film at the top, shifting the visible spectrum of reflected light towards different interference colors.",
+      "The film becomes so thin that it no longer reflects vibrant colors, eventually forming a 'black film' where destructive interference occurs across most visible wavelengths."
+    ],
+    "invariants": [
+      "Camera viewpoint and macro framing",
+      "Black background",
+      "Spherical curvature of the bubble edge",
+      "External lighting direction"
+    ]
+  }
+]

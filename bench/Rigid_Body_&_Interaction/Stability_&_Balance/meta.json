@@ -1,0 +1,262 @@
+[
+  {
+    "id": "189",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Stability & Balance"
+    },
+    "frames": {
+      "input": "input/data_189.png",
+      "intermediate_1": "intermediate_1/data_189.png",
+      "intermediate_2": "intermediate_2/data_189.png",
+      "output": "output/data_189.png"
+    },
+    "instruction": {
+      "global": "Throw a red die from the top right to strike the right side of a 2x2 stack of dice, knocking the right column away while leaving the left column standing.",
+      "steps": [
+        "Introduce a red die falling from the top right toward the stack with visible motion blur.",
+        "Depict the falling die colliding with the right side of the stack, causing the two rightmost dice to tumble and scatter to the right.",
+        "Move the scattered dice further to the right as they lose momentum, with the foreground die becoming out of focus."
+      ]
+    },
+    "explain": [
+      "A die enters the frame from above, gaining velocity due to gravity and exhibiting motion blur.",
+      "Kinetic energy is transferred from the falling die to the right half of the stack upon impact, displacing those dice.",
+      "The displaced dice continue to slide and roll across the surface until friction brings them to a rest at new coordinates."
+    ],
+    "invariants": [
+      "Static camera viewpoint",
+      "Plain white background and reflective surface",
+      "Consistent lighting and shadows",
+      "The left column of two stacked dice remains undisturbed"
+    ]
+  },
+  {
+    "id": "190",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Stability & Balance"
+    },
+    "frames": {
+      "input": "input/data_190.png",
+      "intermediate_1": "intermediate_1/data_190.png",
+      "intermediate_2": "intermediate_2/data_190.png",
+      "output": "output/data_190.png"
+    },
+    "instruction": {
+      "global": "Collapse the tower of white blocks into a scattered pile on the floor, revealing a hidden sphere at the center.",
+      "steps": [
+        "Destabilize the tower so the blocks on the right side begin to fall and scatter at the base.",
+        "Complete the collapse of the structure until all blocks form a disorganized heap.",
+        "Settle the pile further, spreading the blocks outward to reveal a white sphere resting in the center."
+      ]
+    },
+    "explain": [
+      "Gravity and a loss of structural integrity cause the outer blocks to tumble downward and outward.",
+      "The remaining vertical support fails, leading to a total collapse where potential energy is converted into kinetic energy and then rest.",
+      "The blocks settle into a flatter distribution due to friction and momentum, uncovering an object previously obscured by the tower."
+    ],
+    "invariants": [
+      "Static camera viewpoint",
+      "Solid black background",
+      "Reflective black floor surface",
+      "White material and rectangular shape of the blocks",
+      "Consistent studio lighting"
+    ]
+  },
+  {
+    "id": "194",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Stability & Balance"
+    },
+    "frames": {
+      "input": "input/data_194.png",
+      "intermediate_1": "intermediate_1/data_194.png",
+      "intermediate_2": "intermediate_2/data_194.png",
+      "output": "output/data_194.png"
+    },
+    "instruction": {
+      "global": "Make the front-most stack of coins tip over and fall into the collection bin while keeping the other two stacks stable.",
+      "steps": [
+        "Tilt the front-most stack of coins forward toward the drop, showing it losing its balance while still mostly intact.",
+        "Collapse the stack completely, scattering the coins in mid-air with motion blur as they fall toward the lower tray.",
+        "Remove the falling coins and the front stack entirely, leaving only the scattered coins on the tray and the two original stacks in the background."
+      ]
+    },
+    "explain": [
+      "Gravity causes the center of mass of the leaning stack to shift past its base, initiating a rotational fall.",
+      "The stack loses structural cohesion during the fall, causing individual coins to separate and disperse due to kinetic energy.",
+      "The coins complete their trajectory, settling on the lower platform or falling into the prize chute out of frame."
+    ],
+    "invariants": [
+      "The two coin stacks in the background must remain stationary and unchanged.",
+      "The camera viewpoint and angle must stay fixed.",
+      "The green machine housing and 'Coin Tickets' signage must remain consistent.",
+      "The lighting and reflections on the glass must be preserved."
+    ]
+  },
+  {
+    "id": "195",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Stability & Balance"
+    },
+    "frames": {
+      "input": "input/data_195.png",
+      "intermediate_1": "intermediate_1/data_195.png",
+      "intermediate_2": "intermediate_2/data_195.png",
+      "output": "output/data_195.png"
+    },
+    "instruction": {
+      "global": "Place a red owl mug onto the triple beam balance and prepare to adjust the sliding weights.",
+      "steps": [
+        "Lower the red owl mug onto the balance pan and release it, causing the beam to tilt.",
+        "Move the hand away from the mug toward the bottom left of the frame.",
+        "Bring the hand back toward the center to point at the sliding weights on the balance beam."
+      ]
+    },
+    "explain": [
+      "The weight of the mug is applied to the pan, causing the left side of the balance to drop and the beam to tip upward on the right.",
+      "The hand is withdrawn, leaving the mug's mass as the sole force acting on the scale's pan.",
+      "The hand returns to the mechanism to begin the process of sliding the poises to find the object's mass."
+    ],
+    "invariants": [
+      "camera viewpoint",
+      "background and table surface",
+      "appearance of the red owl mug",
+      "lighting conditions",
+      "triple beam balance structure"
+    ]
+  },
+  {
+    "id": "196",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Stability & Balance"
+    },
+    "frames": {
+      "input": "input/data_196.png",
+      "intermediate_1": "intermediate_1/data_196.png",
+      "intermediate_2": "intermediate_2/data_196.png",
+      "output": "output/data_196.png"
+    },
+    "instruction": {
+      "global": "The large stack of pink and yellow poker chips collapses forward into the coin pusher tray, scattering the existing coins and revealing a black pouch.",
+      "steps": [
+        "Make the large stack of pink chips tip over and fall toward the camera with significant motion blur.",
+        "Show the falling chips impacting the tray, scattering the silver coins and orange stacks across the surface.",
+        "Settle the chips into a final resting position, revealing a black velvet pouch amidst the yellow chips and showing the silver coins pushed to the back."
+      ]
+    },
+    "explain": [
+      "Gravity overcomes the stability of the high-piled stack, causing it to collapse forward.",
+      "The kinetic energy from the falling chips is transferred to the items in the tray, causing a chain reaction of displacement.",
+      "Friction and collisions bring the objects to a rest, resulting in a new distribution of chips and coins based on the impact."
+    ],
+    "invariants": [
+      "Static camera viewpoint",
+      "Machine interior walls and glass reflections",
+      "Specific chip denominations and colors ($5000 pink, $1000 yellow, $10000 orange)",
+      "Consistent lighting from the top of the machine"
+    ]
+  },
+  {
+    "id": "191",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Stability & Balance"
+    },
+    "frames": {
+      "input": "input/data_191.png",
+      "intermediate_1": "intermediate_1/data_191.png",
+      "intermediate_2": "intermediate_2/data_191.png",
+      "output": "output/data_191.png"
+    },
+    "instruction": {
+      "global": "A black ball rolls through the base of two wooden block towers, causing the entire structure to collapse into a scattered pile.",
+      "steps": [
+        "Introduce a black ball hitting the bottom of the left tower, causing the tower to buckle and the connecting bridge to break.",
+        "Show the left tower completely collapsing while the right tower tilts and begins to fall as the ball passes through.",
+        "Depict all wooden blocks settled in a flat pile on the ground with the black ball having rolled to the far right."
+      ]
+    },
+    "explain": [
+      "The kinetic energy of the moving ball is transferred to the base blocks, overcoming their static friction and destabilizing the vertical equilibrium of the tower.",
+      "Gravity pulls the unsupported upper blocks downward, creating a cascading collapse, while the ball's momentum continues to disrupt the second tower's foundation.",
+      "The potential energy of the standing towers is fully converted into kinetic energy and then dissipated as the blocks reach a stable state on the floor."
+    ],
+    "invariants": [
+      "Camera viewpoint and focal length",
+      "Grey background and white floor surface",
+      "Wood grain texture and dimensions of the blocks",
+      "Lighting direction and soft shadows",
+      "Material properties of the black ball"
+    ]
+  },
+  {
+    "id": "192",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Stability & Balance"
+    },
+    "frames": {
+      "input": "input/data_192.png",
+      "intermediate_1": "intermediate_1/data_192.png",
+      "intermediate_2": "intermediate_2/data_192.png",
+      "output": "output/data_192.png"
+    },
+    "instruction": {
+      "global": "Collapse the standing Jenga tower so that the blocks are scattered across the table and the person's hand is removed from the scene.",
+      "steps": [
+        "Topple the wooden tower completely, scattering the blocks across the right side of the table surface and removing the hand.",
+        "Maintain the scattered blocks in their fallen positions on the table.",
+        "Keep the arrangement of the fallen blocks consistent with the previous state."
+      ]
+    },
+    "explain": [
+      "The removal of a support block causes the tower to lose structural integrity, leading to a gravitational collapse where blocks scatter upon impact with the table.",
+      "The blocks reach a state of static equilibrium, resting motionless on the flat surface after the kinetic energy from the fall dissipates.",
+      "The system remains at rest as no external forces are applied to the scattered blocks."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Wooden table texture and grain pattern",
+      "Solid black background",
+      "Lighting and shadows on the table",
+      "The specific 'Jenga' branding and wood color of the blocks"
+    ]
+  },
+  {
+    "id": "193",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Stability & Balance"
+    },
+    "frames": {
+      "input": "input/data_193.png",
+      "intermediate_1": "intermediate_1/data_193.png",
+      "intermediate_2": "intermediate_2/data_193.png",
+      "output": "output/data_193.png"
+    },
+    "instruction": {
+      "global": "Show the dominoes falling and knocking over the Jenga tower until it collapses completely.",
+      "steps": [
+        "Tip the line of dominoes so they strike the base of the wooden tower, causing the tower to begin leaning.",
+        "Increase the tilt of the wooden tower as the momentum from the base impact travels upward, causing the top figure to start falling.",
+        "Complete the collapse of the tower, scattering all the wooden blocks across the table surface."
+      ]
+    },
+    "explain": [
+      "Kinetic energy from the falling dominoes is transferred to the base of the tower, destabilizing its center of gravity.",
+      "As the base shifts, the gravitational torque increases, causing the entire structure to lean and accelerate downwards.",
+      "The structural integrity fails completely, and the blocks fall under gravity, dispersing upon impact with the table."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Background wall color and texture",
+      "Table surface material and lighting",
+      "The appearance and material of the wooden blocks"
+    ]
+  }
+]

@@ -1,0 +1,650 @@
+[
+  {
+    "id": "120",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Collision & Chain"
+    },
+    "frames": {
+      "input": "input/data_120.png",
+      "intermediate_1": "intermediate_1/data_120.png",
+      "intermediate_2": "intermediate_2/data_120.png",
+      "output": "output/data_120.png"
+    },
+    "instruction": {
+      "global": "Throw two additional red dice into the scene, causing them to collide with the existing dice and eventually come to a rest scattered across the surface.",
+      "steps": [
+        "Introduce two new red dice falling into the frame from the top and right, applying motion blur to indicate high velocity.",
+        "Show the falling dice impacting the white surface and colliding with the original dice, causing the left-most die to be pushed further back.",
+        "Bring all four dice to a complete stop, removing motion blur and positioning them in a scattered arrangement across the table."
+      ]
+    },
+    "explain": [
+      "Two additional dice enter the frame from above, their rapid descent creating significant motion blur.",
+      "The new dice strike the surface and the existing objects, transferring kinetic energy and causing the dice to bounce and shift positions.",
+      "Friction and gravity dissipate the kinetic energy, allowing all four dice to settle into stable, stationary positions."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "White reflective surface",
+      "Neutral background lighting",
+      "Red color and translucent material of the dice"
+    ]
+  },
+  {
+    "id": "121",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Collision & Chain"
+    },
+    "frames": {
+      "input": "input/data_121.png",
+      "intermediate_1": "intermediate_1/data_121.png",
+      "intermediate_2": "intermediate_2/data_121.png",
+      "output": "output/data_121.png"
+    },
+    "instruction": {
+      "global": "Initiate and complete a chain reaction of falling dominoes from left to right until all tiles are resting on the surface.",
+      "steps": [
+        "Tip the first domino on the left forward to strike the second one, creating motion blur as the first few tiles begin to fall.",
+        "Propagate the falling motion through the center of the row, showing the dominoes leaning into each other in a continuous wave.",
+        "Complete the sequence so that all dominoes have fallen and settled into a stable, overlapping resting position on the table."
+      ]
+    },
+    "explain": [
+      "The first domino's potential energy is converted to kinetic energy, which is transferred to the next tile upon impact, overcoming its static equilibrium.",
+      "Gravity pulls the tilted dominoes downward while momentum carries the force forward through the line, maintaining the chain reaction.",
+      "The dominoes reach a state of mechanical equilibrium where they are supported by the surface and the friction between overlapping tiles."
+    ],
+    "invariants": [
+      "Camera viewpoint and focal length",
+      "Plain white background and surface texture",
+      "The specific pip patterns and colors on each individual domino tile",
+      "Consistent soft lighting and shadows"
+    ]
+  },
+  {
+    "id": "122",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Collision & Chain"
+    },
+    "frames": {
+      "input": "input/data_122.png",
+      "intermediate_1": "intermediate_1/data_122.png",
+      "intermediate_2": "intermediate_2/data_122.png",
+      "output": "output/data_122.png"
+    },
+    "instruction": {
+      "global": "Show the dominoes falling in a chain reaction until the entire line has collapsed.",
+      "steps": [
+        "Collapse the first few dominoes on the left so they lie flat on the surface.",
+        "Tilt the middle section of the domino line forward as the chain reaction continues.",
+        "Complete the chain reaction by knocking down the remaining upright dominoes on the right."
+      ]
+    },
+    "explain": [
+      "Kinetic energy from the first falling dominoes is transferred to the next ones, causing them to tip over and settle on the ground.",
+      "Gravity pulls the tilted dominoes down as they are struck by the preceding ones, creating a wave of motion.",
+      "The momentum carries through to the end of the line, resulting in all dominoes resting in a fallen state."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Plain grey background and surface",
+      "Soft, consistent lighting",
+      "The specific dot patterns and colors on each domino"
+    ]
+  },
+  {
+    "id": "123",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Collision & Chain"
+    },
+    "frames": {
+      "input": "input/data_123.png",
+      "intermediate_1": "intermediate_1/data_123.png",
+      "intermediate_2": "intermediate_2/data_123.png",
+      "output": "output/data_123.png"
+    },
+    "instruction": {
+      "global": "Scatter a handful of almonds onto the surface so they fall, bounce, and come to rest.",
+      "steps": [
+        "Introduce several almonds falling from the top of the frame towards the surface, casting soft shadows below them.",
+        "Depict the almonds bouncing and tumbling across the surface, with one almond entering the extreme foreground.",
+        "Bring all the almonds to a complete stop, scattered across the surface in their final resting positions."
+      ]
+    },
+    "explain": [
+      "Gravity accelerates the almonds downwards from an external source towards the plane.",
+      "Elastic collisions with the surface cause the almonds to bounce and rotate mid-air, distributing them across the frame.",
+      "Kinetic energy is dissipated through friction and multiple impacts, resulting in a static state where all objects are at rest."
+    ],
+    "invariants": [
+      "camera viewpoint",
+      "dark background with faint grid pattern",
+      "grey surface texture",
+      "low-key lighting"
+    ]
+  },
+  {
+    "id": "124",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Collision & Chain"
+    },
+    "frames": {
+      "input": "input/data_124.png",
+      "intermediate_1": "intermediate_1/data_124.png",
+      "intermediate_2": "intermediate_2/data_124.png",
+      "output": "output/data_124.png"
+    },
+    "instruction": {
+      "global": "A marble rolls from the left foreground into the distant background, passing behind the central cluster of marbles.",
+      "steps": [
+        "Introduce a large, blurry marble entering from the left side of the frame, showing motion blur.",
+        "Move the rolling marble into the background behind the central group, transitioning from motion blur to a soft bokeh effect.",
+        "Position the marble further into the distance along the wooden planks, increasing the depth-of-field blur as it recedes."
+      ]
+    },
+    "explain": [
+      "The marble enters with high velocity, creating motion blur because its movement exceeds the camera's shutter speed.",
+      "As the marble moves away from the camera's focal plane, it loses sharpness due to the shallow depth of field.",
+      "The marble continues its trajectory into the background, appearing smaller and more out of focus due to perspective and lens optics."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle.",
+      "The positions and orientations of the central cluster of marbles.",
+      "The texture, cracks, and grain of the wooden planks.",
+      "The lighting direction and shadow placement.",
+      "The static marbles in the far left and right background."
+    ]
+  },
+  {
+    "id": "125",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Collision & Chain"
+    },
+    "frames": {
+      "input": "input/data_125.png",
+      "intermediate_1": "intermediate_1/data_125.png",
+      "intermediate_2": "intermediate_2/data_125.png",
+      "output": "output/data_125.png"
+    },
+    "instruction": {
+      "global": "Knock down the pyramid of three blue bottles by throwing a ball at them from the left.",
+      "steps": [
+        "Maintain the stable pyramid formation of the three blue bottles on the white table.",
+        "Introduce a patterned ball flying from the left side of the frame to strike the center of the bottle stack, causing it to tilt.",
+        "Remove the ball and depict the three bottles lying scattered and fallen on the table surface."
+      ]
+    },
+    "explain": [
+      "The bottles remain in a state of static equilibrium, supported by the table and each other.",
+      "Kinetic energy from the moving ball is transferred to the bottles upon impact, overcoming their gravitational stability.",
+      "Gravity pulls the displaced bottles downward until they reach a new stable state resting horizontally on the table."
+    ],
+    "invariants": [
+      "Camera viewpoint and focal length",
+      "White table surface and plain background wall",
+      "Consistent lighting and shadows",
+      "The specific design, color, and number of the blue bottles"
+    ]
+  },
+  {
+    "id": "126",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Collision & Chain"
+    },
+    "frames": {
+      "input": "input/data_126.png",
+      "intermediate_1": "intermediate_1/data_126.png",
+      "intermediate_2": "intermediate_2/data_126.png",
+      "output": "output/data_126.png"
+    },
+    "instruction": {
+      "global": "Strike the standing bowling pin with a blue bowling ball and then clear the lane using the mechanical sweep bar.",
+      "steps": [
+        "Introduce a blue bowling ball striking the pin, causing the pin to fly to the right with significant motion blur.",
+        "Bring down a mechanical sweep bar from the top left to push the ball and pin off the lane.",
+        "Complete the sweep movement to leave the lane surface entirely empty."
+      ]
+    },
+    "explain": [
+      "The bowling ball transfers kinetic energy to the pin upon impact, resulting in high-velocity projectile motion and directional blur.",
+      "A mechanical pinsetter sweep applies a constant lateral force to clear debris from the lane surface.",
+      "The lane returns to a state of rest once all objects are pushed into the pit and the sweep bar retracts."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Wooden lane texture and color",
+      "Dark background structure of the pin deck",
+      "Ambient lighting and shadows"
+    ]
+  },
+  {
+    "id": "127",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Collision & Chain"
+    },
+    "frames": {
+      "input": "input/data_127.png",
+      "intermediate_1": "intermediate_1/data_127.png",
+      "intermediate_2": "intermediate_2/data_127.png",
+      "output": "output/data_127.png"
+    },
+    "instruction": {
+      "global": "Knock down the miniature red bowling pins by rolling the small ball into them until they are all scattered across the table.",
+      "steps": [
+        "Roll the ball into the left side of the pin formation, causing the first few pins to tip and fall.",
+        "Scatter the remaining standing pins as the ball and falling pins collide with them, spreading them across the white surface.",
+        "Allow the pins to settle into their final resting positions on the table as the ball rolls further away."
+      ]
+    },
+    "explain": [
+      "Kinetic energy is transferred from the moving ball to the pins upon impact, overcoming their gravitational stability and causing them to tip.",
+      "A chain reaction occurs as falling pins strike adjacent pins, distributing the initial momentum throughout the group and knocking them over.",
+      "Friction between the pins and the table surface, combined with gravity, causes the objects to lose kinetic energy and come to a complete rest."
+    ],
+    "invariants": [
+      "White table surface",
+      "Red color and shape of the miniature pins",
+      "Presence of the small red and black ball",
+      "Consistent indoor lighting and soft shadows",
+      "Blurred background elements including the person"
+    ]
+  },
+  {
+    "id": "128",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Collision & Chain"
+    },
+    "frames": {
+      "input": "input/data_128.png",
+      "intermediate_1": "intermediate_1/data_128.png",
+      "intermediate_2": "intermediate_2/data_128.png",
+      "output": "output/data_128.png"
+    },
+    "instruction": {
+      "global": "Release the rightmost ball of the Newton's cradle and allow the momentum to transfer back and forth until the balls come to a complete stop.",
+      "steps": [
+        "Release the rightmost ball from the hand so it strikes the stationary balls, causing the leftmost ball to swing upward.",
+        "Swing the leftmost ball back down to strike the center balls, transferring momentum so the rightmost ball swings upward.",
+        "Allow the swinging motion to dampen until all five balls hang vertically and stationary in the center."
+      ]
+    },
+    "explain": [
+      "The potential energy of the raised right ball converts to kinetic energy, which is transferred through elastic collisions through the center balls to the leftmost ball.",
+      "The leftmost ball's kinetic energy is transferred back through the stack, demonstrating conservation of momentum as the rightmost ball rises.",
+      "Energy is gradually lost to friction and air resistance, causing the amplitude of the swings to decrease until the system reaches equilibrium at rest."
+    ],
+    "invariants": [
+      "Black background",
+      "Wooden table surface",
+      "Newton's cradle frame position and orientation",
+      "Camera viewpoint",
+      "Lighting conditions"
+    ]
+  },
+  {
+    "id": "129",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Collision & Chain"
+    },
+    "frames": {
+      "input": "input/data_129.png",
+      "intermediate_1": "intermediate_1/data_129.png",
+      "intermediate_2": "intermediate_2/data_129.png",
+      "output": "output/data_129.png"
+    },
+    "instruction": {
+      "global": "Perform a break shot on the racked billiard balls, causing them to scatter across the red felt table until only a few remain in the frame.",
+      "steps": [
+        "Strike the apex of the racked balls with the cue ball, causing the formation to break and balls to begin moving outward with motion blur.",
+        "Scatter the balls further across the table surface, increasing the distance between them as they move towards the frame edges.",
+        "Remove the balls that have exited the frame or entered pockets, leaving only a few stationary balls scattered on the felt."
+      ]
+    },
+    "explain": [
+      "Kinetic energy from the cue ball is transferred to the racked balls upon impact, overcoming static friction and initiating momentum in multiple directions.",
+      "The balls continue to travel across the low-friction felt surface, spreading out as they conserve momentum and undergo secondary collisions.",
+      "Friction and energy loss from collisions eventually cause the balls to slow down, with many exiting the field of view while others come to a complete stop."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Red felt texture and color of the pool table",
+      "Overhead warm lighting and shadow direction",
+      "Billiard ball designs and numbering"
+    ]
+  },
+  {
+    "id": "130",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Collision & Chain"
+    },
+    "frames": {
+      "input": "input/data_130.png",
+      "intermediate_1": "intermediate_1/data_130.png",
+      "intermediate_2": "intermediate_2/data_130.png",
+      "output": "output/data_130.png"
+    },
+    "instruction": {
+      "global": "Strike the white cue ball with the cue stick so it rolls toward the bottom left corner while the hand and stick exit the frame.",
+      "steps": [
+        "Shift the hand and cue stick slightly as the player prepares the stroke.",
+        "Apply a force to the cue ball with the stick, making it roll toward the bottom left with visible motion blur.",
+        "Move the cue ball further along its trajectory and remove the hand and cue stick from the top left corner."
+      ]
+    },
+    "explain": [
+      "The player adjusts their aim and prepares for the kinetic transfer.",
+      "The cue stick strikes the cue ball, converting potential energy into kinetic energy and causing motion across the felt.",
+      "The cue ball maintains its momentum while the player retracts the cue stick out of the camera's field of view."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Positions of the stationary balls (3, 10, 2, 9, 8)",
+      "Red felt texture and table rails",
+      "Lighting conditions and shadows",
+      "Corner pocket position"
+    ]
+  },
+  {
+    "id": "131",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Collision & Chain"
+    },
+    "frames": {
+      "input": "input/data_131.png",
+      "intermediate_1": "intermediate_1/data_131.png",
+      "intermediate_2": "intermediate_2/data_131.png",
+      "output": "output/data_131.png"
+    },
+    "instruction": {
+      "global": "Add several small spheres to the scene by stacking one on the left and placing others near the central arch.",
+      "steps": [
+        "Place a second white sphere directly on top of the existing white sphere on the left-most cube.",
+        "Place a white sphere on the floor surface in front of the wooden block under the pink arch.",
+        "Place a beige wooden sphere on the floor behind the white sphere that was just added."
+      ]
+    },
+    "explain": [
+      "A new sphere is balanced on top of another, with gravity and contact friction maintaining the stack.",
+      "A sphere is introduced to the ground plane, resting stably on the flat surface.",
+      "An additional sphere is placed on the ground, creating depth through occlusion with the sphere in front of it."
+    ],
+    "invariants": [
+      "Camera viewpoint and focal length",
+      "Background color and texture",
+      "Soft studio lighting and shadow direction",
+      "Positions and textures of all original geometric objects"
+    ]
+  },
+  {
+    "id": "132",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Collision & Chain"
+    },
+    "frames": {
+      "input": "input/data_132.png",
+      "intermediate_1": "intermediate_1/data_132.png",
+      "intermediate_2": "intermediate_2/data_132.png",
+      "output": "output/data_132.png"
+    },
+    "instruction": {
+      "global": "A blue bowling ball rolls down the lane, strikes the pins, and the mechanical sweep bar descends to clear the lane.",
+      "steps": [
+        "Introduce a blue bowling ball rolling from the right side of the lane toward the center of the pin formation.",
+        "Show the ball impacting the pins, causing the front and center pins to fly backward and to the sides with motion blur.",
+        "Remove the scattered pins and the ball, leaving one pin standing while lowering the orange 'STOP' sweep bar across the lane."
+      ]
+    },
+    "explain": [
+      "The bowling ball possesses linear momentum as it rolls toward the target.",
+      "Kinetic energy is transferred from the ball to the pins during the collision, resulting in elastic and inelastic scattering of the pins.",
+      "The mechanical pinsetter clears the fallen pins from the deck and lowers a barrier to prevent further balls from being thrown during the reset."
+    ],
+    "invariants": [
+      "Camera viewpoint and focal length",
+      "Wooden lane texture and glossy reflections",
+      "Background machinery and side gutters",
+      "Ambient lighting and shadows"
+    ]
+  },
+  {
+    "id": "133",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Collision & Chain"
+    },
+    "frames": {
+      "input": "input/data_133.png",
+      "intermediate_1": "intermediate_1/data_133.png",
+      "intermediate_2": "intermediate_2/data_133.png",
+      "output": "output/data_133.png"
+    },
+    "instruction": {
+      "global": "A blue curling stone slides down the ice and knocks the stationary red stone out of the house, taking its position in the foreground.",
+      "steps": [
+        "Introduce a blue-handled curling stone sliding from the background towards the red stone in the foreground.",
+        "Move the blue stone closer to the red stone, maintaining its path along the ice surface.",
+        "Replace the red stone with the blue stone at the center of the target after a collision, with the red stone being knocked out of the frame."
+      ]
+    },
+    "explain": [
+      "A second curling stone is launched from the far end of the rink, sliding across the low-friction ice surface towards the target.",
+      "The blue stone continues its forward trajectory, gaining proximity to the stationary red stone due to its initial momentum.",
+      "An elastic collision occurs where the blue stone transfers its kinetic energy to the red stone, displacing it and coming to rest in its place."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Background elements including the blue pillars and the person in the distance",
+      "Ice surface texture and the painted red and blue circles",
+      "Lighting and shadows on the ice"
+    ]
+  },
+  {
+    "id": "135",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Collision & Chain"
+    },
+    "frames": {
+      "input": "input/data_135.png",
+      "intermediate_1": "intermediate_1/data_135.png",
+      "intermediate_2": "intermediate_2/data_135.png",
+      "output": "output/data_135.png"
+    },
+    "instruction": {
+      "global": "Roll green apples across the blue floor from the left side of the frame while keeping the pedestals and stacked objects stationary.",
+      "steps": [
+        "Introduce a green apple rolling into the frame from the left with visible motion blur.",
+        "Advance the first apple further left and add a second green apple rolling in from the same direction.",
+        "Remove the second apple and show the first apple stationary at the far left edge of the frame."
+      ]
+    },
+    "explain": [
+      "A green apple enters the scene from the left with horizontal momentum, causing motion blur.",
+      "The first apple continues its path while a second apple enters the frame, demonstrating sequential motion.",
+      "The second apple exits the frame or is removed, leaving the first apple at rest near the left boundary."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Blue background and floor color",
+      "White cube and sphere on the left",
+      "White cylinder and the stacked fruits (green apple and yellow quince) on the right",
+      "Lighting and shadow directions"
+    ]
+  },
+  {
+    "id": "136",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Collision & Chain"
+    },
+    "frames": {
+      "input": "input/data_136.png",
+      "intermediate_1": "intermediate_1/data_136.png",
+      "intermediate_2": "intermediate_2/data_136.png",
+      "output": "output/data_136.png"
+    },
+    "instruction": {
+      "global": "Introduce small white balls and have the large yellow ball fall from its balanced position on the cube to the floor.",
+      "steps": [
+        "Add several small white balls scattered across the dark floor surface.",
+        "Shift the large yellow ball so it begins to roll off the edge of the tan cube while the white balls roll across the floor.",
+        "Place the large yellow ball at rest on the floor next to the tan cube, with most white balls having rolled out of view."
+      ]
+    },
+    "explain": [
+      "Small white spheres are introduced as new dynamic elements in the scene.",
+      "The large yellow ball loses its equilibrium on the corner of the cube and begins to fall due to gravity.",
+      "The yellow ball completes its descent and reaches a stable state on the ground surface."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle.",
+      "Background wall color and texture.",
+      "Positions and textures of the tan cube, yellow cube, white stick, and stone slabs.",
+      "Lighting and shadow direction."
+    ]
+  },
+  {
+    "id": "137",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Collision & Chain"
+    },
+    "frames": {
+      "input": "input/data_137.png",
+      "intermediate_1": "intermediate_1/data_137.png",
+      "intermediate_2": "intermediate_2/data_137.png",
+      "output": "output/data_137.png"
+    },
+    "instruction": {
+      "global": "Complete a full swing cycle of the Newton's cradle, starting from the right ball swinging in and ending with the right ball swinging back out after momentum transfers through the center.",
+      "steps": [
+        "Move the rightmost ball to strike the center group and swing the leftmost ball out to the left.",
+        "Swing the leftmost ball back down from its peak position towards the center group.",
+        "Have the leftmost ball strike the center group and swing the rightmost ball out to the right."
+      ]
+    },
+    "explain": [
+      "Elastic collision transfers kinetic energy from the right ball through the stationary balls to the leftmost ball, causing it to lift.",
+      "The leftmost ball reaches its maximum potential energy at the peak of its arc and begins its descent due to gravity.",
+      "The returning leftmost ball transfers its momentum back through the chain, launching the rightmost ball into the air again."
+    ],
+    "invariants": [
+      "Camera viewpoint and perspective",
+      "Plain blue background and supporting surface",
+      "Newton's cradle metal frame structure",
+      "The three central balls remain in their resting positions",
+      "Consistent lighting and metallic reflections"
+    ]
+  },
+  {
+    "id": "138",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Collision & Chain"
+    },
+    "frames": {
+      "input": "input/data_138.png",
+      "intermediate_1": "intermediate_1/data_138.png",
+      "intermediate_2": "intermediate_2/data_138.png",
+      "output": "output/data_138.png"
+    },
+    "instruction": {
+      "global": "Add a plastic water bottle to the left of the glass bottle and then tip the glass bottle over to the right in successive stages.",
+      "steps": [
+        "Place a clear plastic water bottle with a blue cap vertically to the left of the glass bottle.",
+        "Tilt the glass bottle approximately 15 degrees to the right while keeping the water bottle stationary.",
+        "Increase the tilt of the glass bottle to approximately 45 degrees to the right, ensuring the base remains near its original contact point."
+      ]
+    },
+    "explain": [
+      "A second object is introduced into the scene, requiring the generation of realistic shadows and reflections on the surface consistent with the existing lighting.",
+      "The glass bottle undergoes a rotational transformation around the right edge of its base, simulating the initial phase of tipping over.",
+      "The angular displacement of the glass bottle increases as gravity pulls its center of mass further away from the vertical equilibrium point."
+    ],
+    "invariants": [
+      "Camera viewpoint and focal length",
+      "Background surface texture and color",
+      "Lighting direction and intensity",
+      "Appearance and position of the plastic water bottle once added",
+      "Integrity of the glass bottle and its red cap"
+    ]
+  },
+  {
+    "id": "139",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Collision & Chain"
+    },
+    "frames": {
+      "input": "input/data_139.png",
+      "intermediate_1": "intermediate_1/data_139.png",
+      "intermediate_2": "intermediate_2/data_139.png",
+      "output": "output/data_139.png"
+    },
+    "instruction": {
+      "global": "Scatter the central cluster of marbles across the wooden surface until they come to a rest.",
+      "steps": [
+        "Disperse the central group of marbles, pushing them outward from the center point.",
+        "Continue the outward rolling motion of the marbles, with some moving toward the foreground and others toward the background.",
+        "Bring the marbles to a complete stop in their final scattered positions, ensuring they rest naturally on the wood grain."
+      ]
+    },
+    "explain": [
+      "An initial force or collision causes the marbles to overcome static friction and begin rolling away from each other.",
+      "Kinetic energy carries the marbles across the surface, with their paths influenced by the texture of the wood.",
+      "Friction and loss of momentum cause the marbles to decelerate and settle into stable positions on the planks."
+    ],
+    "invariants": [
+      "Low-angle camera viewpoint",
+      "Shallow depth of field with blurred background",
+      "Rainbow color gradient lighting across the scene",
+      "Wooden plank texture and grain patterns",
+      "Internal patterns and transparency of the glass marbles"
+    ]
+  },
+  {
+    "id": "134",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Collision & Chain"
+    },
+    "frames": {
+      "input": "input/data_134.png",
+      "intermediate_1": "intermediate_1/data_134.png",
+      "intermediate_2": "intermediate_2/data_134.png",
+      "output": "output/data_134.png"
+    },
+    "instruction": {
+      "global": "A blue curling stone slides in from the top, strikes the red stone on the left, knocking it out of the frame, and comes to rest near the center.",
+      "steps": [
+        "Introduce a blue curling stone sliding from the top edge towards the center of the house.",
+        "Move the blue stone to collide with the red stone on the left, causing the red stone to shift towards the left edge.",
+        "Remove the red stone as it slides out of frame and settle the blue stone in its final position near the center."
+      ]
+    },
+    "explain": [
+      "A blue curling stone is launched and slides across the low-friction ice surface towards the stationary red stones.",
+      "The blue stone undergoes an elastic collision with the red stone on the left, transferring its kinetic energy and momentum.",
+      "The struck red stone continues its trajectory out of the field of view while the blue stone decelerates due to ice friction and comes to a halt."
+    ],
+    "invariants": [
+      "Top-down camera viewpoint",
+      "Ice surface texture and blue/white circular markings",
+      "Position and orientation of the red stone on the bottom right",
+      "Lighting and specular reflections on the ice"
+    ]
+  }
+]

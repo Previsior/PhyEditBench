@@ -1,0 +1,910 @@
+[
+  {
+    "id": "74",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_74.png",
+      "intermediate_1": "intermediate_1/data_74.png",
+      "intermediate_2": "intermediate_2/data_74.png",
+      "output": "output/data_74.png"
+    },
+    "instruction": {
+      "global": "Pour a small amount of blue liquid into the empty petri dish and let it spread across the bottom surface.",
+      "steps": [
+        "Introduce a vertical stream of blue liquid into the center of the petri dish, showing it splashing and spreading outward.",
+        "Remove the pouring stream and show the blue liquid continuing to expand with visible concentric ripples at the impact site.",
+        "Let the ripples dissipate and the liquid settle into a flatter, more stable pool covering a larger area of the dish."
+      ]
+    },
+    "explain": [
+      "A stream of blue liquid hits the center of the dish, creating a dynamic splash and an irregular spreading pattern driven by momentum.",
+      "As the pouring stops, the remaining kinetic energy creates circular wave patterns (ripples) while the liquid continues to flow outward.",
+      "Gravity and surface tension cause the liquid to level out, resulting in the ripples fading and the fluid reaching a state of equilibrium."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Position and geometry of the petri dishes",
+      "Striped background pattern and texture",
+      "Lighting conditions and reflections on the glass"
+    ]
+  },
+  {
+    "id": "75",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_75.png",
+      "intermediate_1": "intermediate_1/data_75.png",
+      "intermediate_2": "intermediate_2/data_75.png",
+      "output": "output/data_75.png"
+    },
+    "instruction": {
+      "global": "Continue the clockwise swirling motion of the multicolored fluid, causing the teal, pink, and white patterns to stretch and blend further.",
+      "steps": [
+        "Rotate the central fluid vortex clockwise, shifting the pink and teal bands slightly along the flow lines.",
+        "Elongate the fluid filaments as they spiral outward from the center, increasing the curvature of the marble patterns.",
+        "Further diffuse the color boundaries and continue the rotational flow to create more intricate, thin streaks of pigment."
+      ]
+    },
+    "explain": [
+      "Viscous drag and rotational force cause the fluid layers to slide past each other, creating laminar flow patterns.",
+      "Shear stress within the liquid stretches the pigment bands into thinner, more complex marble-like structures.",
+      "Continued mixing increases the surface area between different colored fluids, leading to more intricate marbling and gradual blending."
+    ],
+    "invariants": [
+      "Top-down macro camera viewpoint",
+      "Soft, diffused lighting",
+      "Color palette of teal, pink, white, and dark specks",
+      "Viscous liquid texture"
+    ]
+  },
+  {
+    "id": "77",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_77.png",
+      "intermediate_1": "intermediate_1/data_77.png",
+      "intermediate_2": "intermediate_2/data_77.png",
+      "output": "output/data_77.png"
+    },
+    "instruction": {
+      "global": "Transform the small initial flame into a large explosion that cools into a thick smoke cloud and eventually dissipates as it rises.",
+      "steps": [
+        "Expand the small flame into a large, bright, turbulent fireball.",
+        "Replace the luminous fire with a dense, dark grey smoke plume of similar volume.",
+        "Move the smoke plume upwards and thin it out until only a faint, wispy residue remains at the top."
+      ]
+    },
+    "explain": [
+      "The initial ignition expands rapidly due to the release of thermal energy and gas pressure, creating a large fireball.",
+      "As the fuel is consumed and the temperature drops, the glowing flame transitions into an opaque cloud of soot and smoke.",
+      "The smoke rises due to buoyancy and gradually disperses into the surrounding air through diffusion and mixing."
+    ],
+    "invariants": [
+      "Solid black background",
+      "Static camera viewpoint",
+      "Central vertical axis of the plume"
+    ]
+  },
+  {
+    "id": "78",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_78.png",
+      "intermediate_1": "intermediate_1/data_78.png",
+      "intermediate_2": "intermediate_2/data_78.png",
+      "output": "output/data_78.png"
+    },
+    "instruction": {
+      "global": "Transform the falling water droplet into a full splash sequence, culminating in a central Worthington jet rising from the surface.",
+      "steps": [
+        "Impact the droplet onto the surface to create a symmetrical crown splash with thin liquid filaments extending upwards.",
+        "Break the crown splash into smaller, irregular droplets and elongated liquid strands as the splash expands and loses cohesion.",
+        "Collapse the outer splash and form a tall, thin central water jet rising vertically from the impact site."
+      ]
+    },
+    "explain": [
+      "Kinetic energy from the falling drop is transferred to the surface liquid, forcing it outward and upward into a crown shape due to surface tension and inertia.",
+      "Rayleigh-Plateau instability causes the thin filaments of the crown to break apart into individual droplets as the splash expands.",
+      "The cavity created by the initial impact collapses, and the converging fluid at the center is forced upward, creating a vertical Worthington jet."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Dark gradient background",
+      "Side-lit lighting conditions",
+      "Reflective wet surface texture"
+    ]
+  },
+  {
+    "id": "79",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_79.png",
+      "intermediate_1": "intermediate_1/data_79.png",
+      "intermediate_2": "intermediate_2/data_79.png",
+      "output": "output/data_79.png"
+    },
+    "instruction": {
+      "global": "Pour pancake batter into a pan and cook it until bubbles form and pop on the surface.",
+      "steps": [
+        "Stop pouring the batter and allow the viscous liquid to spread into a wider, circular shape on the pan.",
+        "Expand the batter circle slightly and introduce the first few small air bubbles rising to the surface.",
+        "Increase the density of bubbles across the surface, with many popping to leave small holes as the batter begins to set."
+      ]
+    },
+    "explain": [
+      "Gravity and surface tension cause the thick batter to spread radially outward across the flat, oiled surface of the pan.",
+      "Heat from the pan activates leavening agents, causing gases to expand and rise, creating visible surface tension deformations.",
+      "As moisture evaporates and the batter solidifies, gas bubbles burst through the surface, leaving permanent pores in the thickening structure."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Black non-stick pan texture",
+      "Position of oil droplets on the pan surface",
+      "Lighting direction and intensity"
+    ]
+  },
+  {
+    "id": "82",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_82.png",
+      "intermediate_1": "intermediate_1/data_82.png",
+      "intermediate_2": "intermediate_2/data_82.png",
+      "output": "output/data_82.png"
+    },
+    "instruction": {
+      "global": "Pour amber tea from the teapot into the glass cup until it is full, then remove the teapot.",
+      "steps": [
+        "Tilt the teapot spout and pour a steady stream of tea into the glass cup until it is one-third full.",
+        "Continue pouring the tea stream into the cup until the liquid level reaches just below the gold rim.",
+        "Stop the pour and remove the teapot from the frame, leaving the cup full of tea with a calm surface."
+      ]
+    },
+    "explain": [
+      "Gravity pulls the tea from the tilted spout into the cup, creating bubbles and turbulence as the liquid hits the glass.",
+      "The continuous flow of liquid increases the volume in the cup, raising the water level while maintaining surface agitation from the stream's impact.",
+      "Removing the source of the flow allows the liquid to reach equilibrium, causing bubbles to dissipate and the surface to settle due to surface tension."
+    ],
+    "invariants": [
+      "Camera viewpoint and focal length.",
+      "Position and design of the glass cup and white tray.",
+      "Background kitchen environment and lighting conditions.",
+      "The gold rim detailing on the cup."
+    ]
+  },
+  {
+    "id": "84",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_84.png",
+      "intermediate_1": "intermediate_1/data_84.png",
+      "intermediate_2": "intermediate_2/data_84.png",
+      "output": "output/data_84.png"
+    },
+    "instruction": {
+      "global": "Pour steamed milk from the spout into the coffee cup until the surface is mostly covered with white foam.",
+      "steps": [
+        "Increase the area of white milk foam on the surface of the coffee as the stream continues to pour.",
+        "Expand the white foam layer further across the surface, displacing the dark coffee crema toward the edges.",
+        "Fill the cup further until the white foam dominates the surface and the liquid level rises slightly."
+      ]
+    },
+    "explain": [
+      "As milk is poured into the coffee, the microfoam rises to the surface and begins to spread from the point of impact.",
+      "Continued fluid injection increases the volume of foam, causing it to push the existing coffee crema outward due to fluid displacement.",
+      "The accumulation of milk and foam raises the total volume in the cup, resulting in a higher liquid level and a more complete foam covering."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Position and appearance of the metal milk spout",
+      "Background espresso machine components",
+      "Color and position of the ceramic cup",
+      "Lighting and shadows"
+    ]
+  },
+  {
+    "id": "86",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_86.png",
+      "intermediate_1": "intermediate_1/data_86.png",
+      "intermediate_2": "intermediate_2/data_86.png",
+      "output": "output/data_86.png"
+    },
+    "instruction": {
+      "global": "Fill the glass cup with almond milk from the bottle until it is nearly full, then remove the bottle and hand from the frame.",
+      "steps": [
+        "Increase the flow of almond milk from the tilted bottle into the cup, causing the liquid level at the bottom to rise.",
+        "Continue pouring almond milk until the cup is approximately three-quarters full, maintaining a steady stream from the bottle.",
+        "Stop the pour, remove the bottle and the hand from the scene, and let the almond milk settle at its final level in the cup."
+      ]
+    },
+    "explain": [
+      "Gravity pulls the almond milk from the tilted bottle into the cup, increasing the volume of liquid at the base of the glass.",
+      "Sustained pouring results in fluid accumulation, raising the liquid level significantly within the glass container.",
+      "Removing the source of the liquid stops the flow, and the surface of the milk stabilizes as the bottle is withdrawn from the frame."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Background white wall",
+      "Wooden table texture and color",
+      "Position and appearance of the glass cup",
+      "Arrangement of the almonds on the table",
+      "Ambient lighting and shadows"
+    ]
+  },
+  {
+    "id": "87",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_87.png",
+      "intermediate_1": "intermediate_1/data_87.png",
+      "intermediate_2": "intermediate_2/data_87.png",
+      "output": "output/data_87.png"
+    },
+    "instruction": {
+      "global": "Fill the white cup with coffee until it is full.",
+      "steps": [
+        "Start pouring a stream of dark coffee into the center of the empty white cup until it is half full.",
+        "Continue pouring the coffee stream until the liquid level reaches just below the rim of the cup.",
+        "Stop the coffee stream and let the liquid surface settle into a calm, dark pool at the top of the cup."
+      ]
+    },
+    "explain": [
+      "Gravity causes the liquid stream to fall into the cup, increasing the volume and creating ripples on the surface.",
+      "The continuous flow of liquid further increases the volume and height of the coffee inside the vessel.",
+      "Once the pouring stops, the liquid level stabilizes and surface tension dampens the remaining ripples."
+    ],
+    "invariants": [
+      "Camera viewpoint and framing",
+      "Position and appearance of the half lemon",
+      "Position and pattern of the white cup and saucer",
+      "Woven background texture and lighting"
+    ]
+  },
+  {
+    "id": "88",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_88.png",
+      "intermediate_1": "intermediate_1/data_88.png",
+      "intermediate_2": "intermediate_2/data_88.png",
+      "output": "output/data_88.png"
+    },
+    "instruction": {
+      "global": "Drizzle honey from a honey dipper into the glass cup.",
+      "steps": [
+        "Introduce a hand holding a honey dipper above the cup and start a thin, continuous stream of honey falling into the center.",
+        "Increase the amount of honey collected at the bottom of the glass cup while maintaining the falling stream.",
+        "Further accumulate the honey at the base of the cup, showing a larger pool of viscous liquid."
+      ]
+    },
+    "explain": [
+      "Gravity pulls the viscous honey from the dipper, creating a thin thread-like stream that begins to pool at the bottom of the glass.",
+      "As the honey continues to flow, the pool at the bottom expands and thickens due to the liquid's high viscosity and surface tension.",
+      "The volume of honey in the cup increases steadily as the stream remains unbroken, with the pool spreading to cover more of the cup's base."
+    ],
+    "invariants": [
+      "Camera viewpoint and framing",
+      "White background and surface",
+      "Position and appearance of the glass cup and wooden handle",
+      "Position of the wooden coaster and metal spoon",
+      "Lighting conditions and shadows"
+    ]
+  },
+  {
+    "id": "89",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_89.png",
+      "intermediate_1": "intermediate_1/data_89.png",
+      "intermediate_2": "intermediate_2/data_89.png",
+      "output": "output/data_89.png"
+    },
+    "instruction": {
+      "global": "Fill the empty wine glass halfway with red wine.",
+      "steps": [
+        "Start pouring a stream of red wine into the center of the glass until the bottom is covered.",
+        "Continue pouring the red wine until the glass is half full, allowing bubbles to form on the surface from the impact.",
+        "Stop the pour and let the liquid level stabilize, keeping the layer of bubbles on the surface."
+      ]
+    },
+    "explain": [
+      "Gravity pulls the liquid stream into the glass, creating turbulence and initial splashing as it hits the bottom.",
+      "As the volume of liquid increases, the surface level rises and the continuous impact of the stream introduces air, forming a layer of foam.",
+      "The external liquid source is removed, allowing the surface to become horizontal while surface tension maintains the accumulated bubbles."
+    ],
+    "invariants": [
+      "Camera viewpoint and framing",
+      "Plain white background",
+      "Position and shape of the wine glass",
+      "Lighting and reflections on the glass surface"
+    ]
+  },
+  {
+    "id": "90",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_90.png",
+      "intermediate_1": "intermediate_1/data_90.png",
+      "intermediate_2": "intermediate_2/data_90.png",
+      "output": "output/data_90.png"
+    },
+    "instruction": {
+      "global": "Fill the empty glass with dense white smoke until it settles into a thick, level layer.",
+      "steps": [
+        "Introduce a stream of thick white smoke into the glass, allowing it to begin spilling over the left rim.",
+        "Increase the smoke volume so it billows out of the glass, creating a turbulent cloud that surrounds the exterior.",
+        "Remove the external smoke clouds and let the vapor settle inside the glass to form a dense, opaque, and level surface."
+      ]
+    },
+    "explain": [
+      "Dense vapor is poured into the glass, displacing the air and beginning to overflow due to its higher density.",
+      "The continuous flow of vapor creates turbulence and convection, causing the smoke to spill over all sides of the rim.",
+      "As the flow stops, the heavy vapor settles under gravity, reaching a state of equilibrium where it fills the container with a flat top surface."
+    ],
+    "invariants": [
+      "Camera viewpoint and framing",
+      "Position and geometry of the glass",
+      "Solid black background",
+      "Lighting intensity and direction"
+    ]
+  },
+  {
+    "id": "91",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_91.png",
+      "intermediate_1": "intermediate_1/data_91.png",
+      "intermediate_2": "intermediate_2/data_91.png",
+      "output": "output/data_91.png"
+    },
+    "instruction": {
+      "global": "Pour liquid chocolate syrup onto the top peaks of three watermelon slices held by forks.",
+      "steps": [
+        "Initiate thin streams of chocolate syrup falling from above onto the top point of each watermelon slice.",
+        "Allow the chocolate to spread across the upper edges and begin dripping down the sides of the fruit.",
+        "Increase the volume of chocolate to create a thicker, glossy coating that covers the top third of the watermelon slices."
+      ]
+    },
+    "explain": [
+      "Viscous liquid chocolate makes initial contact with the solid surface of the watermelon peaks.",
+      "Gravity pulls the chocolate downward, causing it to flow along the slanted edges of the fruit slices.",
+      "Surface tension and continued pouring result in a thick accumulation of chocolate on the upper surfaces with visible drips."
+    ],
+    "invariants": [
+      "Static camera viewpoint",
+      "Red gradient background",
+      "Position and orientation of the three forks",
+      "Base shape and position of the watermelon slices",
+      "Consistent studio lighting"
+    ]
+  },
+  {
+    "id": "92",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_92.png",
+      "intermediate_1": "intermediate_1/data_92.png",
+      "intermediate_2": "intermediate_2/data_92.png",
+      "output": "output/data_92.png"
+    },
+    "instruction": {
+      "global": "Pour a glossy red glaze over the cylindrical cake until it is completely covered and the excess glaze pools at the base.",
+      "steps": [
+        "Pour a stream of red glaze onto the center of the cake's top surface.",
+        "Increase the volume of glaze so it spreads across the top and begins to drip down the sides.",
+        "Continue the pour until the glaze fully coats the sides and drips onto the floor surface, forming a pool."
+      ]
+    },
+    "explain": [
+      "Viscous red liquid is introduced to the center of the flat cake top, spreading outward due to gravity and fluid pressure.",
+      "The glaze reaches the edge of the cake and gravity pulls it downward, creating a curtain of liquid along the vertical sides.",
+      "The liquid flow continues down the sides until it detaches from the bottom edge, accumulating on the surface below as a result of gravity and surface tension."
+    ],
+    "invariants": [
+      "Cylindrical shape of the cake",
+      "Metallic cake stand",
+      "Solid black background",
+      "Camera angle and position",
+      "Consistent studio lighting"
+    ]
+  },
+  {
+    "id": "93",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_93.png",
+      "intermediate_1": "intermediate_1/data_93.png",
+      "intermediate_2": "intermediate_2/data_93.png",
+      "output": "output/data_93.png"
+    },
+    "instruction": {
+      "global": "Mix a drop of dark pigment into a stirred blue liquid until the solution becomes uniformly dark.",
+      "steps": [
+        "Introduce a drop of dark pigment into the center of the liquid vortex.",
+        "Disperse the pigment cloud further into the surrounding blue liquid using the centrifugal force of the stir bar.",
+        "Continue stirring until the pigment is completely and uniformly mixed into a solid dark blue solution."
+      ]
+    },
+    "explain": [
+      "A concentrated drop of dye enters the turbulent center of a vortex, creating a localized cloud of high concentration.",
+      "The rotation of the liquid carries the dye outwards and downwards, increasing the volume of the colored region through advection.",
+      "Sustained mechanical stirring achieves a homogeneous mixture where the dye is evenly distributed throughout the solvent."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Background laboratory environment",
+      "Glass beaker shape and position",
+      "Presence of a central vortex in the liquid",
+      "Magnetic stir bar at the bottom of the beaker",
+      "Ambient lighting conditions"
+    ]
+  },
+  {
+    "id": "94",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_94.png",
+      "intermediate_1": "intermediate_1/data_94.png",
+      "intermediate_2": "intermediate_2/data_94.png",
+      "output": "output/data_94.png"
+    },
+    "instruction": {
+      "global": "Pour a viscous red liquid from a test tube into a clear petri dish, allowing the liquid to pool and spread across the bottom.",
+      "steps": [
+        "Tilt the test tube to initiate a thin, steady stream of red liquid that forms a small, circular puddle at the center of the petri dish.",
+        "Maintain the pour so the volume of the red liquid in the dish increases, causing the puddle to expand outward.",
+        "Continue the flow until the red liquid covers a larger portion of the base of the petri dish, ensuring the stream remains unbroken."
+      ]
+    },
+    "explain": [
+      "Gravity pulls the liquid from the tilted tube, creating a laminar flow stream that accumulates on the flat surface of the dish.",
+      "The incoming mass of the liquid forces the existing pool to spread radially due to fluid pressure and gravity.",
+      "Continued accumulation results in a larger surface area coverage as the liquid seeks a level state within the container."
+    ],
+    "invariants": [
+      "Static camera angle and distance.",
+      "Position and orientation of the petri dish.",
+      "The blue gloved hand and the angle of the test tube.",
+      "Uniform green background and soft overhead lighting."
+    ]
+  },
+  {
+    "id": "95",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_95.png",
+      "intermediate_1": "intermediate_1/data_95.png",
+      "intermediate_2": "intermediate_2/data_95.png",
+      "output": "output/data_95.png"
+    },
+    "instruction": {
+      "global": "Pour clear liquid from the glass tube into the round-bottom flask, causing the liquid level to rise and creating splashes on the surface.",
+      "steps": [
+        "Begin pouring clear liquid from the tube into the neck of the flask, showing a thin stream entering the vessel.",
+        "Increase the flow of the liquid, showing the stream hitting the existing liquid surface and creating initial ripples and splashes.",
+        "Continue the steady pour, resulting in a higher liquid level and more intense splashing and turbulence within the flask."
+      ]
+    },
+    "explain": [
+      "Gravity pulls the liquid from the tilted tube into the flask's opening, initiating a downward flow.",
+      "The kinetic energy of the falling liquid stream is transferred to the surface of the liquid in the flask, creating waves and small splashes upon impact.",
+      "As more volume is added, the liquid level rises, and the continuous impact of the stream maintains a turbulent surface with air bubbles and splashing against the glass walls."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Plain white background",
+      "Shape and position of the round-bottom flask",
+      "Blue inner glass object's shape and color",
+      "Lighting conditions and shadows",
+      "Material properties of the glass"
+    ]
+  },
+  {
+    "id": "76",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_76.png",
+      "intermediate_1": "intermediate_1/data_76.png",
+      "intermediate_2": "intermediate_2/data_76.png",
+      "output": "output/data_76.png"
+    },
+    "instruction": {
+      "global": "Animate the rolling fog as it drifts across the forest canopy from left to right, revealing and obscuring different sections of the trees.",
+      "steps": [
+        "Shift the fog layer slightly to the right, revealing more of the central tree silhouettes and thinning the mist in the middle ground.",
+        "Continue the rightward drift of the fog, exposing more of the green foliage on the far right side of the frame.",
+        "Move the fog further to the right, partially obscuring the lower left foreground while clearing the view of the lower right trees."
+      ]
+    },
+    "explain": [
+      "Wind-driven advection causes the low-lying fog to move laterally across the landscape.",
+      "The fog interacts with the forest canopy, creating turbulent wisps and varying density as it flows over the trees.",
+      "Continued air movement shifts the opaque regions of the fog, changing the visibility of the underlying terrain and forest structure."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Static positions of the trees",
+      "Overcast, diffused lighting",
+      "Muted purple and green color palette"
+    ]
+  },
+  {
+    "id": "80",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_80.png",
+      "intermediate_1": "intermediate_1/data_80.png",
+      "intermediate_2": "intermediate_2/data_80.png",
+      "output": "output/data_80.png"
+    },
+    "instruction": {
+      "global": "Drop blue ink into clear water and allow it to diffuse into a large, turbulent plume.",
+      "steps": [
+        "Introduce a concentrated stream of blue ink from the top center, forming a downward-moving plume with a mushroom-like head.",
+        "Expand the ink plume outwards and downwards, creating intricate, wispy tendrils and increasing the volume of the colored area.",
+        "Continue the diffusion process until the ink forms a large, complex cloud with varying densities and fine, smoke-like patterns filling the center of the frame."
+      ]
+    },
+    "explain": [
+      "Gravity and initial momentum pull the dense ink downward into the water, creating a plume through fluid displacement.",
+      "Fluid dynamics and local currents cause the concentrated ink to spread, forming vortices and turbulent structures as it mixes with the surrounding water.",
+      "Continued molecular diffusion and convection further disperse the pigment particles, resulting in a larger, more chaotic, and less concentrated distribution of color."
+    ],
+    "invariants": [
+      "Static camera viewpoint",
+      "Consistent white background lighting",
+      "Blue color of the ink",
+      "Presence of water as the medium"
+    ]
+  },
+  {
+    "id": "83",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_83.png",
+      "intermediate_1": "intermediate_1/data_83.png",
+      "intermediate_2": "intermediate_2/data_83.png",
+      "output": "output/data_83.png"
+    },
+    "instruction": {
+      "global": "Transform the initial smoke ball into a dense layer of ground-level fog as it falls and spreads across the floor.",
+      "steps": [
+        "Expand the smoke ball and begin its descent towards the bottom of the frame.",
+        "Extend the smoke plume to the bottom edge and show it starting to spread horizontally across the ground.",
+        "Distribute the smoke further across the entire bottom surface to create a thick, settled fog layer."
+      ]
+    },
+    "explain": [
+      "The concentrated vapor cloud expands and begins to sink due to its density relative to the surrounding air.",
+      "Gravity pulls the dense vapor to the floor, causing it to accumulate and flow outward upon impact with the surface.",
+      "The vapor continues to spread along the ground plane, increasing in volume and coverage while the source plume becomes more diffuse."
+    ],
+    "invariants": [
+      "Solid black background",
+      "Static camera viewpoint",
+      "Consistent white/light gray color of the smoke",
+      "Frontal lighting source"
+    ]
+  },
+  {
+    "id": "85",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_85.png",
+      "intermediate_1": "intermediate_1/data_85.png",
+      "intermediate_2": "intermediate_2/data_85.png",
+      "output": "output/data_85.png"
+    },
+    "instruction": {
+      "global": "Increase the turbulence and volume of the splashing water until it fills the frame with white foam.",
+      "steps": [
+        "Increase the amount of white foam at the base of the water flow.",
+        "Raise the height of the water peaks and add distinct droplets splashing upwards against the dark background.",
+        "Fill the frame with a dense surge of aerated white water and foam, obscuring the background."
+      ]
+    },
+    "explain": [
+      "Falling water impacts the surface, mixing with air to create white foam through aeration.",
+      "Momentum from the downward flow causes water to rebound upwards, forming distinct peaks and droplets due to surface tension.",
+      "A surge in water volume or velocity creates a large-scale splash, resulting in a dense cloud of foam that fills the camera's field of view."
+    ],
+    "invariants": [
+      "Macro camera viewpoint",
+      "Dark background tones",
+      "Cool white and blue color palette of the water",
+      "High-speed shutter aesthetic"
+    ]
+  },
+  {
+    "id": "96",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_96.png",
+      "intermediate_1": "intermediate_1/data_96.png",
+      "intermediate_2": "intermediate_2/data_96.png",
+      "output": "output/data_96.png"
+    },
+    "instruction": {
+      "global": "Pour cream into a cup of black coffee and let it mix naturally.",
+      "steps": [
+        "Pour a thin stream of cream into the center of the coffee, creating a splash and white plumes.",
+        "Continue the pour to increase the volume of cream, causing bubbles to form on the surface.",
+        "Stop the pour and allow the cream to swirl and diffuse across the surface of the coffee."
+      ]
+    },
+    "explain": [
+      "Gravity pulls the cream into the coffee, where the impact and density differences create turbulent plumes and initial mixing.",
+      "The continuous stream introduces air into the liquid, resulting in the formation of small bubbles and a larger area of surface agitation.",
+      "As the external force of the pour ceases, the cream continues to spread through convection and diffusion, creating a marbled texture."
+    ],
+    "invariants": [
+      "White mug position and geometry",
+      "Black background texture",
+      "Camera viewpoint",
+      "Lighting direction and intensity"
+    ]
+  },
+  {
+    "id": "97",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_97.png",
+      "intermediate_1": "intermediate_1/data_97.png",
+      "intermediate_2": "intermediate_2/data_97.png",
+      "output": "output/data_97.png"
+    },
+    "instruction": {
+      "global": "Dispense a dollop of white lotion from the pump bottle into the palm of the hand.",
+      "steps": [
+        "Press down on the pump head so a small amount of white lotion begins to emerge from the nozzle.",
+        "Continue pressing the pump further down, causing more lotion to flow out and start curling into the palm.",
+        "Fully depress the pump to finish dispensing the dollop of lotion onto the hand."
+      ]
+    },
+    "explain": [
+      "Downward pressure on the pump mechanism forces the viscous liquid through the nozzle due to internal pressure.",
+      "As the pump is pushed further, the volume of lotion increases, and gravity pulls the thick stream toward the palm.",
+      "The pump reaches its lowest point, completing the stroke and leaving a coiled dollop of lotion in the hand."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Background elements and blur level",
+      "Bottle position and label text",
+      "Person's clothing and the red string on the wrist",
+      "Lighting and shadows"
+    ]
+  },
+  {
+    "id": "98",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_98.png",
+      "intermediate_1": "intermediate_1/data_98.png",
+      "intermediate_2": "intermediate_2/data_98.png",
+      "output": "output/data_98.png"
+    },
+    "instruction": {
+      "global": "Fill the empty double-walled glass with water until it is full and the surface settles.",
+      "steps": [
+        "Pour a stream of water into the glass from above, filling it to the one-third mark with visible turbulence and bubbles.",
+        "Continue pouring water until the glass is three-quarters full, increasing the volume of suspended air bubbles.",
+        "Stop the pour and let the water level reach the top rim, allowing the surface to settle with a thin layer of bubbles remaining."
+      ]
+    },
+    "explain": [
+      "Gravity pulls the water stream into the glass, creating kinetic energy that generates air bubbles and surface ripples upon impact.",
+      "As the water volume increases, the continuous force of the stream maintains a turbulent state, trapping air within the fluid.",
+      "Once the external force of the stream is removed, fluid viscosity dampens the motion and buoyant bubbles rise to form a layer at the surface."
+    ],
+    "invariants": [
+      "Camera viewpoint and focal length",
+      "Background cloudy sky and horizon line",
+      "Reflective table surface and its cloud reflections",
+      "Position and double-walled structure of the glass"
+    ]
+  },
+  {
+    "id": "99",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_99.png",
+      "intermediate_1": "intermediate_1/data_99.png",
+      "intermediate_2": "intermediate_2/data_99.png",
+      "output": "output/data_99.png"
+    },
+    "instruction": {
+      "global": "Simulate the continuous sublimation of dry ice in a bowl, showing the dense white vapor spilling over the edges and spreading across the flat surface.",
+      "steps": [
+        "Expand the pool of white vapor on the surface around the bowl while maintaining the bubbling effect inside the bowl.",
+        "Further spread the vapor across the foreground and background surfaces, making the layer more uniform and dense.",
+        "Continue the outward flow of the vapor until it covers the entire visible surface area, while the bowl continues to emit fresh fog."
+      ]
+    },
+    "explain": [
+      "Dry ice sublimates into cold carbon dioxide gas, which is denser than air and flows over the rim of the container.",
+      "The cold gas continues to sink and spread horizontally across the surface due to gravity and its higher density compared to the surrounding air.",
+      "As sublimation continues, the volume of gas increases, pushing the existing vapor further away from the source and creating a thick, low-lying fog layer."
+    ],
+    "invariants": [
+      "Static camera viewpoint",
+      "Solid black background",
+      "Position and appearance of the bowl",
+      "Low-key lighting with high contrast on the vapor",
+      "Flat surface plane"
+    ]
+  },
+  {
+    "id": "100",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_100.png",
+      "intermediate_1": "intermediate_1/data_100.png",
+      "intermediate_2": "intermediate_2/data_100.png",
+      "output": "output/data_100.png"
+    },
+    "instruction": {
+      "global": "Show a chocolate sphere falling into a pool of liquid chocolate, creating a crown splash that evolves into a central vertical jet.",
+      "steps": [
+        "Impact the chocolate sphere into the surface to create a wide, symmetrical crown splash with fine droplets at the tips.",
+        "Expand the crown splash further outward while the rim begins to thicken and the central cavity deepens.",
+        "Collapse the outer crown and generate a tall, thin vertical column of liquid rising from the center of the impact site."
+      ]
+    },
+    "explain": [
+      "The kinetic energy of the falling sphere is transferred to the liquid, displacing it upward and outward to form a crown splash.",
+      "Surface tension and gravity act on the rising crown, causing the edges to expand and the droplets to begin their descent.",
+      "The hydrostatic pressure from the collapsing impact cavity forces liquid upward at the center, creating a Worthington jet."
+    ],
+    "invariants": [
+      "Static low-angle camera viewpoint",
+      "Consistent warm brown background gradient",
+      "Glossy, viscous material properties of the chocolate",
+      "Soft, directional lighting with specular highlights on the liquid surface"
+    ]
+  },
+  {
+    "id": "101",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_101.png",
+      "intermediate_1": "intermediate_1/data_101.png",
+      "intermediate_2": "intermediate_2/data_101.png",
+      "output": "output/data_101.png"
+    },
+    "instruction": {
+      "global": "Simulate the spreading and dissipation of thick white vapor across a flat surface until it becomes a thin, streaky haze.",
+      "steps": [
+        "Expand the vapor cloud outward, making the edges less defined and introducing radial flow lines as the density decreases.",
+        "Continue the expansion of the vapor, further reducing its opacity and lengthening the radial streaks across the surface.",
+        "Thin the vapor until it is nearly transparent, leaving only fine, wispy radial patterns that cover the entire frame."
+      ]
+    },
+    "explain": [
+      "The dense vapor expands due to pressure differences, beginning to thin out and follow air currents, creating initial flow patterns.",
+      "As the vapor spreads over a larger area, its concentration drops significantly, making the underlying surface more visible and stretching the flow lines.",
+      "The vapor reaches a state of high dissipation where the individual particles are widely dispersed, resulting in a faint, textured haze."
+    ],
+    "invariants": [
+      "Camera viewpoint",
+      "Flat surface background",
+      "Monochromatic grayscale color palette",
+      "Radial direction of flow"
+    ]
+  },
+  {
+    "id": "81",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Pouring & Flow"
+    },
+    "frames": {
+      "input": "input/data_81.png",
+      "intermediate_1": "intermediate_1/data_81.png",
+      "intermediate_2": "intermediate_2/data_81.png",
+      "output": "output/data_81.png"
+    },
+    "instruction": {
+      "global": "Fill the glass with water until it is nearly full, allowing the ice cubes to float and shift naturally.",
+      "steps": [
+        "Increase the water level slightly as the stream continues to pour, causing the ice cubes to shift and bob.",
+        "Raise the water level further, creating more surface ripples and air bubbles around the submerged ice.",
+        "Bring the water level near the rim and thin out the pouring stream as the ice cubes reach their final floating positions."
+      ]
+    },
+    "explain": [
+      "The incoming stream adds volume to the liquid, raising the water level and exerting kinetic force on the buoyant ice cubes.",
+      "Continued inflow increases the volume and creates turbulence, trapping air bubbles and causing the ice to displace more water.",
+      "As the glass reaches capacity, the ice cubes achieve buoyancy equilibrium at the surface and the inflow rate decreases."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Background room and window lighting",
+      "Dark table surface texture",
+      "Glass shape and material properties",
+      "Presence of ice cubes"
+    ]
+  }
+]

@@ -1,0 +1,780 @@
+[
+  {
+    "id": "140",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Gravity & Fall"
+    },
+    "frames": {
+      "input": "input/data_140.png",
+      "intermediate_1": "intermediate_1/data_140.png",
+      "intermediate_2": "intermediate_2/data_140.png",
+      "output": "output/data_140.png"
+    },
+    "instruction": {
+      "global": "Pour a batch of strawberries into the glass blender jar until they settle at the bottom.",
+      "steps": [
+        "Drop the first few strawberries into the blender, showing motion blur as they fall.",
+        "Increase the flow of strawberries, filling the air above the blender with many falling fruits.",
+        "Clear the air as the strawberries finish falling and settle at the bottom of the blender."
+      ]
+    },
+    "explain": [
+      "Gravity pulls the initial strawberries downward, creating vertical motion blur as they accelerate into the jar.",
+      "A larger volume of strawberries is released, creating a dense cluster of falling objects following a gravitational trajectory.",
+      "The strawberries complete their fall and come to rest at the base of the jar, leaving the space above clear."
+    ],
+    "invariants": [
+      "Camera viewpoint and framing",
+      "Background kitchen scene including the fruit bowl and counter",
+      "Position and transparency of the glass blender jar",
+      "Consistent lighting and shallow depth of field"
+    ]
+  },
+  {
+    "id": "141",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Gravity & Fall"
+    },
+    "frames": {
+      "input": "input/data_141.png",
+      "intermediate_1": "intermediate_1/data_141.png",
+      "intermediate_2": "intermediate_2/data_141.png",
+      "output": "output/data_141.png"
+    },
+    "instruction": {
+      "global": "Drop the coin from its elevated position onto the grey surface until it comes to a complete rest.",
+      "steps": [
+        "Move the coin down to the surface and tilt it slightly as it makes initial contact.",
+        "Lower the tilted edge of the coin closer to the surface as it begins to settle.",
+        "Place the coin completely flat on the surface in its final resting position."
+      ]
+    },
+    "explain": [
+      "Gravity pulls the coin downward, and upon hitting the surface, it begins to wobble and tilt due to the impact force.",
+      "Kinetic energy is dissipated through friction and small vibrations, causing the coin's tilt angle to decrease as it loses momentum.",
+      "The coin reaches a state of static equilibrium where it lies perfectly flat on the horizontal plane."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Grey surface texture and color",
+      "Black background",
+      "Coin design and denomination",
+      "Lighting direction and intensity"
+    ]
+  },
+  {
+    "id": "142",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Gravity & Fall"
+    },
+    "frames": {
+      "input": "input/data_142.png",
+      "intermediate_1": "intermediate_1/data_142.png",
+      "intermediate_2": "intermediate_2/data_142.png",
+      "output": "output/data_142.png"
+    },
+    "instruction": {
+      "global": "Drop three coins into the empty glass jar until they settle at the bottom.",
+      "steps": [
+        "Show coins falling through the air towards the open mouth of the glass jar.",
+        "Render three coins inside the jar, with some tilted or mid-bounce after hitting the bottom.",
+        "Position the three coins so they are lying flat and stationary at the base of the jar."
+      ]
+    },
+    "explain": [
+      "Gravity pulls the coins downward from an external source into the jar's opening.",
+      "The coins collide with the bottom of the jar, causing them to bounce and tumble within the glass walls.",
+      "Kinetic energy is lost through successive impacts, causing the coins to come to a rest in a stable horizontal orientation."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Glass jar geometry and position",
+      "Neutral grey background",
+      "Consistent studio lighting and reflections on the glass"
+    ]
+  },
+  {
+    "id": "143",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Gravity & Fall"
+    },
+    "frames": {
+      "input": "input/data_143.png",
+      "intermediate_1": "intermediate_1/data_143.png",
+      "intermediate_2": "intermediate_2/data_143.png",
+      "output": "output/data_143.png"
+    },
+    "instruction": {
+      "global": "Show a glass vial falling, impacting the floor, and shattering into scattered shards.",
+      "steps": [
+        "Depict the glass vial hitting the floor and fracturing into multiple sharp pieces at the point of impact.",
+        "Scatter the glass shards outward across the floor surface, showing motion and dispersion.",
+        "Settle the glass shards into their final resting positions on the flat surface."
+      ]
+    },
+    "explain": [
+      "The vial strikes the hard surface, and the impact force exceeds the structural integrity of the glass, causing it to shatter.",
+      "Kinetic energy from the collision is transferred to the resulting fragments, propelling them away from the center of impact.",
+      "Friction between the glass shards and the floor, along with gravity, brings the fragments to a complete stop."
+    ],
+    "invariants": [
+      "Static camera viewpoint",
+      "Consistent beige background and floor color",
+      "Uniform lighting and reflections on the glass",
+      "Material properties of the transparent glass"
+    ]
+  },
+  {
+    "id": "144",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Gravity & Fall"
+    },
+    "frames": {
+      "input": "input/data_144.png",
+      "intermediate_1": "intermediate_1/data_144.png",
+      "intermediate_2": "intermediate_2/data_144.png",
+      "output": "output/data_144.png"
+    },
+    "instruction": {
+      "global": "Fill the empty glass jar by dropping several coins into it, with some coins landing on the surface outside.",
+      "steps": [
+        "Show multiple coins falling from above into the open mouth of the glass jar with motion blur.",
+        "Depict the coins hitting the bottom of the jar, with some bouncing and two coins flying out to the left and right sides.",
+        "Let all coins come to a complete rest at the bottom of the jar and on the flat surface outside."
+      ]
+    },
+    "explain": [
+      "Gravity pulls the coins downward into the jar, creating motion blur as they accelerate.",
+      "Kinetic energy from the fall causes the coins to collide with the glass and each other, resulting in some coins being deflected out of the jar.",
+      "Friction and gravity cause the coins to lose momentum and settle into stable, resting positions."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Glass jar position, shape, and material transparency",
+      "Neutral grey background and lighting conditions",
+      "Flat surface plane"
+    ]
+  },
+  {
+    "id": "145",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Gravity & Fall"
+    },
+    "frames": {
+      "input": "input/data_145.png",
+      "intermediate_1": "intermediate_1/data_145.png",
+      "intermediate_2": "intermediate_2/data_145.png",
+      "output": "output/data_145.png"
+    },
+    "instruction": {
+      "global": "Show a single water droplet forming at the faucet tip, elongating under gravity, and then detaching to fall.",
+      "steps": [
+        "Increase the volume of the water droplet hanging from the faucet aerator until it becomes a full sphere.",
+        "Elongate the water droplet downward, creating a narrow neck as it prepares to detach.",
+        "Remove the main droplet as it falls out of frame, leaving only a small residual amount of water on the aerator mesh."
+      ]
+    },
+    "explain": [
+      "Surface tension holds the accumulating water to the faucet, forming a growing hemispherical drop as more water leaks out.",
+      "As the mass of the droplet increases, the force of gravity begins to overcome surface tension, causing the drop to stretch and form a thin neck.",
+      "The neck of the droplet breaks at the point of instability, allowing the main mass to fall while the remaining water retracts back to the faucet tip."
+    ],
+    "invariants": [
+      "Static camera viewpoint and angle.",
+      "Blurred background tiles and circular logo.",
+      "Position and metallic texture of the faucet and aerator.",
+      "Dim, warm lighting and consistent depth of field."
+    ]
+  },
+  {
+    "id": "146",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Gravity & Fall"
+    },
+    "frames": {
+      "input": "input/data_146.png",
+      "intermediate_1": "intermediate_1/data_146.png",
+      "intermediate_2": "intermediate_2/data_146.png",
+      "output": "output/data_146.png"
+    },
+    "instruction": {
+      "global": "Show a sequence of pecan halves falling, bouncing, and scattering across a wooden table surface.",
+      "steps": [
+        "Increase the number of pecans falling from the top and show them descending toward the wooden surface.",
+        "Depict the pecans making contact with the table, with some bouncing upward and others beginning to roll.",
+        "Show the pecans settling across the table surface as more pieces continue to fall into the frame from above."
+      ]
+    },
+    "explain": [
+      "Gravity accelerates the pecans downward, and additional pieces enter the frame from the top.",
+      "The pecans undergo elastic collisions with the hard wooden surface, causing them to bounce and rotate based on their impact angle.",
+      "Kinetic energy is lost through friction and repeated impacts, causing earlier pecans to settle while new ones maintain high velocity."
+    ],
+    "invariants": [
+      "Static camera viewpoint at a low angle.",
+      "Dark, out-of-focus background.",
+      "Wooden table texture and warm lighting.",
+      "Consistent appearance and scale of the pecan halves."
+    ]
+  },
+  {
+    "id": "147",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Gravity & Fall"
+    },
+    "frames": {
+      "input": "input/data_147.png",
+      "intermediate_1": "intermediate_1/data_147.png",
+      "intermediate_2": "intermediate_2/data_147.png",
+      "output": "output/data_147.png"
+    },
+    "instruction": {
+      "global": "Drop a film strip from the top right so that it falls past the white pillow and lands on the bed surface.",
+      "steps": [
+        "Introduce a film strip entering from the top right corner with significant motion blur.",
+        "Move the film strip further down the frame, positioning it vertically in front of the pillow.",
+        "Place the film strip flat on the bed surface in front of the pillow, removing the motion blur as it comes to rest."
+      ]
+    },
+    "explain": [
+      "The film strip enters the frame from above, accelerated by gravity, resulting in motion blur.",
+      "The strip continues its downward trajectory, passing through the mid-air space in front of the pillow.",
+      "The film strip completes its fall, landing on the soft bedsheet where it loses its kinetic energy and stops."
+    ],
+    "invariants": [
+      "Position and shape of the white pillow",
+      "Texture and color of the quilted bedspread",
+      "Neutral wall background",
+      "Soft, warm indoor lighting",
+      "Static camera viewpoint"
+    ]
+  },
+  {
+    "id": "148",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Gravity & Fall"
+    },
+    "frames": {
+      "input": "input/data_148.png",
+      "intermediate_1": "intermediate_1/data_148.png",
+      "intermediate_2": "intermediate_2/data_148.png",
+      "output": "output/data_148.png"
+    },
+    "instruction": {
+      "global": "Simulate a pile of Australian banknotes falling and accumulating on a white surface, starting from an empty scene.",
+      "steps": [
+        "Place two yellow fifty-dollar Australian banknotes on the white surface, showing slight crumpling as they land.",
+        "Add a large, messy pile of mixed yellow fifty-dollar and orange twenty-dollar Australian banknotes on top of the initial notes.",
+        "Adjust the banknotes in the pile to show them settling into a final, stable resting position with minor shifts in their overlap."
+      ]
+    },
+    "explain": [
+      "Gravity pulls the first two banknotes down until they make contact with the flat surface.",
+      "A large volume of currency is dropped, causing the notes to collide, overlap, and stack into a disorganized pile.",
+      "The banknotes settle under their own weight and friction, reaching a state of physical equilibrium."
+    ],
+    "invariants": [
+      "Fixed camera viewpoint",
+      "Plain white background",
+      "Consistent soft studio lighting",
+      "Australian banknote currency designs ($20 and $50)"
+    ]
+  },
+  {
+    "id": "149",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Gravity & Fall"
+    },
+    "frames": {
+      "input": "input/data_149.png",
+      "intermediate_1": "intermediate_1/data_149.png",
+      "intermediate_2": "intermediate_2/data_149.png",
+      "output": "output/data_149.png"
+    },
+    "instruction": {
+      "global": "Introduce a new toilet paper roll falling from above to land in the foreground while the leftmost roll tips forward to face the camera.",
+      "steps": [
+        "Drop a new toilet paper roll from the top center and tip the leftmost roll forward so its hollow core faces the camera.",
+        "Bring the falling roll into contact with the surface, showing it beginning to settle in front of the middle roll.",
+        "Stabilize the new roll in its final upright position and remove all motion blur."
+      ]
+    },
+    "explain": [
+      "Gravity pulls a new roll downward while the leftmost roll is tipped over by an external force, changing its orientation from vertical to horizontal.",
+      "The falling roll impacts the reflective surface, losing kinetic energy as it prepares to settle.",
+      "Friction and gravity bring the newly added roll to a complete stop in a stable equilibrium on the flat surface."
+    ],
+    "invariants": [
+      "White minimalist background",
+      "Reflective white floor surface",
+      "Camera viewpoint and focal length",
+      "Position and orientation of the two background rolls on the right",
+      "Consistent soft lighting and shadows"
+    ]
+  },
+  {
+    "id": "150",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Gravity & Fall"
+    },
+    "frames": {
+      "input": "input/data_150.png",
+      "intermediate_1": "intermediate_1/data_150.png",
+      "intermediate_2": "intermediate_2/data_150.png",
+      "output": "output/data_150.png"
+    },
+    "instruction": {
+      "global": "Simulate a sequence of gummy candies being dropped onto a flat surface until they settle into a pile.",
+      "steps": [
+        "Replace the single bouncing orange gummy with two dark red gummies falling through the air, casting shadows on the white surface.",
+        "Introduce more multi-colored gummy candies hitting the surface, showing some bouncing and others sliding, creating a scattered arrangement.",
+        "Bring all the candies to a rest, forming a dense pile on the surface with clear contact shadows and no motion blur."
+      ]
+    },
+    "explain": [
+      "Gravity pulls the newly introduced candies downward towards the surface.",
+      "Kinetic energy from the fall causes the candies to bounce and scatter upon impact with the surface.",
+      "Friction and loss of energy through multiple bounces cause the candies to come to a complete rest."
+    ],
+    "invariants": [
+      "low-angle camera viewpoint",
+      "dark background with subtle grid texture",
+      "white foreground surface",
+      "consistent lighting and shadow direction"
+    ]
+  },
+  {
+    "id": "151",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Gravity & Fall"
+    },
+    "frames": {
+      "input": "input/data_151.png",
+      "intermediate_1": "intermediate_1/data_151.png",
+      "intermediate_2": "intermediate_2/data_151.png",
+      "output": "output/data_151.png"
+    },
+    "instruction": {
+      "global": "Show a continuous stream of white flakes falling and accumulating into a pile on the flat surface.",
+      "steps": [
+        "Add many more flakes falling through the air and hitting the surface, creating a scattered layer with motion blur.",
+        "Increase the density of the flakes on the surface to form a central pile while more flakes continue to fall from above.",
+        "Settle the falling flakes onto the pile, making it larger and more spread out, with only a single flake remaining in mid-air."
+      ]
+    },
+    "explain": [
+      "Gravity pulls the light flakes downward, causing them to collide with the surface and scatter across the floor.",
+      "Continuous deposition of material leads to the formation of a heap as flakes stack on top of each other.",
+      "The rate of falling flakes decreases, allowing the pile to stabilize and expand horizontally as the material settles."
+    ],
+    "invariants": [
+      "Low-angle camera viewpoint",
+      "Dark, out-of-focus background",
+      "Flat, light-colored surface",
+      "Dim, directional lighting",
+      "White, thin, irregular flake texture"
+    ]
+  },
+  {
+    "id": "152",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Gravity & Fall"
+    },
+    "frames": {
+      "input": "input/data_152.png",
+      "intermediate_1": "intermediate_1/data_152.png",
+      "intermediate_2": "intermediate_2/data_152.png",
+      "output": "output/data_152.png"
+    },
+    "instruction": {
+      "global": "Show a man shooting a basketball into an outdoor hoop, following the ball's trajectory until it passes through the net.",
+      "steps": [
+        "Launch the basketball into the air towards the hoop, tilting the camera upward to follow its flight.",
+        "Continue the ball's arc until it reaches the center of the basketball rim.",
+        "Let the ball fall through the net and out of the frame, showing the empty hoop."
+      ]
+    },
+    "explain": [
+      "The player exerts upward and forward force on the ball, initiating projectile motion against gravity.",
+      "The ball follows a parabolic trajectory, reaching its peak height as it approaches the hoop's coordinates.",
+      "Gravity pulls the ball downward through the rim, and the net flexes as the ball passes through it."
+    ],
+    "invariants": [
+      "Outdoor lighting conditions at dusk",
+      "Transparent backboard and metal rim design",
+      "Background trees and sky gradient",
+      "Basketball texture and color"
+    ]
+  },
+  {
+    "id": "153",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Gravity & Fall"
+    },
+    "frames": {
+      "input": "input/data_153.png",
+      "intermediate_1": "intermediate_1/data_153.png",
+      "intermediate_2": "intermediate_2/data_153.png",
+      "output": "output/data_153.png"
+    },
+    "instruction": {
+      "global": "Show a shower of US dollar bills falling through the frame from top to bottom against a black background.",
+      "steps": [
+        "Move the initial cluster of bills downward and introduce more bills from the top, allowing them to begin spreading out.",
+        "Continue the downward motion of all bills, increasing the density in the center of the frame as they tumble and rotate.",
+        "Clear the majority of the bills from the frame as they fall past the bottom edge, leaving only a few trailing bills still in view."
+      ]
+    },
+    "explain": [
+      "Gravity pulls the bills downward while air resistance causes them to flutter and separate from the initial cluster.",
+      "The bills continue to accelerate downwards, tumbling and rotating randomly due to aerodynamic forces acting on the thin paper.",
+      "Most bills exit the frame at the bottom as their downward trajectory continues, with only the last few bills in the sequence remaining visible."
+    ],
+    "invariants": [
+      "Solid black background.",
+      "Static camera viewpoint.",
+      "Consistent studio lighting on the bills.",
+      "Appearance and denominations of the US currency."
+    ]
+  },
+  {
+    "id": "154",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Gravity & Fall"
+    },
+    "frames": {
+      "input": "input/data_154.png",
+      "intermediate_1": "intermediate_1/data_154.png",
+      "intermediate_2": "intermediate_2/data_154.png",
+      "output": "output/data_154.png"
+    },
+    "instruction": {
+      "global": "Drop a handful of small toy carrots onto the blue surface until they settle in a scattered pile.",
+      "steps": [
+        "Introduce the first few toy carrots onto the blue surface.",
+        "Drop a larger quantity of toy carrots, showing some in mid-air and others bouncing off the surface.",
+        "Allow all the falling carrots to come to rest, forming a scattered arrangement on the blue background."
+      ]
+    },
+    "explain": [
+      "Gravity pulls the initial carrots toward the surface, where they make first contact.",
+      "A mass of carrots falls simultaneously, creating multiple collisions with the floor and each other, resulting in chaotic bouncing and tumbling.",
+      "Kinetic energy dissipates through friction and impact, leaving the carrots in a stable, static distribution across the frame."
+    ],
+    "invariants": [
+      "Solid cyan-blue background color and texture.",
+      "Static camera angle and framing.",
+      "Consistent bright, top-down lighting.",
+      "Visual design of the toy carrots (orange conical body with green leafy tops)."
+    ]
+  },
+  {
+    "id": "155",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Gravity & Fall"
+    },
+    "frames": {
+      "input": "input/data_155.png",
+      "intermediate_1": "intermediate_1/data_155.png",
+      "intermediate_2": "intermediate_2/data_155.png",
+      "output": "output/data_155.png"
+    },
+    "instruction": {
+      "global": "Add falling and settled feathers around the egg and nest on the dark surface.",
+      "steps": [
+        "Place two light-colored feathers on the surface to the left of the nest.",
+        "Introduce more feathers, including one falling from the top right with motion blur and others landing on the right side of the nest.",
+        "Settle the falling feathers and add more fluffy feathers around the base and right side of the nest."
+      ]
+    },
+    "explain": [
+      "Feathers land on the flat surface to the left of the nest due to gravity.",
+      "Additional feathers are dropped into the scene; some are captured mid-air while others have already landed on the right.",
+      "The airborne feathers settle onto the surface and the nest, increasing the total volume of feathers accumulated."
+    ],
+    "invariants": [
+      "Static camera viewpoint",
+      "Dark blue background color and texture",
+      "Position and appearance of the egg",
+      "Position and structure of the nest",
+      "Consistent soft directional lighting"
+    ]
+  },
+  {
+    "id": "156",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Gravity & Fall"
+    },
+    "frames": {
+      "input": "input/data_156.png",
+      "intermediate_1": "intermediate_1/data_156.png",
+      "intermediate_2": "intermediate_2/data_156.png",
+      "output": "output/data_156.png"
+    },
+    "instruction": {
+      "global": "Show a handful of silver paperclips falling from above, bouncing on the white surface, and coming to a complete rest scattered across the table.",
+      "steps": [
+        "Introduce a shower of silver paperclips falling through the air with motion blur, with several already impacting and bouncing off the white surface.",
+        "Reduce the number of paperclips in the air as they settle onto the surface, showing only a few still in mid-bounce or falling from a higher point.",
+        "Bring all paperclips to a complete stop, lying flat and scattered across the white surface in a static state."
+      ]
+    },
+    "explain": [
+      "Gravity accelerates the paperclips downward, and their collision with the hard surface converts kinetic energy into bounces and lateral movement.",
+      "Energy is dissipated through successive inelastic collisions with the table and air resistance, causing the paperclips to lose height and velocity.",
+      "Friction and gravity overcome the remaining kinetic energy, bringing the paperclips into a state of static equilibrium on the flat surface."
+    ],
+    "invariants": [
+      "Static camera viewpoint",
+      "Solid black background",
+      "White foreground surface",
+      "Consistent overhead lighting",
+      "Material properties of the metal paperclips"
+    ]
+  },
+  {
+    "id": "157",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Gravity & Fall"
+    },
+    "frames": {
+      "input": "input/data_157.png",
+      "intermediate_1": "intermediate_1/data_157.png",
+      "intermediate_2": "intermediate_2/data_157.png",
+      "output": "output/data_157.png"
+    },
+    "instruction": {
+      "global": "Drop a handful of silver paperclips onto a white surface against a black background until they come to a complete rest.",
+      "steps": [
+        "Introduce silver paperclips falling from the top of the frame, with several impacting the white surface and exhibiting motion blur.",
+        "Show additional paperclips falling while those already on the surface bounce, tumble, and scatter across the table.",
+        "Render all paperclips lying flat and stationary on the white surface, removing all motion blur."
+      ]
+    },
+    "explain": [
+      "Gravity pulls the paperclips downward, creating motion blur as they accelerate toward the surface.",
+      "The paperclips collide with the hard surface, causing them to bounce and rotate as kinetic energy is partially conserved.",
+      "Friction and energy loss through successive collisions cause the paperclips to lose all kinetic energy and settle into stable positions."
+    ],
+    "invariants": [
+      "Static camera viewpoint",
+      "Solid black background",
+      "White table surface",
+      "Consistent overhead lighting",
+      "Metallic material of the paperclips"
+    ]
+  },
+  {
+    "id": "158",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Gravity & Fall"
+    },
+    "frames": {
+      "input": "input/data_158.png",
+      "intermediate_1": "intermediate_1/data_158.png",
+      "intermediate_2": "intermediate_2/data_158.png",
+      "output": "output/data_158.png"
+    },
+    "instruction": {
+      "global": "Show the blue ball falling from the top left and rolling along the floor towards the left edge of the frame.",
+      "steps": [
+        "Move the blue ball vertically downward to a mid-air position while maintaining its horizontal alignment.",
+        "Place the blue ball on the ground surface directly below its previous position.",
+        "Roll the blue ball further to the left along the floor, away from the central stack."
+      ]
+    },
+    "explain": [
+      "Gravity causes the blue ball to accelerate downwards from its elevated starting position.",
+      "The ball completes its freefall as it impacts the solid floor surface.",
+      "The ball's remaining kinetic energy causes it to roll horizontally across the floor after impact."
+    ],
+    "invariants": [
+      "Static camera viewpoint",
+      "Background wall and floor texture",
+      "Position and balance of the yellow ball on the cubes",
+      "The arrangement and appearance of the white and tan cubes",
+      "Consistent lighting and shadows from the central stack"
+    ]
+  },
+  {
+    "id": "159",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Gravity & Fall"
+    },
+    "frames": {
+      "input": "input/data_159.png",
+      "intermediate_1": "intermediate_1/data_159.png",
+      "intermediate_2": "intermediate_2/data_159.png",
+      "output": "output/data_159.png"
+    },
+    "instruction": {
+      "global": "Introduce several small white balls that fall into the scene, bounce on the surface, and roll away while the central balanced stack remains undisturbed.",
+      "steps": [
+        "Add multiple small white balls falling from the upper left and bouncing on the dark surface around the central cubes.",
+        "Position the white balls as they settle and roll across the floor, losing their vertical bounce height.",
+        "Remove the white balls as they roll completely out of the frame to the left and right."
+      ]
+    },
+    "explain": [
+      "Gravity accelerates the small balls downward, and they bounce upon impact with the floor due to elastic collision forces.",
+      "Kinetic energy is dissipated through friction and air resistance, transitioning the motion from bouncing to rolling.",
+      "The balls maintain their horizontal momentum until they exit the camera's field of view."
+    ],
+    "invariants": [
+      "Static camera viewpoint and angle.",
+      "Position and balance of the yellow ball on the tan cube.",
+      "Alignment of the tan cube on the white cube.",
+      "Consistent directional lighting and shadows on the central objects.",
+      "Dark grey background and black floor texture."
+    ]
+  },
+  {
+    "id": "160",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Gravity & Fall"
+    },
+    "frames": {
+      "input": "input/data_160.png",
+      "intermediate_1": "intermediate_1/data_160.png",
+      "intermediate_2": "intermediate_2/data_160.png",
+      "output": "output/data_160.png"
+    },
+    "instruction": {
+      "global": "Show a basketball being shot through the hoop, passing through the net, and falling out of frame.",
+      "steps": [
+        "Place a basketball entering the rim from above, partially obscured by the front of the hoop.",
+        "Move the basketball further down into the net, causing the mesh to stretch and bulge outward around the ball's circumference.",
+        "Remove the basketball from the scene and restore the net to its original, relaxed hanging position."
+      ]
+    },
+    "explain": [
+      "The basketball enters the hoop due to its downward trajectory and gravity.",
+      "As the ball passes through the narrow net, its physical volume forces the flexible mesh to expand and deform.",
+      "Gravity pulls the ball completely through the bottom of the net, allowing the net to return to its equilibrium state."
+    ],
+    "invariants": [
+      "Camera viewpoint and framing",
+      "Weathered texture and paint chips on the backboard",
+      "Background trees and clear sky lighting",
+      "Position and structure of the metal rim and support pole"
+    ]
+  },
+  {
+    "id": "161",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Gravity & Fall"
+    },
+    "frames": {
+      "input": "input/data_161.png",
+      "intermediate_1": "intermediate_1/data_161.png",
+      "intermediate_2": "intermediate_2/data_161.png",
+      "output": "output/data_161.png"
+    },
+    "instruction": {
+      "global": "Show a basketball being shot into the hoop, passing through the net, and falling toward the ground.",
+      "steps": [
+        "Add a basketball in the upper right quadrant of the frame, positioned as if it is on a downward trajectory toward the rim.",
+        "Move the basketball so it is centered within the orange rim, partially obscured by the white net.",
+        "Position the basketball directly below the net as it continues its vertical descent."
+      ]
+    },
+    "explain": [
+      "A basketball enters the frame following a parabolic arc toward the hoop due to projectile motion.",
+      "The ball passes through the rim, interacting with the net as gravity pulls it downward.",
+      "The ball exits the bottom of the net and continues to fall freely toward the ground."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Position and appearance of the backboard and orange rim",
+      "Background trees and sky lighting",
+      "Metal support structure and fence on the left"
+    ]
+  },
+  {
+    "id": "162",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Gravity & Fall"
+    },
+    "frames": {
+      "input": "input/data_162.png",
+      "intermediate_1": "intermediate_1/data_162.png",
+      "intermediate_2": "intermediate_2/data_162.png",
+      "output": "output/data_162.png"
+    },
+    "instruction": {
+      "global": "Animate the tomato falling downwards and to the left while rotating, eventually exiting the bottom of the frame.",
+      "steps": [
+        "Shift the tomato slightly down and to the left while rotating it clockwise so the stem scar points towards the right.",
+        "Accelerate the tomato's descent towards the bottom-left corner, making it partially cross the lower frame boundary.",
+        "Continue the downward trajectory until only the top curve of the tomato is visible at the very bottom edge of the frame."
+      ]
+    },
+    "explain": [
+      "Gravity initiates the downward motion while an initial lateral force or air resistance causes a slight rotation and leftward drift.",
+      "The object accelerates due to gravity, increasing its displacement per frame as it moves towards the edge of the field of view.",
+      "The tomato maintains its momentum and trajectory, exiting the camera's view through the bottom-left corner."
+    ],
+    "invariants": [
+      "Solid black background",
+      "Tomato texture and color",
+      "Static camera viewpoint",
+      "Directional lighting from the upper left"
+    ]
+  },
+  {
+    "id": "163",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Gravity & Fall"
+    },
+    "frames": {
+      "input": "input/data_163.png",
+      "intermediate_1": "intermediate_1/data_163.png",
+      "intermediate_2": "intermediate_2/data_163.png",
+      "output": "output/data_163.png"
+    },
+    "instruction": {
+      "global": "Simulate a shower of bullets and casings falling onto a flat surface, bouncing, and eventually settling or rolling away.",
+      "steps": [
+        "Increase the number of falling bullets and casings, showing some impacting the surface and bouncing upwards.",
+        "Fill the frame with a dense cascade of falling ammunition, with multiple objects colliding with the surface and each other at various angles.",
+        "Clear the air of falling objects, leaving only a few scattered bullets and casings resting or rolling on the surface."
+      ]
+    },
+    "explain": [
+      "Gravity pulls more objects downward; kinetic energy from the impact with the hard surface causes the initial projectiles to bounce.",
+      "A continuous stream of projectiles creates a high-density shower where collisions occur between falling objects and those rebounding from the surface.",
+      "The supply of falling objects ceases, and gravity combined with friction brings the remaining objects to rest on the surface while others bounce out of the frame."
+    ],
+    "invariants": [
+      "Static camera viewpoint",
+      "Solid blue gradient background",
+      "Flat grey surface",
+      "Consistent studio lighting and metallic reflections",
+      "Object types limited to brass casings and copper-tipped bullets"
+    ]
+  }
+]

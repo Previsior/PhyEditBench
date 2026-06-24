@@ -1,0 +1,662 @@
+[
+  {
+    "id": "12",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "brittle fracture"
+    },
+    "frames": {
+      "input": "input/data_12.png",
+      "intermediate_1": "intermediate_1/data_12.png",
+      "intermediate_2": "intermediate_2/data_12.png",
+      "output": "output/data_12.png"
+    },
+    "instruction": {
+      "global": "What would happen to the glass bottle as the hammer falls from above",
+      "steps": [
+        "Sledgehammer enters frame and impacts bottle neck, initiating shattering and shard dispersion.",
+        "Hammer continues downward trajectory through bottle body, expanding the field of flying debris.",
+        "Hammer completes stroke against the concrete base, fully pulverizing the bottle into scattered fragments."
+      ]
+    },
+    "explain": [
+      "Kinetic energy transfer creates stress exceeding the glass's yield strength, causing brittle fracture.",
+      "Conservation of momentum allows the heavy hammer to continue motion despite resistance.",
+      "Newton's first law governs the outward trajectory of the disconnected glass shards."
+    ],
+    "invariants": [
+      "Camera viewpoint and framing",
+      "Concrete mounting block",
+      "Background rubble and environment",
+      "Direction of sunlight",
+      "Gravitational field direction"
+    ]
+  },
+  {
+    "id": "7",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "brittle fracture"
+    },
+    "frames": {
+      "input": "input/data_7.png",
+      "intermediate_1": "intermediate_1/data_7.png",
+      "intermediate_2": "intermediate_2/data_7.png",
+      "output": "output/data_7.png"
+    },
+    "instruction": {
+      "global": "What would happen to the object under the hydraulic press after it descends and continues applying pressure",
+      "steps": [
+        "Intact glass instantly fractures into an opaque web of cracks under load",
+        "Fractured cylinder collapses and shards are ejected laterally explosively",
+        "Fragments scatter widely and settle into a flattened pile of debris"
+      ]
+    },
+    "explain": [
+      "Compressive stress exceeds material's ultimate strength causing brittle fracture",
+      "Rapid conversion of stored elastic potential energy into kinetic energy",
+      "Newton's first law (inertia) carries shards; gravity pulls them down"
+    ],
+    "invariants": [
+      "Camera angle and framing",
+      "Background wall and lighting",
+      "Hydraulic press base platform",
+      "Upper metal housing of the press",
+      "Direction of gravitational field"
+    ]
+  },
+  {
+    "id": "15",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "brittle fracture"
+    },
+    "frames": {
+      "input": "input/data_15.png",
+      "intermediate_1": "intermediate_1/data_15.png",
+      "intermediate_2": "intermediate_2/data_15.png",
+      "output": "output/data_15.png"
+    },
+    "instruction": {
+      "global": "What would happen to the object the moment after the hammer strikes down forcefully",
+      "steps": [
+        "Hammer accelerates downward from a raised position toward the nut",
+        "Hammer makes contact, applying compressive force to the nut shell",
+        "Nut shell shatters into fragments under the sustained impact force"
+      ]
+    },
+    "explain": [
+      "Newton's Second Law: Applied force and gravity accelerate the hammer",
+      "Conservation of momentum transfers kinetic energy during collision",
+      "Brittle fracture occurs when stress exceeds the material's yield strength"
+    ],
+    "invariants": [
+      "Stone anvil surface",
+      "Wicker basket of nuts",
+      "Glass jar in background",
+      "Person's red sleeve",
+      "Camera angle"
+    ]
+  },
+  {
+    "id": "1",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "brittle fracture"
+    },
+    "frames": {
+      "input": "input/data_1.png",
+      "intermediate_1": "intermediate_1/data_1.png",
+      "intermediate_2": "intermediate_2/data_1.png",
+      "output": "output/data_1.png"
+    },
+    "instruction": {
+      "global": "What would happen to the apple after the bullet travels through it from left to right",
+      "steps": [
+        "Bullet impacts left side; small entry debris cloud forms.",
+        "Massive debris cloud erupts from right side; skin peels back.",
+        "Debris clouds expand outward; apple body deforms further."
+      ]
+    },
+    "explain": [
+      "Transfer of kinetic energy creates compressive stress exceeding material strength.",
+      "Shockwave propagation and cavitation cause explosive material failure at exit.",
+      "Conservation of momentum drives the continued outward expansion of debris."
+    ],
+    "invariants": [
+      "Black background",
+      "Camera viewpoint (side profile)",
+      "Support stand",
+      "Lighting conditions",
+      "Apple's vertical alignment"
+    ]
+  },
+  {
+    "id": "19",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "brittle fracture"
+    },
+    "frames": {
+      "input": "input/data_19.png",
+      "intermediate_1": "intermediate_1/data_19.png",
+      "intermediate_2": "intermediate_2/data_19.png",
+      "output": "output/data_19.png"
+    },
+    "instruction": {
+      "global": "What would happen to the wood after the axe fully strikes down",
+      "steps": [
+        "The axe strikes the intact log, initiating a central vertical crack",
+        "The axe penetrates deeper, acting as a wedge to widen the split",
+        "The log halves separate completely and fall outward laterally"
+      ]
+    },
+    "explain": [
+      "Transfer of kinetic energy from the axe initiates material fracture",
+      "Mechanical advantage of a wedge converts vertical force to lateral separation",
+      "Lateral momentum and gravity govern the motion of the detached fragments"
+    ],
+    "invariants": [
+      "Camera angle and framing",
+      "Background environment",
+      "The woodcutter's clothing",
+      "Lighting conditions",
+      "Direction of gravity"
+    ]
+  },
+  {
+    "id": "10",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "brittle fracture"
+    },
+    "frames": {
+      "input": "input/data_10.png",
+      "intermediate_1": "intermediate_1/data_10.png",
+      "intermediate_2": "intermediate_2/data_10.png",
+      "output": "output/data_10.png"
+    },
+    "instruction": {
+      "global": "What would happen to the iron hammer the moment it fully strikes down",
+      "steps": [
+        "Hammer strikes bank, causing immediate structural failure and cracking.",
+        "Shards disperse explosively while coins fly out; hammer descends.",
+        "Debris and coins land and settle on the table surface."
+      ]
+    },
+    "explain": [
+      "Impact stress exceeds ceramic's material strength causing brittle fracture.",
+      "Conservation of momentum transfers kinetic energy to flying shards.",
+      "Gravity acts on mass, pulling fragments and coins downward."
+    ],
+    "invariants": [
+      "Background foliage",
+      "White tablecloth surface",
+      "Camera perspective",
+      "Natural lighting",
+      "Hand holding hammer"
+    ]
+  },
+  {
+    "id": "11",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "brittle fracture"
+    },
+    "frames": {
+      "input": "input/data_11.png",
+      "intermediate_1": "intermediate_1/data_11.png",
+      "intermediate_2": "intermediate_2/data_11.png",
+      "output": "output/data_11.png"
+    },
+    "instruction": {
+      "global": "What would happen to the glass bottle as the hammer falls from above",
+      "steps": [
+        "Hammer strikes bottle top; neck fractures immediately with initial debris spray",
+        "Hammer descends further, shattering upper body; liquid and glass expand outward",
+        "Hammer destroys base; wide dispersal of fluid and shards occurs"
+      ]
+    },
+    "explain": [
+      "Impact stress exceeds ultimate tensile strength of glass, causing brittle fracture",
+      "Hammer's kinetic energy transfers to bottle, overcoming structural integrity",
+      "Conservation of momentum disperses debris; fluid dynamics drives radial splashing"
+    ],
+    "invariants": [
+      "Wooden support beam",
+      "Background gravel texture",
+      "Camera viewpoint",
+      "Natural lighting",
+      "Sledgehammer physical properties"
+    ]
+  },
+  {
+    "id": "13",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "brittle fracture"
+    },
+    "frames": {
+      "input": "input/data_13.png",
+      "intermediate_1": "intermediate_1/data_13.png",
+      "intermediate_2": "intermediate_2/data_13.png",
+      "output": "output/data_13.png"
+    },
+    "instruction": {
+      "global": "What would happen to the wall the moment after the hammer strikes it forcefully",
+      "steps": [
+        "Hammer strikes the wall edge, initiating impact and generating fine dust",
+        "Impact force propagates, shattering masonry and ejecting debris chunks",
+        "Large wall section separates completely, creating an expanded dust cloud"
+      ]
+    },
+    "explain": [
+      "Impulse-momentum theorem: rapid kinetic energy transfer generates high force",
+      "Mechanical stress exceeds material yield strength, causing brittle fracture",
+      "Conservation of momentum propels debris; gravity acts on falling mass"
+    ],
+    "invariants": [
+      "Worker's brown hard hat",
+      "Framed pictures in background",
+      "Protective gloves",
+      "Static camera viewpoint",
+      "Unbroken lower wall section"
+    ]
+  },
+  {
+    "id": "2",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "brittle fracture"
+    },
+    "frames": {
+      "input": "input/data_2.png",
+      "intermediate_1": "intermediate_1/data_2.png",
+      "intermediate_2": "intermediate_2/data_2.png",
+      "output": "output/data_2.png"
+    },
+    "instruction": {
+      "global": "What would happen to the banana after the bullet travels through it from left to right",
+      "steps": [
+        "Bullet travels right, impacting the banana skin and initiating penetration",
+        "Projectile traverses banana, causing explosive exit rupture and pulp ejection",
+        "Banana structure disintegrates, peeling apart while debris scatters outward"
+      ]
+    },
+    "explain": [
+      "Projectile motion and high-velocity impact mechanics",
+      "Kinetic energy transfer creating internal pressure and shockwaves",
+      "Material structural failure and conservation of momentum"
+    ],
+    "invariants": [
+      "Black background",
+      "Side-profile camera perspective",
+      "Vertical mounting stick",
+      "Lighting conditions",
+      "Banana's general vertical axis"
+    ]
+  },
+  {
+    "id": "20",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "brittle fracture"
+    },
+    "frames": {
+      "input": "input/data_20.png",
+      "intermediate_1": "intermediate_1/data_20.png",
+      "intermediate_2": "intermediate_2/data_20.png",
+      "output": "output/data_20.png"
+    },
+    "instruction": {
+      "global": "What would happen to the wood after the not-so-sharp axe fully strikes down",
+      "steps": [
+        "Blurred axe impacts the log, creating debris and initiating penetration",
+        "Axe head drives deeper into the wood, forcing fibers apart",
+        "Motion ceases with the axe fully embedded and debris settled"
+      ]
+    },
+    "explain": [
+      "Conversion of kinetic energy into fracture energy and deformation work",
+      "Wedge mechanics translating vertical force into lateral splitting force",
+      "Friction and material resistance dissipating remaining kinetic energy"
+    ],
+    "invariants": [
+      "Camera angle and perspective",
+      "Person's legs in the background",
+      "Pine needle ground cover",
+      "Green forest background",
+      "The log's position on the ground"
+    ]
+  },
+  {
+    "id": "18",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "brittle fracture"
+    },
+    "frames": {
+      "input": "input/data_18.png",
+      "intermediate_1": "intermediate_1/data_18.png",
+      "intermediate_2": "intermediate_2/data_18.png",
+      "output": "output/data_18.png"
+    },
+    "instruction": {
+      "global": "What would happen to the watermelon after the bullet fully travels through it from right to left",
+      "steps": [
+        "Bullet flying past generates a shockwave that triggers rapid fracturing and deformation of the watermelon rind",
+        "Internal pressure forces rind segments outward as the bullet streaks by, exposing pulverized red flesh",
+        "Debris and mist disperse radially in the bullet's wake, resulting in total structural disintegration"
+      ]
+    },
+    "explain": [
+      "Stress waves from kinetic energy transfer exceed the material's tensile strength",
+      "Hydrostatic shock and rapid cavity expansion drive radial acceleration",
+      "Conservation of momentum maintains the outward trajectories of the fragments"
+    ],
+    "invariants": [
+      "Wooden stool base",
+      "Background dirt mound",
+      "Camera perspective",
+      "Natural lighting conditions",
+      "9,000 FPS text overlay"
+    ]
+  },
+  {
+    "id": "9",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "brittle fracture"
+    },
+    "frames": {
+      "input": "input/data_9.png",
+      "intermediate_1": "intermediate_1/data_9.png",
+      "intermediate_2": "intermediate_2/data_9.png",
+      "output": "output/data_9.png"
+    },
+    "instruction": {
+      "global": "What would happen to the glass marble after the hydraulic press continues applying downward pressure",
+      "steps": [
+        "The hydraulic piston descends, closing the gap and contacting the sphere.",
+        "The piston continues downward, compressing the sphere and building internal stress.",
+        "The sphere shatters explosively into fragments as the material fails."
+      ]
+    },
+    "explain": [
+      "Hydraulic pressure creates a downward force causing linear displacement.",
+      "Work done by compression is stored as elastic potential energy.",
+      "Brittle fracture occurs when compressive stress exceeds ultimate material strength."
+    ],
+    "invariants": [
+      "Camera angle and field of view",
+      "Background wall texture",
+      "Stationary base platform",
+      "Yellow and black hazard striping",
+      "Lighting conditions"
+    ]
+  },
+  {
+    "id": "6",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "brittle fracture"
+    },
+    "frames": {
+      "input": "input/data_6.png",
+      "intermediate_1": "intermediate_1/data_6.png",
+      "intermediate_2": "intermediate_2/data_6.png",
+      "output": "output/data_6.png"
+    },
+    "instruction": {
+      "global": "What would happen to the diamond after the hydraulic press continues applying downward pressure",
+      "steps": [
+        "Upper hydraulic piston descends, closing the gap above the gemstone",
+        "Piston exerts pressure; gemstone remains intact under compressive load",
+        "Gemstone disintegrates explosively into dust and flying fragments"
+      ]
+    },
+    "explain": [
+      "Hydraulic mechanics driving linear kinematic motion",
+      "Static equilibrium between applied force and internal material stress",
+      "Brittle fracture occurs when stress exceeds ultimate compressive strength"
+    ],
+    "invariants": [
+      "Camera viewpoint and framing",
+      "Stationary bottom anvil",
+      "Yellow and black warning stripes",
+      "Background lighting",
+      "Text watermark overlays"
+    ]
+  },
+  {
+    "id": "3",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "brittle fracture"
+    },
+    "frames": {
+      "input": "input/data_3.png",
+      "intermediate_1": "intermediate_1/data_3.png",
+      "intermediate_2": "intermediate_2/data_3.png",
+      "output": "output/data_3.png"
+    },
+    "instruction": {
+      "global": "What would happen to the glass bottle filled with modeling clay after it falls",
+      "steps": [
+        "Bottle impacts surface, bottom fractures, and fine debris sprays outward",
+        "Glass shatters completely, shards fly radially, revealing yellow interior",
+        "Debris field expands and settles; yellow object rests on ground"
+      ]
+    },
+    "explain": [
+      "Impact stress exceeds glass tensile strength causing brittle fracture",
+      "Conservation of momentum drives fragments outward after structural failure",
+      "Inertia carries fragments outward; gravity pulls them downward"
+    ],
+    "invariants": [
+      "Camera viewpoint",
+      "Background vegetation",
+      "Asphalt ground texture",
+      "Direction of sunlight",
+      "Yellow object color"
+    ]
+  },
+  {
+    "id": "5",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "brittle fracture"
+    },
+    "frames": {
+      "input": "input/data_5.png",
+      "intermediate_1": "intermediate_1/data_5.png",
+      "intermediate_2": "intermediate_2/data_5.png",
+      "output": "output/data_5.png"
+    },
+    "instruction": {
+      "global": "What would happen to the glass cup after it falls onto the ground",
+      "steps": [
+        "Intact jar impacts the surface, deforming and shattering structurally",
+        "Shattered pieces disperse radially outward from the impact center",
+        "Fragments slide further apart, increasing the debris spread area"
+      ]
+    },
+    "explain": [
+      "Impact forces exceed the elastic limit, causing brittle fracture",
+      "Conservation of momentum distributes energy to individual fragments",
+      "Inertia sustains motion while kinetic energy dissipates via friction"
+    ],
+    "invariants": [
+      "Beige background environment",
+      "Fixed camera angle",
+      "Flat ground plane",
+      "Direction of gravity",
+      "Glass material properties"
+    ]
+  },
+  {
+    "id": "4",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "brittle fracture"
+    },
+    "frames": {
+      "input": "input/data_4.png",
+      "intermediate_1": "intermediate_1/data_4.png",
+      "intermediate_2": "intermediate_2/data_4.png",
+      "output": "output/data_4.png"
+    },
+    "instruction": {
+      "global": "What would happen to the two chocolate eggs the moment after they collide",
+      "steps": [
+        "Hands accelerate the chocolate eggs inward, reducing the distance between them.",
+        "Eggs collide; kinetic energy converts to mechanical stress, initiating shell fracture.",
+        "Cracks propagate rapidly, resulting in catastrophic shattering and ejected debris."
+      ]
+    },
+    "explain": [
+      "Newton's Second Law: Muscular force creates acceleration towards the center.",
+      "Impulse-Momentum Theorem: Rapid deceleration generates impact forces exceeding material strength.",
+      "Brittle Fracture: Accumulated stress causes rapid material failure and fragmentation."
+    ],
+    "invariants": [
+      "Camera viewpoint and framing",
+      "Background subject (blurred torso)",
+      "Lighting conditions",
+      "The person's hands",
+      "Gravitational field direction"
+    ]
+  },
+  {
+    "id": "17",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "brittle fracture"
+    },
+    "frames": {
+      "input": "input/data_17.png",
+      "intermediate_1": "intermediate_1/data_17.png",
+      "intermediate_2": "intermediate_2/data_17.png",
+      "output": "output/data_17.png"
+    },
+    "instruction": {
+      "global": "What would happen to the water-filled balloon after the bullet travels through it from left to right",
+      "steps": [
+        "Projectile impacts the left side, rupturing the membrane with water mist splashing at the entry point",
+        "Projectile exits the right side; the water balloon largely retains its original shape with a plume of water mist trailing the exit",
+        "The water balloon completely ruptures, losing its original form and violently dispersing into a fine mist"
+      ]
+    },
+    "explain": [
+      "Kinetic energy transfer creates stress exceeding the membrane's tensile strength",
+      "Newton's First Law (Inertia) delays the fluid's motion despite loss of containment",
+      "Hydrodynamic instabilities and momentum conservation drive fluid atomization and scattering"
+    ],
+    "invariants": [
+      "Black background",
+      "Top suspension point",
+      "Camera angle",
+      "Lighting conditions",
+      "Vertical alignment"
+    ]
+  },
+  {
+    "id": "16",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "brittle fracture"
+    },
+    "frames": {
+      "input": "input/data_16.png",
+      "intermediate_1": "intermediate_1/data_16.png",
+      "intermediate_2": "intermediate_2/data_16.png",
+      "output": "output/data_16.png"
+    },
+    "instruction": {
+      "global": "What would happen to the wood after the running chainsaw fully strikes down",
+      "steps": [
+        "Chainsaw contacts the log, initiating the cut and ejecting sawdust",
+        "Blade penetrates through the log's diameter, deepening the incision",
+        "The wood slice is fully severed and falls away"
+      ]
+    },
+    "explain": [
+      "Shear forces from rotating chain teeth fracture wood fibers",
+      "Mechanical work by the motor overcomes friction to displace material",
+      "Gravitational acceleration acts on the now-unsupported mass"
+    ],
+    "invariants": [
+      "Blue Makita chainsaw body",
+      "Operator's black jacket sleeve",
+      "Background pile of branches",
+      "Ambient daylight",
+      "Camera perspective"
+    ]
+  },
+  {
+    "id": "14",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "brittle fracture"
+    },
+    "frames": {
+      "input": "input/data_14.png",
+      "intermediate_1": "intermediate_1/data_14.png",
+      "intermediate_2": "intermediate_2/data_14.png",
+      "output": "output/data_14.png"
+    },
+    "instruction": {
+      "global": "What would happen to the ice cube after it strikes the rock at high speed while descending",
+      "steps": [
+        "Falling ice block descends and impacts the stationary rock surface",
+        "The block violently shatters into numerous flying shards",
+        "Fragments disperse further outward away from the impact point"
+      ]
+    },
+    "explain": [
+      "Gravity accelerates the mass downwards, converting potential energy to kinetic energy",
+      "Impact force creates internal stress exceeding the ice's yield strength (brittle fracture)",
+      "Conservation of momentum dictates the scattering trajectories of the debris"
+    ],
+    "invariants": [
+      "Stationary large rock base",
+      "Background stone wall",
+      "Small pebbles on the ground",
+      "Camera angle and position",
+      "Lighting conditions"
+    ]
+  },
+  {
+    "id": "8",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "brittle fracture"
+    },
+    "frames": {
+      "input": "input/data_8.png",
+      "intermediate_1": "intermediate_1/data_8.png",
+      "intermediate_2": "intermediate_2/data_8.png",
+      "output": "output/data_8.png"
+    },
+    "instruction": {
+      "global": "What would happen to the egg cushioned with soft padding when the hydraulic press applies 16 kilograms of pressure",
+      "steps": [
+        "A vertical hairline fracture appears on the center of the egg shell",
+        "The fracture widens significantly and red '8 kg' text appears",
+        "The shell separates further along the vertical crack, creating a large gap"
+      ]
+    },
+    "explain": [
+      "Compressive stress exceeds the ultimate tensile strength of the brittle shell",
+      "Continued compressive force drives crack propagation and expansion",
+      "Loss of structural integrity allows displacement of the broken shell fragments"
+    ],
+    "invariants": [
+      "Camera angle and framing",
+      "Yellow and black striped press plates",
+      "White background",
+      "Red support pad",
+      "Lighting conditions"
+    ]
+  }
+]

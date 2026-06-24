@@ -1,0 +1,660 @@
+[
+  {
+    "id": "27",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "elasticity"
+    },
+    "frames": {
+      "input": "input/data_27.png",
+      "intermediate_1": "intermediate_1/data_27.png",
+      "intermediate_2": "intermediate_2/data_27.png",
+      "output": "output/data_27.png"
+    },
+    "instruction": {
+      "global": "What would happen to a soccer ball under the descending hydraulic press just before explosion",
+      "steps": [
+        "The hydraulic press slowly lowering toward a soccer ball below, stopping just short without contact, small gap visible between them",
+        "The hydraulic press descending and gently compressing a soccer ball beneath it, slight deformation visible on the ball's surface",
+        "The hydraulic press compressing a soccer ball severely, the ball heavily deformed but intact due to its elastic material, not yet ruptured"
+      ]
+    },
+    "explain": [
+      "Pascal's principle drives the hydraulic press downward motion via fluid pressure",
+      "Hooke's law describes the initial elastic deformation proportional to compressive force",
+      "Material elasticity allows large strain deformation without exceeding the yield strength"
+    ],
+    "invariants": [
+      "Camera perspective",
+      "Green background wall",
+      "Metal base plate",
+      "Yellow and black striped cylinder",
+      "Lighting conditions"
+    ]
+  },
+  {
+    "id": "32",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "elasticity"
+    },
+    "frames": {
+      "input": "input/data_32.png",
+      "intermediate_1": "intermediate_1/data_32.png",
+      "intermediate_2": "intermediate_2/data_32.png",
+      "output": "output/data_32.png"
+    },
+    "instruction": {
+      "global": "What would happen to the spinning ping pong ball the moment it separates from the paddle after contact",
+      "steps": [
+        "The table tennis ball flying diagonally toward the paddle, close but not yet making cont",
+        "The table tennis ball making contact with the paddle at a diagonal angle, rotation halted at the moment of impact, poised to rebound",
+        "The table tennis ball rebounding upward-left after contact with the paddle, already separated and moving away"
+      ]
+    },
+    "explain": [
+      "The table tennis ball follows a projectile trajectory governed by inertia and gravity, with minimal air resistance affecting its diagonal approach toward the paddle",
+      "Upon contact, linear and angular momentum transfer occurs between ball and paddle; friction halts rotation momentarily while elastic deformation stores kinetic energy for rebound",
+      "The ball rebounds with redirected velocity vector determined by conservation of momentum and the paddle's angle, while restored elastic energy converts back to kinetic energy propelling it upward-left"
+    ],
+    "invariants": [
+      "Camera perspective",
+      "Black background",
+      "racket on the table"
+    ]
+  },
+  {
+    "id": "24",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "elasticity"
+    },
+    "frames": {
+      "input": "input/data_24.png",
+      "intermediate_1": "intermediate_1/data_24.png",
+      "intermediate_2": "intermediate_2/data_24.png",
+      "output": "output/data_24.png"
+    },
+    "instruction": {
+      "global": "What would happen to the yellow ball after the woman kicks it in front of the goal and runs forward",
+      "steps": [
+        "The woman plants her left foot firmly, preparing to strike the yellow soccer ball with her right foot, contact not yet made",
+        "The woman's right foot striking the yellow soccer ball at the moment of contact, the ball not yet rebounding",
+        "The woman completing a powerful strike on the yellow soccer ball, the ball flying toward the goal, her body leaning forward and running with the momentum of the kick"
+      ]
+    },
+    "explain": [
+      "Static friction provides traction; torque generates angular acceleration of the leg",
+      "Impulse transfers momentum; Newton's 3rd law governs action-reaction forces during impact",
+      "Projectile motion governs ball trajectory; body inertia maintains forward follow-through"
+    ],
+    "invariants": [
+      "White goalposts",
+      "Green artificial turf",
+      "Background trees",
+      "Lighting conditions",
+      "Background fence"
+    ]
+  },
+  {
+    "id": "34",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "elasticity"
+    },
+    "frames": {
+      "input": "input/data_34.png",
+      "intermediate_1": "intermediate_1/data_34.png",
+      "intermediate_2": "intermediate_2/data_34.png",
+      "output": "output/data_34.png"
+    },
+    "instruction": {
+      "global": "What would happen to the tennis ball at the moment of maximum rebound after contacting the ground",
+      "steps": [
+        "The tennis ball falling vertically and making initial contact with the ground, the moment of impact captured",
+        "The tennis ball compressing against the ground after impact, still moving downward with momentum but not yet reaching maximum deformation",
+        "The tennis ball compressing against the ground with residual downward velocity, approaching maximum deformation"
+      ]
+    },
+    "explain": [
+      "Gravitational acceleration and impulse-momentum theorem during impact",
+      "Transformation of kinetic energy into elastic potential energy",
+      "Work-energy principle maximizing stored elastic potential energy"
+    ],
+    "invariants": [
+      "Black background",
+      "Wooden surface",
+      "Camera angle",
+      "Lighting direction",
+      "Watermark text"
+    ]
+  },
+  {
+    "id": "26",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "elasticity"
+    },
+    "frames": {
+      "input": "input/data_26.png",
+      "intermediate_1": "intermediate_1/data_26.png",
+      "intermediate_2": "intermediate_2/data_26.png",
+      "output": "output/data_26.png"
+    },
+    "instruction": {
+      "global": "What would happen to the golf ball after striking it toward the hole with the golf club",
+      "steps": [
+        "The golf club striking the ball, the ball rolling forward across the green but not yet reaching the hole",
+        "The golf club striking the ball, the ball rolling forward across the green but not yet reaching the hole",
+        "The golf ball partially sunk into the hole, the upper half still visible above the "
+      ]
+    },
+    "explain": [
+      "Impulsive force transfers momentum from the club to accelerate the ball",
+      "Rotational inertia maintains rolling motion against rolling resistance friction",
+      "Gravity causes free fall acceleration as the normal support force vanishes"
+    ],
+    "invariants": [
+      "Position of the golfer's feet",
+      "Direction of sunlight and shadows",
+      "Camera viewpoint and framing",
+      "Location of the golf hole",
+      "Background trees and foliage"
+    ]
+  },
+  {
+    "id": "30",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "elasticity"
+    },
+    "frames": {
+      "input": "input/data_30.png",
+      "intermediate_1": "intermediate_1/data_30.png",
+      "intermediate_2": "intermediate_2/data_30.png",
+      "output": "output/data_30.png"
+    },
+    "instruction": {
+      "global": "What would happen to the resistance band on the woman's ankle as she extends her right foot backward",
+      "steps": [
+        "The woman with a resistance band tied around her ankles, left foot planted firmly, right foot slightly retracted backward, the band visibly stretched",
+        "The woman with a resistance band tied around her ankles, left foot planted firmly, right foot slightly retracted backward, the band visibly stretched",
+        "The woman with a resistance band tied around her ankles, left foot anchored firmly, right foot pulled backward with moderate amplitude, the band visibly stretched"
+      ]
+    },
+    "explain": [
+      "Hooke's law: Elastic tension increases proportionally to the resistance band's elongation",
+      "Newton's 3rd law: Band exerts an equal and opposite reaction force against the leg",
+      "Static friction: Prevents the anchored foot from sliding against lateral band tension"
+    ],
+    "invariants": [
+      "Pink yoga mat position",
+      "Wooden wall paneling",
+      "Camera perspective",
+      "Participant's pink sneakers",
+      "Grey leggings pattern"
+    ]
+  },
+  {
+    "id": "22",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "elasticity"
+    },
+    "frames": {
+      "input": "input/data_22.png",
+      "intermediate_1": "intermediate_1/data_22.png",
+      "intermediate_2": "intermediate_2/data_22.png",
+      "output": "output/data_22.png"
+    },
+    "instruction": {
+      "global": "What would happen to the bow as the woman draws it with an arrow, aiming upward in the frame",
+      "steps": [
+        "The woman holding the bow with an arrow nocked, right elbow slightly raised, lightly drawing the bowstring",
+        "The woman straightening the bow into a ready stance, drawing the bowstring further but not yet fully drawn",
+        "The woman drawing the bow further, low-angle view shifting upward, her raised elbow partially obscuring most of her face"
+      ]
+    },
+    "explain": [
+      "Hooke's law: applied force causes proportional elastic deformation of the bow limbs",
+      "Work-energy theorem: muscular work is converted into elastic potential energy",
+      "Newton's 3rd law: arm exerts force equal and opposite to increasing string tension"
+    ],
+    "invariants": [
+      "Red hoodie and scarf",
+      "Snowy forest background",
+      "Wooden recurve bow",
+      "Feather-fletched arrow",
+      "Diffuse daylight conditions"
+    ]
+  },
+  {
+    "id": "37",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "elasticity"
+    },
+    "frames": {
+      "input": "input/data_37.png",
+      "intermediate_1": "intermediate_1/data_37.png",
+      "intermediate_2": "intermediate_2/data_37.png",
+      "output": "output/data_37.png"
+    },
+    "instruction": {
+      "global": "What would happen to the man the moment after he separates from the trampoline following maximum deformation",
+      "steps": [
+        "The man rising from the trampoline as it rebounds from maximum deformation, his body remaining in continuous contact with the surface until the trampoline returns to its original position",
+        "The man losing contact with the trampoline as it returns to its original shape, beginning to rise upward",
+        "The man reaching the apex of his ascent, suspended momentarily at the highest point"
+      ]
+    },
+    "explain": [
+      "Elastic potential energy converts to kinetic energy via Hooke's Law restoring force",
+      "Newton's first law (inertia) maintains upward velocity after contact force ceases",
+      "Gravitational deceleration reduces vertical velocity to zero (conservation of energy)"
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Position of background blue mats",
+      "Placement of the orange vaulting horse",
+      "Window structure on the back wall",
+      "Indoor lighting conditions"
+    ]
+  },
+  {
+    "id": "29",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "elasticity"
+    },
+    "frames": {
+      "input": "input/data_29.png",
+      "intermediate_1": "intermediate_1/data_29.png",
+      "intermediate_2": "intermediate_2/data_29.png",
+      "output": "output/data_29.png"
+    },
+    "instruction": {
+      "global": "What would happen to the object ball as it rolls toward the pocket along its current trajectory, the moment just before it drops in",
+      "steps": [
+        "The man striking the yellow ball, the ball moving forward but not yet contacting any other balls",
+        "The yellow ball striking the white ball and coming to an immediate stop, the white ball rolling toward the pocket",
+        "The white ball rolling toward the pocket, half of the ball still visible above the rim as it begins to drop"
+      ]
+    },
+    "explain": [
+      "Impulse from cue stick transfers linear momentum to ball",
+      "Elastic collision transfers kinetic energy entirely to target ball",
+      "Gravity accelerates unsupported ball vertically into pocket"
+    ],
+    "invariants": [
+      "Camera viewpoint",
+      "Overhead lighting fixtures",
+      "Green billiard table surface",
+      "Player's plaid shirt pattern",
+      "Positions of uninvolved background balls"
+    ]
+  },
+  {
+    "id": "35",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "elasticity"
+    },
+    "frames": {
+      "input": "input/data_35.png",
+      "intermediate_1": "intermediate_1/data_35.png",
+      "intermediate_2": "intermediate_2/data_35.png",
+      "output": "output/data_35.png"
+    },
+    "instruction": {
+      "global": "What would happen to the tennis ball and the racket the moment after they make contact during the man's swing",
+      "steps": [
+        "The man swinging the racket forward, making precise contact with the incoming tennis ball at the moment of impact",
+        "The tennis ball compressed to maximum deformation on the racket face, still in full contact without separation during the strike",
+        "The tennis ball separating from the racket, the man's arm continuing forward with momentum after the strike"
+      ]
+    },
+    "explain": [
+      "Impulse-momentum theorem governing force transfer during collision impact",
+      "Hooke's law describing elastic deformation and potential energy storage",
+      "Elastic restitution and Newton's first law governing rotational inertia"
+    ],
+    "invariants": [
+      "Camera viewpoint and framing",
+      "Direction and intensity of lighting",
+      "Player's clothing (white shirt, black shorts)",
+      "Background environment",
+      "Text watermark position"
+    ]
+  },
+  {
+    "id": "21",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "elasticity"
+    },
+    "frames": {
+      "input": "input/data_21.png",
+      "intermediate_1": "intermediate_1/data_21.png",
+      "intermediate_2": "intermediate_2/data_21.png",
+      "output": "output/data_21.png"
+    },
+    "instruction": {
+      "global": "What would happen to the basketball the moment the man completes a single hand-switch dribble",
+      "steps": [
+        "The man's left hand dribbling the basketball as it contacts the ground, hand moving slightly downward simultaneously",
+        "The basketball rebounding upward toward the man's right hand, not yet making con",
+        "The man's right hand making contact with the ball, extending slightly outward to absorb the momentum"
+      ]
+    },
+    "explain": [
+      "Newton's 3rd law: ground reaction force enables elastic rebound",
+      "Projectile motion: vertical ascent decelerated by gravitational force",
+      "Impulse-momentum theorem: increasing contact time to reduce impact force"
+    ],
+    "invariants": [
+      "Red running track surface",
+      "White lane markings",
+      "Athlete's neon yellow shoes",
+      "Athlete's black shorts",
+      "Camera viewpoint and angle"
+    ]
+  },
+  {
+    "id": "39",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "elasticity"
+    },
+    "frames": {
+      "input": "input/data_39.png",
+      "intermediate_1": "intermediate_1/data_39.png",
+      "intermediate_2": "intermediate_2/data_39.png",
+      "output": "output/data_39.png"
+    },
+    "instruction": {
+      "global": "What would happen to the water-filled balloon the moment after it contacts the ground but just before bursting",
+      "steps": [
+        "The water-filled balloon making initial contact with the ground at the moment of impact",
+        "The water-filled balloon compressing further against the ground, deformation increasing",
+        "The water-filled balloon compressed nearly flat against the ground, still intact without bursting"
+      ]
+    },
+    "explain": [
+      "Gravitational acceleration increases vertical velocity until impact with the ground",
+      "Newton's 1st Law (inertia) causes the fluid mass to continue downward, compressing the shape",
+      "Fluid incompressibility mandates radial expansion to conserve volume while skin elasticity maintains integrity"
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Background wall structure",
+      "Reflective ground surface",
+      "Lighting direction and shadow positions",
+      "Total mass of the water balloon"
+    ]
+  },
+  {
+    "id": "25",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "elasticity"
+    },
+    "frames": {
+      "input": "input/data_25.png",
+      "intermediate_1": "intermediate_1/data_25.png",
+      "intermediate_2": "intermediate_2/data_25.png",
+      "output": "output/data_25.png"
+    },
+    "instruction": {
+      "global": "What would happen to the liquid level in the narrow glass tube when the glass bottle is squeezed",
+      "steps": [
+        "The experimenter gently compressing the glass bottle, the liquid level in the narrow glass tube rising slightly",
+        "The experimenter gently compressing the glass bottle, the liquid level in the narrow glass tube rising slightly",
+        "The experimenter gently compressing the glass bottle, the liquid level in the narrow glass tube rising slightly"
+      ]
+    },
+    "explain": [
+      "Elastic deformation reduces bottle volume, displacing incompressible fluid upward",
+      "Fluid incompressibility forces liquid level rise as volume decreases",
+      "Conservation of volume: displaced liquid fills narrow tube vertically"
+    ],
+    "invariants": [
+      "Camera viewpoint",
+      "Green table surface",
+      "White lab coat",
+      "Background lighting",
+      "Glass tube orientation"
+    ]
+  },
+  {
+    "id": "23",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "elasticity"
+    },
+    "frames": {
+      "input": "input/data_23.png",
+      "intermediate_1": "intermediate_1/data_23.png",
+      "intermediate_2": "intermediate_2/data_23.png",
+      "output": "output/data_23.png"
+    },
+    "instruction": {
+      "global": "What would happen to the white bubble ball the moment before it bursts upon hitting the ground",
+      "steps": [
+        "The white bubble ball making initial contact with the ground, not yet compressed",
+        "The white bubble ball beginning to compress upon contact with the ground, deformation underway but not yet reaching maximum",
+        "The white bubble ball compressing beyond its maximum deformation limit, rupturing and releasing a burst of white mist"
+      ]
+    },
+    "explain": [
+      "Gravitational acceleration drives the object's descent leading to initial surface contact",
+      "Impact kinetic energy converts into elastic potential energy causing shape deformation",
+      "Internal membrane stress exceeds ultimate tensile strength causing structural rupture"
+    ],
+    "invariants": [
+      "Dark background",
+      "Static camera viewpoint",
+      "Flat horizontal surface",
+      "Lighting direction",
+      "Object color"
+    ]
+  },
+  {
+    "id": "36",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "elasticity"
+    },
+    "frames": {
+      "input": "input/data_36.png",
+      "intermediate_1": "intermediate_1/data_36.png",
+      "intermediate_2": "intermediate_2/data_36.png",
+      "output": "output/data_36.png"
+    },
+    "instruction": {
+      "global": "What would happen to the gymnast the next moment their velocity reaches zero after free-falling from the apex in mid-air",
+      "steps": [
+        "The gymnast in free fall descending toward the trampoline, not yet making contact",
+        "The gymnast descending closer to the trampoline, only a narrow gap remaining",
+        "The gymnast making contact with the trampoline, compressing it to maximum deformation"
+      ]
+    },
+    "explain": [
+      "Gravitational acceleration drives vertical projectile motion during free fall",
+      "Conservation of mechanical energy converts gravitational potential to kinetic energy",
+      "Hooke's law governs elastic deformation and restoring force upon impact"
+    ],
+    "invariants": [
+      "Fixed camera viewpoint",
+      "Background window structure",
+      "Blue safety mats",
+      "Orange vaulting table",
+      "Gym lighting conditions"
+    ]
+  },
+  {
+    "id": "28",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "elasticity"
+    },
+    "frames": {
+      "input": "input/data_28.png",
+      "intermediate_1": "intermediate_1/data_28.png",
+      "intermediate_2": "intermediate_2/data_28.png",
+      "output": "output/data_28.png"
+    },
+    "instruction": {
+      "global": "What would happen to the elastic egg under the descending hydraulic press the moment just before it shatters",
+      "steps": [
+        "The hydraulic press descending and making initial contact with the elastic egg, no deformation or pressure applied yet",
+        "The hydraulic press descending further, applying pressure to the elastic egg with visible deformation but not yet reaching maximum compressions",
+        "The hydraulic press descending further, compressing the elastic egg to maximum deformation while remaining intact without rupture"
+      ]
+    },
+    "explain": [
+      "Pascal's principle driving the hydraulic ram's vertical descent",
+      "Hooke's law relating compressive stress to elastic strain",
+      "Storage of elastic potential energy within the material's elastic limit"
+    ],
+    "invariants": [
+      "Camera viewpoint",
+      "Position of the metal base plate",
+      "Background wall texture",
+      "Lighting conditions",
+      "Green color of the hydraulic press head"
+    ]
+  },
+  {
+    "id": "33",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "elasticity"
+    },
+    "frames": {
+      "input": "input/data_33.png",
+      "intermediate_1": "intermediate_1/data_33.png",
+      "intermediate_2": "intermediate_2/data_33.png",
+      "output": "output/data_33.png"
+    },
+    "instruction": {
+      "global": "What would happen to the tennis ball after its elastic potential energy is fully converted into kinetic and gravitational potential energy",
+      "steps": [
+        "The tennis ball beginning to rebound with elastic energy converting to kinetic energy, still in contact with the ground",
+        "The tennis ball rebounding and just losing contact with the ground",
+        "The tennis ball rising upward after rebound, elastic potential energy nearly fully converted to kinetic energy"
+      ]
+    },
+    "explain": [
+      "Conservation of energy: elastic potential energy converts to kinetic energy during decompression",
+      "Newton's 3rd Law: ground reaction force propels the ball upward until separation",
+      "Newton's 1st Law: inertia maintains the ball's upward velocity after contact ceases"
+    ],
+    "invariants": [
+      "Black background color",
+      "Brown wooden surface",
+      "Static camera viewpoint",
+      "Lighting direction and intensity",
+      "Watermark position at top-left"
+    ]
+  },
+  {
+    "id": "31",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "elasticity"
+    },
+    "frames": {
+      "input": "input/data_31.png",
+      "intermediate_1": "intermediate_1/data_31.png",
+      "intermediate_2": "intermediate_2/data_31.png",
+      "output": "output/data_31.png"
+    },
+    "instruction": {
+      "global": "What would happen to the spring the moment it reaches maximum deformation for the first time after releasing its top end",
+      "steps": [
+        "Hand releases top; top coils fall while bottom coils remain stationary.",
+        "Top coils continue falling and compressing spring; bottom coils remain suspended.",
+        "Slinky fully compresses; top meets bottom; entire object begins to fall."
+      ]
+    },
+    "explain": [
+      "Upward spring tension exactly balances downward gravity on the bottom coils.",
+      "Information of release travels at wave speed; bottom maintains force equilibrium.",
+      "Internal tension vanishes upon collapse; gravity accelerates the entire mass."
+    ],
+    "invariants": [
+      "Black background",
+      "Camera viewpoint",
+      "Text watermark position",
+      "Direction of gravity",
+      "The Slinky object"
+    ]
+  },
+  {
+    "id": "40",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "elasticity"
+    },
+    "frames": {
+      "input": "input/data_40.png",
+      "intermediate_1": "intermediate_1/data_40.png",
+      "intermediate_2": "intermediate_2/data_40.png",
+      "output": "output/data_40.png"
+    },
+    "instruction": {
+      "global": "What would happen to the water droplet the moment just before it fully merges with the water surface",
+      "steps": [
+        "Falling droplet descends and makes initial contact with the reflective surface",
+        "Droplet compresses vertically and expands horizontally, losing spherical shape",
+        "Droplet flattens significantly into a thin disc, spreading radially outward"
+      ]
+    },
+    "explain": [
+      "Gravity accelerates the mass; inertia maintains downward velocity until collision",
+      "Normal force from surface redirects vertical momentum into horizontal flow",
+      "Inertia drives spreading while surface tension resists surface area increase"
+    ],
+    "invariants": [
+      "Camera viewpoint and framing",
+      "Background lighting and color",
+      "Reflective surface properties",
+      "Total volume of the water droplet",
+      "Frame rate annotation (7,000 fps)"
+    ]
+  },
+  {
+    "id": "38",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "elasticity"
+    },
+    "frames": {
+      "input": "input/data_38.png",
+      "intermediate_1": "intermediate_1/data_38.png",
+      "intermediate_2": "intermediate_2/data_38.png",
+      "output": "output/data_38.png"
+    },
+    "instruction": {
+      "global": "What would happen to the volleyball the moment it separates from the man's hands after a single touch",
+      "steps": [
+        "The ball descends and makes contact with the player's extended forearms.",
+        "The ball rebounds upward as the player's arms lift in a digging motion.",
+        "The ball travels high into the air, moving away from the player."
+      ]
+    },
+    "explain": [
+      "Gravitational acceleration pulls the ball downward into the collision zone.",
+      "Impulse and transfer of momentum from the player to the ball.",
+      "Projectile motion and conservation of energy (kinetic to potential)."
+    ],
+    "invariants": [
+      "Camera viewpoint and framing",
+      "The ocean horizon and background scenery",
+      "The yellow volleyball net and pole",
+      "The second player standing in the background",
+      "The sandy beach terrain"
+    ]
+  }
+]

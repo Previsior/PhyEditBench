@@ -1,0 +1,662 @@
+[
+  {
+    "id": "44",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "plastic deformation"
+    },
+    "frames": {
+      "input": "input/data_44.png",
+      "intermediate_1": "intermediate_1/data_44.png",
+      "intermediate_2": "intermediate_2/data_44.png",
+      "output": "output/data_44.png"
+    },
+    "instruction": {
+      "global": "What would happen to the two bullets after the hydraulic press fully descends",
+      "steps": [
+        "Hydraulic ram descends, contacting bullets and initiating vertical compression and buckling",
+        "Continued downward force causes severe plastic deformation and horizontal expansion of casings",
+        "Ram fully compresses bullets, flattening them completely against the base"
+      ]
+    },
+    "explain": [
+      "Compressive stress exceeds the material's yield strength, causing plastic deformation",
+      "Material ductility permits extensive plastic flow without immediate shattering",
+      "Extreme pressure forces lateral material displacement, overcoming structural integrity"
+    ],
+    "invariants": [
+      "Camera angle and field of view",
+      "Stationary metal base platform",
+      "Hydraulic ram cylinder structure",
+      "Overlay text and logos",
+      "Background lighting conditions"
+    ]
+  },
+  {
+    "id": "57",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "plastic deformation"
+    },
+    "frames": {
+      "input": "input/data_57.png",
+      "intermediate_1": "intermediate_1/data_57.png",
+      "intermediate_2": "intermediate_2/data_57.png",
+      "output": "output/data_57.png"
+    },
+    "instruction": {
+      "global": "What would happen to the slime as hands pull it apart in opposite directions",
+      "steps": [
+        "Hands grip the cubic block and pull outwards, deforming it into a rectangular shape",
+        "Hands move further apart, elongating the material which thins in the center",
+        "Continued pulling stretches the material into a long, thin strand showing internal texture"
+      ]
+    },
+    "explain": [
+      "Applied tensile stress causes initial viscoelastic deformation of the material",
+      "Conservation of volume necessitates cross-sectional thinning as the object elongates",
+      "Viscoelastic properties allow significant strain and polymer alignment without immediate rupture"
+    ],
+    "invariants": [
+      "White background surface",
+      "The two hands manipulating the object",
+      "Composition of the material (slime with beads)",
+      "Top-down camera angle",
+      "Consistent lighting conditions"
+    ]
+  },
+  {
+    "id": "56",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "plastic deformation"
+    },
+    "frames": {
+      "input": "input/data_56.png",
+      "intermediate_1": "intermediate_1/data_56.png",
+      "intermediate_2": "intermediate_2/data_56.png",
+      "output": "output/data_56.png"
+    },
+    "instruction": {
+      "global": "What would happen to the modeling clay in hand as the thumb presses down forcefully",
+      "steps": [
+        "Thumbs press into the pink sphere, initiating surface cracks while view zooms in",
+        "Thumbs push outward, widening the crack and revealing the granular internal texture",
+        "The sphere is torn completely open, fully exposing the crumbly interior structure"
+      ]
+    },
+    "explain": [
+      "Applied stress exceeds the material's yield strength, causing fracture initiation",
+      "Tensile forces drive crack propagation, overcoming internal cohesive bonds",
+      "Continued work against material cohesion results in complete macroscopic separation"
+    ],
+    "invariants": [
+      "Pink spherical object",
+      "Hands with blue floral nail art",
+      "Colorful background spheres",
+      "White surface background",
+      "Direction of lighting"
+    ]
+  },
+  {
+    "id": "46",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "plastic deformation"
+    },
+    "frames": {
+      "input": "input/data_46.png",
+      "intermediate_1": "intermediate_1/data_46.png",
+      "intermediate_2": "intermediate_2/data_46.png",
+      "output": "output/data_46.png"
+    },
+    "instruction": {
+      "global": "What would happen to the metal cans after being run over by the car tire",
+      "steps": [
+        "Tire rolls left, crushing the pink and red boxes while the others remain intact.",
+        "Tire advances further, flattening the white box and compressing the blue box.",
+        "Tire clears the frame, leaving all four boxes permanently flattened on the asphalt."
+      ]
+    },
+    "explain": [
+      "Compressive stress exceeds the material's yield strength, causing plastic deformation.",
+      "Rolling motion transfers the vehicle's weight, applying vertical crushing force to subsequent objects.",
+      "Plasticity ensures the metal retains its deformed shape after the external load is removed."
+    ],
+    "invariants": [
+      "Asphalt ground texture",
+      "Camera viewpoint",
+      "Natural lighting conditions",
+      "Color patterns of the boxes",
+      "Direction of gravity"
+    ]
+  },
+  {
+    "id": "43",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "plastic deformation"
+    },
+    "frames": {
+      "input": "input/data_43.png",
+      "intermediate_1": "intermediate_1/data_43.png",
+      "intermediate_2": "intermediate_2/data_43.png",
+      "output": "output/data_43.png"
+    },
+    "instruction": {
+      "global": "What would happen to the bucket with alcohol-coated interior after being ignited and having its opening sealed by hand",
+      "steps": [
+        "Hand seals bottle opening; upper walls begin to buckle inward",
+        "Bottle body collapses rapidly inward, drastically reducing internal volume",
+        "Bottle reaches fully crumpled state and deformation stabilizes"
+      ]
+    },
+    "explain": [
+      "Sealing traps hot gas; rapid cooling lowers internal pressure (Gay-Lussac's Law)",
+      "External atmospheric pressure exceeds internal pressure, creating unbalanced inward force",
+      "Volume reduction increases internal pressure until equilibrium is restored (Boyle's Law)"
+    ],
+    "invariants": [
+      "Camera angle and framing",
+      "Green plant on the right",
+      "Blue tablecloth",
+      "Person's black shirt",
+      "Text overlays"
+    ]
+  },
+  {
+    "id": "50",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "plastic deformation"
+    },
+    "frames": {
+      "input": "input/data_50.png",
+      "intermediate_1": "intermediate_1/data_50.png",
+      "intermediate_2": "intermediate_2/data_50.png",
+      "output": "output/data_50.png"
+    },
+    "instruction": {
+      "global": "What would happen to the gold after the hydraulic press continues applying downward pressure",
+      "steps": [
+        "The press descends, compressing the cylinder which buckles and bulges outward.",
+        "The press moves lower, flattening the object significantly and forcing it wider.",
+        "The press nearly touches the base, squashing the object into a thin sheet."
+      ]
+    },
+    "explain": [
+      "Compressive stress exceeds yield strength, causing plastic deformation and buckling.",
+      "Plastic flow causes lateral expansion to conserve volume under vertical compression.",
+      "Continued compressive force maximizes deformation against the rigid surface."
+    ],
+    "invariants": [
+      "Camera angle and framing",
+      "The hydraulic press head (shape)",
+      "The gold material composition",
+      "The background environment",
+      "The subtitle text overlay"
+    ]
+  },
+  {
+    "id": "54",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "plastic deformation"
+    },
+    "frames": {
+      "input": "input/data_54.png",
+      "intermediate_1": "intermediate_1/data_54.png",
+      "intermediate_2": "intermediate_2/data_54.png",
+      "output": "output/data_54.png"
+    },
+    "instruction": {
+      "global": "What would happen to the plastic water bottle after the hydraulic press continues applying downward pressure",
+      "steps": [
+        "Hydraulic ram descends, contacts the bottle, and initiates compression",
+        "Ram presses further, causing severe flattening and plastic deformation",
+        "Full compression occurs; internal air pressure violently ejects the cap"
+      ]
+    },
+    "explain": [
+      "Hydraulic force overcomes the bottle's initial structural rigidity",
+      "Compressive stress exceeds material yield strength causing permanent deformation",
+      "Rapid reduction of volume increases air pressure, launching the cap"
+    ],
+    "invariants": [
+      "Grey background wall",
+      "Stationary bottom platform",
+      "Yellow and black hazard stripes",
+      "Camera viewpoint",
+      "Bilibili watermark"
+    ]
+  },
+  {
+    "id": "59",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "plastic deformation"
+    },
+    "frames": {
+      "input": "input/data_59.png",
+      "intermediate_1": "intermediate_1/data_59.png",
+      "intermediate_2": "intermediate_2/data_59.png",
+      "output": "output/data_59.png"
+    },
+    "instruction": {
+      "global": "What would happen to the toilet paper roll after the hydraulic press continues applying downward pressure",
+      "steps": [
+        "Piston descends, compressing the white roll vertically; sides buckle and wrinkle significantly.",
+        "Piston lowers further, crushing the roll into a compact, flattened, irregular shape.",
+        "Piston reaches bottom, fully flattening the material into a thin, solid disk."
+      ]
+    },
+    "explain": [
+      "Compressive stress exceeds critical load, causing structural buckling and plastic deformation.",
+      "Continuous external force maintains plastic flow, reducing volume and rearranging material.",
+      "Extreme pressure causes maximum material compaction and lateral expansion (Poisson effect)."
+    ],
+    "invariants": [
+      "Camera angle and viewpoint",
+      "Yellow base platform",
+      "White background wall",
+      "Vertical axis of motion",
+      "Lighting conditions"
+    ]
+  },
+  {
+    "id": "58",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "plastic deformation"
+    },
+    "frames": {
+      "input": "input/data_58.png",
+      "intermediate_1": "intermediate_1/data_58.png",
+      "intermediate_2": "intermediate_2/data_58.png",
+      "output": "output/data_58.png"
+    },
+    "instruction": {
+      "global": "What would happen to the thermos cup after the hydraulic press fully descends",
+      "steps": [
+        "The press plate descends, causing the top of the flask to buckle and wrinkle.",
+        "Continued downward pressure vertically shortens the flask, forming deep accordion-like folds.",
+        "The flask is completely flattened into a compact, compressed metal puck."
+      ]
+    },
+    "explain": [
+      "Compressive stress exceeds the cylinder's critical buckling load, initiating structural instability.",
+      "Plastic deformation allows the metal to yield and fold progressively under sustained force.",
+      "Extreme compressive strain forces complete structural collapse and material densification."
+    ],
+    "invariants": [
+      "Camera angle and framing",
+      "Hydraulic press frame structure",
+      "Background workshop environment",
+      "Text overlays ('Thermos Flask', 'FOSSBYTES')",
+      "Lighting conditions"
+    ]
+  },
+  {
+    "id": "49",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "plastic deformation"
+    },
+    "frames": {
+      "input": "input/data_49.png",
+      "intermediate_1": "intermediate_1/data_49.png",
+      "intermediate_2": "intermediate_2/data_49.png",
+      "output": "output/data_49.png"
+    },
+    "instruction": {
+      "global": "What would happen to the aluminum ball after the hydraulic press fully descends",
+      "steps": [
+        "The upper press plate descends, making contact and slightly compressing the foil ball",
+        "The plate pushes down further, plastically deforming the ball into a flattened puck",
+        "The plate descends to its lowest point, crushing the foil into a thin disk"
+      ]
+    },
+    "explain": [
+      "Hydraulic force application initiates compressive stress on the structure",
+      "Stress exceeds the material's yield strength, causing irreversible plastic deformation",
+      "Continued work results in maximum material densification and lateral expansion"
+    ],
+    "invariants": [
+      "Camera angle and framing",
+      "Grey background wall",
+      "Yellow and black hazard pattern on the press",
+      "Mass of the aluminum foil",
+      "Vertical axis of the machine"
+    ]
+  },
+  {
+    "id": "55",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "plastic deformation"
+    },
+    "frames": {
+      "input": "input/data_55.png",
+      "intermediate_1": "intermediate_1/data_55.png",
+      "intermediate_2": "intermediate_2/data_55.png",
+      "output": "output/data_55.png"
+    },
+    "instruction": {
+      "global": "What would happen to the modeling clay after the hydraulic press fully descends",
+      "steps": [
+        "Ram descends, compressing the stack; clay shortens vertically and expands laterally.",
+        "Continued compression flattens the clay layers, forcing them to spread wider.",
+        "Ram nearly touches base, crushing clay into a thin, uniform sheet."
+      ]
+    },
+    "explain": [
+      "Compressive stress causes plastic deformation; conservation of volume forces lateral expansion.",
+      "Sustained force exceeds yield strength, driving continuous plastic flow of material.",
+      "Extreme pressure forces maximum lateral displacement of the incompressible solid mass."
+    ],
+    "invariants": [
+      "Camera angle and framing",
+      "Striped safety pattern on base",
+      "Order of colored clay layers",
+      "Text overlay in top left",
+      "Background wall texture"
+    ]
+  },
+  {
+    "id": "41",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "plastic deformation"
+    },
+    "frames": {
+      "input": "input/data_41.png",
+      "intermediate_1": "intermediate_1/data_41.png",
+      "intermediate_2": "intermediate_2/data_41.png",
+      "output": "output/data_41.png"
+    },
+    "instruction": {
+      "global": "What would happen to the aluminum block after the hydraulic press fully descends",
+      "steps": [
+        "The upper ram descends, closing the gap to contact the aluminum cube",
+        "The cube is compressed vertically and expands horizontally, losing its cubic shape",
+        "The cube is flattened completely into a thin disk structure"
+      ]
+    },
+    "explain": [
+      "Hydraulic force drives the linear motion of the ram (Newton's Second Law)",
+      "Compressive stress exceeds the material's yield strength, causing plastic deformation",
+      "High ductility allows the metal to flow plastically without fracturing"
+    ],
+    "invariants": [
+      "Camera angle and viewpoint",
+      "Yellow and black hazard stripes on the press",
+      "The stationary metal base",
+      "The material identity (Aluminium)",
+      "Background lighting and color"
+    ]
+  },
+  {
+    "id": "53",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "plastic deformation"
+    },
+    "frames": {
+      "input": "input/data_53.png",
+      "intermediate_1": "intermediate_1/data_53.png",
+      "intermediate_2": "intermediate_2/data_53.png",
+      "output": "output/data_53.png"
+    },
+    "instruction": {
+      "global": "What would happen to the iron rod after the hammer fully strikes down",
+      "steps": [
+        "Hammer descends to contact rod, initiating downward bending",
+        "Hammer continues downward, forcing rod into a V-shape",
+        "Hammer presses deeper, sharpening the final bend angle"
+      ]
+    },
+    "explain": [
+      "Applied force creates bending moment exceeding material yield strength",
+      "Plastic deformation occurs as stress exceeds the yield point",
+      "Work done by force causes further permanent structural strain"
+    ],
+    "invariants": [
+      "Stationary metal support base",
+      "Text markings on hammer",
+      "Camera angle and perspective",
+      "Lighting conditions",
+      "Material composition of the rod"
+    ]
+  },
+  {
+    "id": "47",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "plastic deformation"
+    },
+    "frames": {
+      "input": "input/data_47.png",
+      "intermediate_1": "intermediate_1/data_47.png",
+      "intermediate_2": "intermediate_2/data_47.png",
+      "output": "output/data_47.png"
+    },
+    "instruction": {
+      "global": "What would happen to the dough after the rolling pin is pressed back and forth with force",
+      "steps": [
+        "Hands press the rolling pin downward, compressing the initial clay lump",
+        "Rolling pin moves forward, flattening the clay and extending its shape",
+        "Rolling motion completes, leaving a thin, expanded sheet of clay"
+      ]
+    },
+    "explain": [
+      "Downward force creates compressive stress causing initial plastic deformation",
+      "Continuous pressure and rolling motion induce material flow and elongation",
+      "Conservation of volume necessitates surface area expansion as thickness decreases"
+    ],
+    "invariants": [
+      "Camera angle and framing",
+      "Teal background wall",
+      "Person's linen apron",
+      "Burning candles on the table",
+      "White ceramic bowls"
+    ]
+  },
+  {
+    "id": "42",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "plastic deformation"
+    },
+    "frames": {
+      "input": "input/data_42.png",
+      "intermediate_1": "intermediate_1/data_42.png",
+      "intermediate_2": "intermediate_2/data_42.png",
+      "output": "output/data_42.png"
+    },
+    "instruction": {
+      "global": "What would happen to this apple when the hydraulic press fully descends",
+      "steps": [
+        "Hydraulic ram descends, contacts apple, and initiates vertical compression",
+        "Continued compression causes lateral expansion, skin rupture, and juice release",
+        "Apple is completely flattened and crushed into pulp"
+      ]
+    },
+    "explain": [
+      "Compressive stress causes elastic and initial plastic deformation",
+      "Internal pressure exceeds the material's ultimate tensile strength",
+      "Extreme strain causes total structural collapse and fracture"
+    ],
+    "invariants": [
+      "Camera angle and framing",
+      "Grey background wall",
+      "Stationary bottom platform",
+      "Black and yellow stripe pattern",
+      "Ambient lighting"
+    ]
+  },
+  {
+    "id": "52",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "plastic deformation"
+    },
+    "frames": {
+      "input": "input/data_52.png",
+      "intermediate_1": "intermediate_1/data_52.png",
+      "intermediate_2": "intermediate_2/data_52.png",
+      "output": "output/data_52.png"
+    },
+    "instruction": {
+      "global": "What would happen to this iron pillar after the hydraulic press partially descends and then lifts",
+      "steps": [
+        "Load increases to ~81t; cylinder compresses axially and begins to deform",
+        "Load stabilizes around ~81t; cylinder buckles laterally to the right",
+        "Load rises to ~99t; cylinder collapses into a severe plastic bend"
+      ]
+    },
+    "explain": [
+      "Compressive stress exceeds the material's yield strength, initiating plasticity",
+      "Structural instability (buckling) occurs as the column exceeds critical load",
+      "Strain hardening increases material resistance, requiring higher force to deform"
+    ],
+    "invariants": [
+      "Camera viewpoint",
+      "Hydraulic press platens",
+      "Digital load display position",
+      "Background environment",
+      "The metal cylinder object"
+    ]
+  },
+  {
+    "id": "45",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "plastic deformation"
+    },
+    "frames": {
+      "input": "input/data_45.png",
+      "intermediate_1": "intermediate_1/data_45.png",
+      "intermediate_2": "intermediate_2/data_45.png",
+      "output": "output/data_45.png"
+    },
+    "instruction": {
+      "global": "What would happen to these three beverage bottles after a car wheel rolls over them",
+      "steps": [
+        "Tire rolls forward, contacting the cans and initiating structural buckling",
+        "Tire fully compresses cans, causing collapse and violent liquid spray",
+        "Tire rolls past the objects, leaving permanently flattened cans and foam"
+      ]
+    },
+    "explain": [
+      "Compressive force from the tire exceeds the aluminum's yield strength",
+      "Rapid volume reduction spikes internal fluid pressure causing explosive rupture",
+      "Irreversible plastic deformation prevents the metal from recovering its shape"
+    ],
+    "invariants": [
+      "Camera angle and framing",
+      "Asphalt ground texture",
+      "The car tire",
+      "Wooden stopper block",
+      "Ambient lighting conditions"
+    ]
+  },
+  {
+    "id": "48",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "plastic deformation"
+    },
+    "frames": {
+      "input": "input/data_48.png",
+      "intermediate_1": "intermediate_1/data_48.png",
+      "intermediate_2": "intermediate_2/data_48.png",
+      "output": "output/data_48.png"
+    },
+    "instruction": {
+      "global": "What would happen to this copper pillar after the hydraulic press partially descends and then lifts",
+      "steps": [
+        "The press descends, causing the copper cylinder to shorten vertically and bulge outward.",
+        "The cylinder undergoes further compression, becoming slightly shorter and wider.",
+        "The cylinder is flattened into a short, squat shape; a gloved hand enters the frame."
+      ]
+    },
+    "explain": [
+      "Compressive stress exceeds yield strength, causing plastic deformation and lateral expansion (barreling).",
+      "Continued plastic flow maintains constant volume by increasing cross-sectional area as height decreases.",
+      "Accumulated strain under high pressure results in significant permanent geometric deformation."
+    ],
+    "invariants": [
+      "Copper material composition",
+      "Hydraulic press base plate",
+      "Green background wall",
+      "Vertical direction of applied force",
+      "Camera viewing angle"
+    ]
+  },
+  {
+    "id": "60",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "plastic deformation"
+    },
+    "frames": {
+      "input": "input/data_60.png",
+      "intermediate_1": "intermediate_1/data_60.png",
+      "intermediate_2": "intermediate_2/data_60.png",
+      "output": "output/data_60.png"
+    },
+    "instruction": {
+      "global": "What would happen to this watermelon-shaped clay when pressed firmly by a hand",
+      "steps": [
+        "Hands apply outward tension, causing the green rind to crack and reveal pink foam.",
+        "The fissure widens significantly as pulling continues, exposing the porous internal structure.",
+        "The object is torn completely into two separate halves with jagged, textured surfaces."
+      ]
+    },
+    "explain": [
+      "Applied tensile stress exceeds the material's yield strength, initiating fracture.",
+      "Continued external work propagates the crack through the material matrix.",
+      "Sustained tension causes complete structural failure and separation."
+    ],
+    "invariants": [
+      "Camera angle and framing",
+      "Background wooden tray",
+      "Watermelon props in background",
+      "Lighting conditions",
+      "Operator's hands"
+    ]
+  },
+  {
+    "id": "51",
+    "class": {
+      "primary": "Deformation & Fracture",
+      "sub": "plastic deformation"
+    },
+    "frames": {
+      "input": "input/data_51.png",
+      "intermediate_1": "intermediate_1/data_51.png",
+      "intermediate_2": "intermediate_2/data_51.png",
+      "output": "output/data_51.png"
+    },
+    "instruction": {
+      "global": "What would happen to this glowing red-hot nickel ball after the hydraulic press fully descends and remains for a long time",
+      "steps": [
+        "Hydraulic press descends, contacting the sphere and causing initial flattening.",
+        "Continued compression flattens the sphere into a wider, red-hot disc shape.",
+        "Object flattens further and turns dark grey as it loses incandescence."
+      ]
+    },
+    "explain": [
+      "Compressive stress exceeds the material's yield strength, initiating plastic deformation.",
+      "Continuous plastic flow spreads material laterally under sustained vertical force.",
+      "Rapid conductive heat transfer to the cold press plates causes quenching."
+    ],
+    "invariants": [
+      "Camera viewpoint",
+      "Bottom metal base position",
+      "Text overlay \"Red Hot Nickel Ball\"",
+      "Yellow warning sign background",
+      "Pressure gauge housing"
+    ]
+  }
+]

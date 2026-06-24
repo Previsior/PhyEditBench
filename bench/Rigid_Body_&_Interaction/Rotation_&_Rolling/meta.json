@@ -1,0 +1,812 @@
+[
+  {
+    "id": "164",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Rotation & Rolling"
+    },
+    "frames": {
+      "input": "input/data_164.png",
+      "intermediate_1": "intermediate_1/data_164.png",
+      "intermediate_2": "intermediate_2/data_164.png",
+      "output": "output/data_164.png"
+    },
+    "instruction": {
+      "global": "Reinstall the slipped bicycle chain onto the front chainring by rotating the pedal and guiding the chain back into place.",
+      "steps": [
+        "Grasp the pedal and begin rotating the crank arm clockwise.",
+        "Continue rotating the crank arm to pull the chain toward the top of the chainring.",
+        "Use both hands to align the chain links with the chainring teeth while completing the rotation until the chain is fully seated."
+      ]
+    },
+    "explain": [
+      "Mechanical force is applied to the crank arm, initiating the rotation of the drivetrain components.",
+      "The rotation of the crank creates tension in the chain, drawing the slack portion toward the sprocket.",
+      "Manual guidance aligns the chain links with the sprocket teeth, allowing the gear's rotation to lock the chain back into its functional path."
+    ],
+    "invariants": [
+      "Static camera viewpoint",
+      "Upside-down white bicycle frame",
+      "Ground texture and background",
+      "Person's clothing (blue jeans and tan jacket)",
+      "Consistent outdoor lighting"
+    ]
+  },
+  {
+    "id": "165",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Rotation & Rolling"
+    },
+    "frames": {
+      "input": "input/data_165.png",
+      "intermediate_1": "intermediate_1/data_165.png",
+      "intermediate_2": "intermediate_2/data_165.png",
+      "output": "output/data_165.png"
+    },
+    "instruction": {
+      "global": "Lift the rear wheel of the bicycle, move it forward as the person walks, and then set it back down on the ground with the kickstand deployed.",
+      "steps": [
+        "Lift the rear wheel off the dirt path while the person begins to step forward with their left foot.",
+        "Maintain the wheel's elevation as the person completes their stride, allowing the wheel to rotate slightly in the air.",
+        "Lower the rear wheel back onto the ground and extend the kickstand to a supporting position."
+      ]
+    },
+    "explain": [
+      "The person applies upward force on the frame, overcoming gravity to lift the tire from the ground while their gait shifts their center of mass forward.",
+      "The wheel remains suspended and rotates due to inertia or manual adjustment as the person's legs move through a walking cycle.",
+      "The wheel returns to the ground under gravity, and the kickstand is mechanically engaged to provide a stable tripod base for the stationary bike."
+    ],
+    "invariants": [
+      "Static camera viewpoint",
+      "Dappled sunlight and shadows on the dirt path",
+      "White bicycle frame and silver components",
+      "Background foliage and forest setting",
+      "Person's denim jeans and sneaker style"
+    ]
+  },
+  {
+    "id": "166",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Rotation & Rolling"
+    },
+    "frames": {
+      "input": "input/data_166.png",
+      "intermediate_1": "intermediate_1/data_166.png",
+      "intermediate_2": "intermediate_2/data_166.png",
+      "output": "output/data_166.png"
+    },
+    "instruction": {
+      "global": "Spin the coin on the wooden table until it loses momentum and comes to a complete rest lying flat.",
+      "steps": [
+        "Initiate a rapid spin of the coin on its edge, maintaining a nearly vertical orientation.",
+        "Tilt the spinning coin as it loses rotational speed, bringing its edge closer to the table surface.",
+        "Allow the coin to settle completely flat on the wooden surface after the spinning stops."
+      ]
+    },
+    "explain": [
+      "Rotational kinetic energy is applied to the coin, causing it to spin on its axis while balanced on its edge.",
+      "Friction and air resistance dissipate the coin's energy, causing the gyroscopic stability to weaken and the coin to tilt.",
+      "Gravity pulls the center of mass down as the rotational speed becomes insufficient to keep the coin upright, resulting in it lying flat."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Wooden table texture and grain",
+      "Warm directional lighting and reflections",
+      "The specific coin design and material"
+    ]
+  },
+  {
+    "id": "167",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Rotation & Rolling"
+    },
+    "frames": {
+      "input": "input/data_167.png",
+      "intermediate_1": "intermediate_1/data_167.png",
+      "intermediate_2": "intermediate_2/data_167.png",
+      "output": "output/data_167.png"
+    },
+    "instruction": {
+      "global": "Throw two additional red dice onto the surface to collide with and scatter the existing pair of dice.",
+      "steps": [
+        "Introduce two red dice falling into the frame from above with significant motion blur while the original pair remains stationary.",
+        "Depict the falling dice impacting the surface and bouncing, with the collision displacing the original left die further back.",
+        "Settle all four dice into stationary positions, maintaining a shallow depth of field where the background dice are blurred."
+      ]
+    },
+    "explain": [
+      "Two new dice are tossed into the scene, appearing with motion blur as they accelerate downward due to gravity.",
+      "The falling dice strike the table and transfer kinetic energy to the existing dice through physical collision and bouncing.",
+      "Friction and energy loss during impacts cause the dice to stop moving, resulting in a final scattered arrangement."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "White table surface and neutral background",
+      "Consistent lighting and soft shadows",
+      "Red color and translucent material of the dice"
+    ]
+  },
+  {
+    "id": "168",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Rotation & Rolling"
+    },
+    "frames": {
+      "input": "input/data_168.png",
+      "intermediate_1": "intermediate_1/data_168.png",
+      "intermediate_2": "intermediate_2/data_168.png",
+      "output": "output/data_168.png"
+    },
+    "instruction": {
+      "global": "Rotate the Ferris wheel clockwise while cycling the LED light patterns from purple/red to red/white, then to solid green, and finally to solid blue.",
+      "steps": [
+        "Rotate the Ferris wheel slightly clockwise and change the LED light pattern to alternating red and white segments.",
+        "Continue the clockwise rotation and switch all the LED lights on the spokes and rim to a solid green color.",
+        "Rotate the wheel further clockwise and change the LED light color from green to a solid blue."
+      ]
+    },
+    "explain": [
+      "The mechanical motor drives the wheel clockwise while the programmable LED controller updates the light pattern to red and white.",
+      "The wheel continues its rotation as the electronic control system switches the LED output to a uniform green hue.",
+      "The wheel maintains its angular movement, and the LED system shifts the light emission to a solid blue color."
+    ],
+    "invariants": [
+      "Static camera viewpoint",
+      "Black night sky background",
+      "Ground-level structures and lighting",
+      "Ferris wheel structural frame and gondola count"
+    ]
+  },
+  {
+    "id": "169",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Rotation & Rolling"
+    },
+    "frames": {
+      "input": "input/data_169.png",
+      "intermediate_1": "intermediate_1/data_169.png",
+      "intermediate_2": "intermediate_2/data_169.png",
+      "output": "output/data_169.png"
+    },
+    "instruction": {
+      "global": "Rotate the blades of the wind turbines clockwise while the cows graze in the field.",
+      "steps": [
+        "Rotate the blades of the three wind turbines clockwise by approximately 30 degrees and shift the positions of the grazing cows slightly.",
+        "Continue rotating the turbine blades clockwise by another 30 degrees and adjust the cows' postures as they move across the grass.",
+        "Rotate the turbine blades clockwise for a third increment and move the cows further to reflect continuous grazing."
+      ]
+    },
+    "explain": [
+      "Wind energy causes the turbine rotors to spin around their horizontal axes, while the cows move to find fresh patches of grass.",
+      "Sustained wind maintains the angular velocity of the turbines, and the cows' locomotion results in new spatial coordinates on the pasture.",
+      "The mechanical rotation of the blades continues under wind pressure, and the biological movement of the cattle persists as they forage."
+    ],
+    "invariants": [
+      "Camera viewpoint and focal length",
+      "Background landscape including trees and clear blue sky",
+      "Lighting conditions and shadow directions",
+      "Number of wind turbines and cows",
+      "Structural integrity of the turbine towers"
+    ]
+  },
+  {
+    "id": "170",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Rotation & Rolling"
+    },
+    "frames": {
+      "input": "input/data_170.png",
+      "intermediate_1": "intermediate_1/data_170.png",
+      "intermediate_2": "intermediate_2/data_170.png",
+      "output": "output/data_170.png"
+    },
+    "instruction": {
+      "global": "Rotate the ceiling fan clockwise while maintaining consistent motion blur and lighting.",
+      "steps": [
+        "Rotate the fan blades clockwise by approximately 15 degrees from their initial position.",
+        "Continue the clockwise rotation of the fan blades by another 15 degrees.",
+        "Advance the fan blades further clockwise to complete the rotational sequence."
+      ]
+    },
+    "explain": [
+      "The motor's torque causes the fan assembly to rotate around its central axis, shifting the angular position of the blades.",
+      "Due to constant angular velocity, the blades move to a new position while the motion blur remains consistent with the exposure time.",
+      "The continuous rotation further advances the blades, changing their orientation relative to the static ceiling background."
+    ],
+    "invariants": [
+      "Fixed camera viewpoint and angle.",
+      "Corrugated metal ceiling background and insulation texture.",
+      "Fan housing, pull chain, and mounting hardware position.",
+      "Ambient lighting and shadow patterns on the ceiling.",
+      "Consistent degree of motion blur on the blades."
+    ]
+  },
+  {
+    "id": "171",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Rotation & Rolling"
+    },
+    "frames": {
+      "input": "input/data_171.png",
+      "intermediate_1": "intermediate_1/data_171.png",
+      "intermediate_2": "intermediate_2/data_171.png",
+      "output": "output/data_171.png"
+    },
+    "instruction": {
+      "global": "Rotate the vinyl record clockwise on the turntable while keeping the tonearm and background static.",
+      "steps": [
+        "Rotate the vinyl record and its center label approximately 90 degrees clockwise.",
+        "Continue the clockwise rotation of the record by another 90 degrees.",
+        "Rotate the record clockwise further until the label text is oriented towards the left side of the frame."
+      ]
+    },
+    "explain": [
+      "The turntable platter rotates clockwise due to the motor's torque, changing the orientation of the vinyl record and its center label.",
+      "Angular momentum keeps the record spinning at a constant speed, resulting in a further shift of the label's position.",
+      "The continuous circular motion of the record around the spindle completes the observed rotation sequence."
+    ],
+    "invariants": [
+      "Camera viewpoint and top-down perspective.",
+      "Position and appearance of the surrounding album covers.",
+      "Position of the turntable tonearm and the black frame.",
+      "Lighting conditions and the shadow cast across the record."
+    ]
+  },
+  {
+    "id": "172",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Rotation & Rolling"
+    },
+    "frames": {
+      "input": "input/data_172.png",
+      "intermediate_1": "intermediate_1/data_172.png",
+      "intermediate_2": "intermediate_2/data_172.png",
+      "output": "output/data_172.png"
+    },
+    "instruction": {
+      "global": "Rotate the ceiling fan blades clockwise in a continuous, smooth motion.",
+      "steps": [
+        "Rotate the fan blades clockwise by approximately 30 degrees from their starting position.",
+        "Continue the clockwise rotation of the blades by another 30 degrees.",
+        "Advance the fan blades further clockwise to complete the motion sequence."
+      ]
+    },
+    "explain": [
+      "The electric motor provides torque, causing the fan blades to begin rotating clockwise around the central hub.",
+      "Angular momentum maintains the circular motion of the blades at a consistent speed.",
+      "The blades continue their trajectory, with motion blur appearing along the path of rotation due to the shutter speed."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle.",
+      "Ceiling tile grid and cloud-patterned texture.",
+      "Central fan housing and the four glass light fixtures.",
+      "Ambient indoor lighting and shadows."
+    ]
+  },
+  {
+    "id": "173",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Rotation & Rolling"
+    },
+    "frames": {
+      "input": "input/data_173.png",
+      "intermediate_1": "intermediate_1/data_173.png",
+      "intermediate_2": "intermediate_2/data_173.png",
+      "output": "output/data_173.png"
+    },
+    "instruction": {
+      "global": "Unroll the remaining toilet paper from the holder until only the empty cardboard tube remains.",
+      "steps": [
+        "A hand enters the frame and pulls the loose end of the toilet paper diagonally downwards.",
+        "The hand pulls further, causing the roll to rotate and unspool the last layer of paper.",
+        "Remove the hand and the detached paper, leaving only the bare cardboard tube on the holder."
+      ]
+    },
+    "explain": [
+      "External force is applied to the paper, creating tension and initiating the rotation of the roll on its axis.",
+      "The rotational motion of the roll allows the paper to unwind as the hand continues to apply a pulling force.",
+      "The paper is fully depleted and detached from the tube, returning the holder to a static state with no paper left."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "White tiled wall background",
+      "Design and position of the white suction-cup toilet paper holder",
+      "Ambient lighting and shadows"
+    ]
+  },
+  {
+    "id": "174",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Rotation & Rolling"
+    },
+    "frames": {
+      "input": "input/data_174.png",
+      "intermediate_1": "intermediate_1/data_174.png",
+      "intermediate_2": "intermediate_2/data_174.png",
+      "output": "output/data_174.png"
+    },
+    "instruction": {
+      "global": "Make the front-right toilet paper roll fall forward, roll into the foreground, and partially unroll.",
+      "steps": [
+        "Tip the front-right toilet paper roll forward so it begins to roll towards the viewer.",
+        "Continue the rolling motion of the toilet paper roll until it reaches the center foreground.",
+        "Bring the roll to a stop and unroll a short strip of paper from the bottom onto the surface."
+      ]
+    },
+    "explain": [
+      "The roll tips over its bottom edge, converting potential energy into kinetic energy as it begins to roll on its cylindrical side.",
+      "The roll travels across the flat surface, moving closer to the camera while maintaining its orientation.",
+      "Friction and a loss of momentum bring the roll to a halt, while the loose end of the paper strip extends forward due to inertia or gravity."
+    ],
+    "invariants": [
+      "Static camera viewpoint",
+      "Plain white background and reflective surface",
+      "Consistent soft lighting and shadows",
+      "Positions of the remaining five toilet paper rolls",
+      "Texture and color of the toilet paper"
+    ]
+  },
+  {
+    "id": "175",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Rotation & Rolling"
+    },
+    "frames": {
+      "input": "input/data_175.png",
+      "intermediate_1": "intermediate_1/data_175.png",
+      "intermediate_2": "intermediate_2/data_175.png",
+      "output": "output/data_175.png"
+    },
+    "instruction": {
+      "global": "Rotate the foreground iridescent fidget spinner clockwise and the background fidget spinner counter-clockwise on the flat surface.",
+      "steps": [
+        "Rotate the foreground spinner clockwise and the background spinner counter-clockwise by a small increment, shifting the iridescent highlights.",
+        "Continue the rotation of both spinners in their respective directions, ensuring the motion blur remains consistent with the speed.",
+        "Complete the rotation sequence so the foreground spinner's arms point towards the top and the background spinner's arms point towards the bottom-left."
+      ]
+    },
+    "explain": [
+      "The central bearings allow for low-friction angular rotation around the center of mass of each spinner.",
+      "As the spinners rotate, the thin-film interference on the iridescent coating causes the perceived colors to shift based on the angle of light reflection.",
+      "Kinetic energy maintains the rotation of the weighted arms, while slight motion blur indicates the velocity of the outer edges relative to the camera shutter."
+    ],
+    "invariants": [
+      "Camera viewpoint and focal length",
+      "White surface background and ambient lighting",
+      "Physical structure and material of the fidget spinners",
+      "Central gold-colored bearing caps"
+    ]
+  },
+  {
+    "id": "176",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Rotation & Rolling"
+    },
+    "frames": {
+      "input": "input/data_176.png",
+      "intermediate_1": "intermediate_1/data_176.png",
+      "intermediate_2": "intermediate_2/data_176.png",
+      "output": "output/data_176.png"
+    },
+    "instruction": {
+      "global": "Cycle the LED light colors on the Ferris wheel through a sequence of color transitions while keeping the structure and background static.",
+      "steps": [
+        "Shift the outer rim lights from red to a green-yellow gradient and change the spoke lights from green to blue.",
+        "Transition the outer rim lights to a solid green and shift the spoke lights to a blue-purple gradient.",
+        "Change the outer rim lights to a purple-red gradient and return the spoke lights to a green-yellow gradient."
+      ]
+    },
+    "explain": [
+      "The LED controllers on the Ferris wheel update the color values, shifting the emitted light spectrum across the rim and spokes.",
+      "The light show sequence continues, moving the color phase further along the wheel's structural elements.",
+      "The programmed light pattern completes a transition cycle, resulting in a new distribution of warm and cool tones across the frame."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Physical structure of the Ferris wheel and gondolas",
+      "Background night sky and surrounding carnival stalls",
+      "Foreground trees and silhouettes",
+      "Ambient lighting from secondary sources"
+    ]
+  },
+  {
+    "id": "177",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Rotation & Rolling"
+    },
+    "frames": {
+      "input": "input/data_177.png",
+      "intermediate_1": "intermediate_1/data_177.png",
+      "intermediate_2": "intermediate_2/data_177.png",
+      "output": "output/data_177.png"
+    },
+    "instruction": {
+      "global": "Roll the translucent orange die on the dark textured surface until it comes to a complete stop.",
+      "steps": [
+        "Rotate the spinning die clockwise as it balances on its bottom corner, maintaining motion blur.",
+        "Continue the rotation of the die, shifting its orientation as it begins to tumble toward a flat face.",
+        "Settle the die onto its bottom face, bringing it to a complete rest with the top face clearly visible."
+      ]
+    },
+    "explain": [
+      "Kinetic energy causes the die to spin rapidly on a single point of contact, resulting in rotational motion blur and a tilted axis.",
+      "Friction and gravity cause the die to lose rotational stability, making it wobble and tilt as it loses energy and prepares to land.",
+      "The die loses its remaining kinetic energy through friction with the surface, eventually landing flat on one of its faces due to gravity and coming to a halt."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Dark, grainy surface texture",
+      "Cool blue directional lighting",
+      "Translucent orange material of the die"
+    ]
+  },
+  {
+    "id": "178",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Rotation & Rolling"
+    },
+    "frames": {
+      "input": "input/data_178.png",
+      "intermediate_1": "intermediate_1/data_178.png",
+      "intermediate_2": "intermediate_2/data_178.png",
+      "output": "output/data_178.png"
+    },
+    "instruction": {
+      "global": "Roll two oranges from the left side of the frame past a stationary orange on the right, then show the stationary orange settling back into a still position.",
+      "steps": [
+        "Introduce two oranges entering from the left with horizontal motion blur, moving toward the stationary orange on the right.",
+        "Remove the moving oranges as they exit the frame, leaving the stationary orange with a slight rotation and motion blur from the disturbance.",
+        "Stabilize the remaining orange on the right until it is completely stationary and in sharp focus."
+      ]
+    },
+    "explain": [
+      "Two oranges are propelled across the surface, their speed resulting in visible motion blur as they approach the stationary object.",
+      "The moving oranges pass out of the camera's view, and the stationary orange exhibits a physical reaction to the air displacement or slight contact, showing residual motion.",
+      "Friction between the orange's skin and the table surface dampens the kinetic energy, bringing the object to a state of static equilibrium."
+    ],
+    "invariants": [
+      "Grey background wall color and texture",
+      "Light-colored tabletop surface",
+      "Fixed camera viewpoint and framing",
+      "Consistent shadow patterns from the window/grid light source"
+    ]
+  },
+  {
+    "id": "179",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Rotation & Rolling"
+    },
+    "frames": {
+      "input": "input/data_179.png",
+      "intermediate_1": "intermediate_1/data_179.png",
+      "intermediate_2": "intermediate_2/data_179.png",
+      "output": "output/data_179.png"
+    },
+    "instruction": {
+      "global": "Roll the bowling ball down the lane to strike the pins, causing them to scatter and the pinsetter barrier to descend.",
+      "steps": [
+        "Move the bowling ball forward until it impacts the head pin, causing the center pins to tilt and wobble.",
+        "Knock the majority of the pins into the pit as the ball rolls past them, and begin lowering the orange 'STOP' barrier.",
+        "Fully lower the 'STOP' barrier and clear the fallen pins from the lane, leaving only a single standing pin in the back."
+      ]
+    },
+    "explain": [
+      "The bowling ball transfers kinetic energy to the pins upon impact, overcoming their static equilibrium and causing them to tip.",
+      "Momentum carries the ball and the struck pins backward into the pit, while the mechanical pinsetter initiates the sweep cycle.",
+      "Gravity and mechanical force from the sweep bar remove the fallen pins from the deck, while the barrier reaches its lowest point to block the lane."
+    ],
+    "invariants": [
+      "Static camera viewpoint and angle.",
+      "Wood grain texture and glossy reflections on the bowling lane.",
+      "The blue '700 Brunswick' header at the top of the frame.",
+      "Lighting and shadows on the side gutters and lane surface."
+    ]
+  },
+  {
+    "id": "180",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Rotation & Rolling"
+    },
+    "frames": {
+      "input": "input/data_180.png",
+      "intermediate_1": "intermediate_1/data_180.png",
+      "intermediate_2": "intermediate_2/data_180.png",
+      "output": "output/data_180.png"
+    },
+    "instruction": {
+      "global": "Spin the gold coin on the wooden table and let it come to a complete rest.",
+      "steps": [
+        "Remove the hand and show the coin spinning rapidly on its edge.",
+        "Show the coin losing rotational speed and tilting as it begins to wobble.",
+        "Show the coin lying completely flat on the table surface after it stops moving."
+      ]
+    },
+    "explain": [
+      "The hand applies torque to the coin, initiating a rapid spin on its vertical axis while the hand is removed from the frame.",
+      "Friction and air resistance cause the coin to lose kinetic energy, leading to a precessional wobble and a decrease in the tilt angle relative to the table.",
+      "The coin loses all rotational energy and gravity pulls it flat against the table surface into a stable, static position."
+    ],
+    "invariants": [
+      "wooden table texture and grain",
+      "camera viewpoint and angle",
+      "lighting conditions and color temperature",
+      "coin design and material appearance"
+    ]
+  },
+  {
+    "id": "181",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Rotation & Rolling"
+    },
+    "frames": {
+      "input": "input/data_181.png",
+      "intermediate_1": "intermediate_1/data_181.png",
+      "intermediate_2": "intermediate_2/data_181.png",
+      "output": "output/data_181.png"
+    },
+    "instruction": {
+      "global": "Introduce a second orange on the floor and show it rolling from right to left in front of the concrete blocks.",
+      "steps": [
+        "Place a second orange on the floor surface directly in front of the bottom concrete block.",
+        "Shift the position of the orange on the floor slightly to the left.",
+        "Move the orange further to the left so it sits near the left corner of the bottom block."
+      ]
+    },
+    "explain": [
+      "A second orange is added to the scene, resting on the flat surface under the influence of gravity.",
+      "The orange undergoes a rolling motion, changing its horizontal coordinates while maintaining contact with the floor.",
+      "The orange continues its lateral movement across the frame, demonstrating momentum and friction against the surface."
+    ],
+    "invariants": [
+      "Static camera viewpoint and framing.",
+      "Position and texture of the two stacked concrete blocks.",
+      "The first orange remains stationary on top of the upper block.",
+      "Consistent lighting, shadows, and background colors."
+    ]
+  },
+  {
+    "id": "182",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Rotation & Rolling"
+    },
+    "frames": {
+      "input": "input/data_182.png",
+      "intermediate_1": "intermediate_1/data_182.png",
+      "intermediate_2": "intermediate_2/data_182.png",
+      "output": "output/data_182.png"
+    },
+    "instruction": {
+      "global": "Rotate the wind turbine blades clockwise by 180 degrees.",
+      "steps": [
+        "Rotate the turbine blades clockwise so the lower-left blade moves to a horizontal position on the left.",
+        "Continue the clockwise rotation until the horizontal blade reaches the upper-left diagonal position.",
+        "Complete the rotation by moving the upper-left blade to the upper-right diagonal position."
+      ]
+    },
+    "explain": [
+      "Wind energy exerts aerodynamic torque on the blades, initiating clockwise angular displacement around the hub.",
+      "The angular momentum of the rotor assembly carries the blades further through the upper arc of the rotation cycle.",
+      "Sustained wind pressure maintains the rotational velocity, moving the blades into the next quadrant of the circular path."
+    ],
+    "invariants": [
+      "Camera viewpoint and drone positioning",
+      "Background landscape including fields, roads, and horizon",
+      "Clear blue sky and consistent daylighting",
+      "Structural position and integrity of the turbine tower and nacelle"
+    ]
+  },
+  {
+    "id": "183",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Rotation & Rolling"
+    },
+    "frames": {
+      "input": "input/data_183.png",
+      "intermediate_1": "intermediate_1/data_183.png",
+      "intermediate_2": "intermediate_2/data_183.png",
+      "output": "output/data_183.png"
+    },
+    "instruction": {
+      "global": "Rotate the wooden water wheel clockwise on its central axle.",
+      "steps": [
+        "Rotate the water wheel clockwise by a small increment, shifting the position of the spokes.",
+        "Continue the clockwise rotation of the wheel, ensuring the wet wood textures move with the structure.",
+        "Further rotate the wheel clockwise to complete the motion sequence."
+      ]
+    },
+    "explain": [
+      "The wheel begins to turn clockwise around its central horizontal axis due to mechanical or hydraulic force.",
+      "Angular momentum maintains the rotation, causing the buckets and spokes to shift their orientation relative to the frame.",
+      "The wheel reaches a new rotational position, with the wet surfaces reflecting the sunlight at a different angle."
+    ],
+    "invariants": [
+      "Static camera viewpoint and framing.",
+      "Background mountains, trees, and sky.",
+      "Foreground lily pads and pond surface.",
+      "The stationary wooden A-frame support structure.",
+      "Consistent daylight and shadow directions."
+    ]
+  },
+  {
+    "id": "184",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Rotation & Rolling"
+    },
+    "frames": {
+      "input": "input/data_184.png",
+      "intermediate_1": "intermediate_1/data_184.png",
+      "intermediate_2": "intermediate_2/data_184.png",
+      "output": "output/data_184.png"
+    },
+    "instruction": {
+      "global": "Rotate the windmill blades clockwise while keeping the rest of the structure and background static.",
+      "steps": [
+        "Rotate the windmill rotor clockwise by approximately 15 degrees.",
+        "Continue the clockwise rotation of the rotor by another 15 degrees.",
+        "Advance the rotor further clockwise to complete the motion sequence."
+      ]
+    },
+    "explain": [
+      "Wind pressure against the pitched blades generates torque, initiating clockwise angular displacement.",
+      "The rotor maintains angular momentum as wind energy continues to drive the blades along their circular path.",
+      "Sustained aerodynamic forces keep the windmill in motion, shifting the blades to a new rotational position."
+    ],
+    "invariants": [
+      "Camera viewpoint and framing",
+      "Background hills and sky",
+      "Windmill tower and tail vane orientation",
+      "Lighting and shadow direction",
+      "Foreground foliage"
+    ]
+  },
+  {
+    "id": "185",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Rotation & Rolling"
+    },
+    "frames": {
+      "input": "input/data_185.png",
+      "intermediate_1": "intermediate_1/data_185.png",
+      "intermediate_2": "intermediate_2/data_185.png",
+      "output": "output/data_185.png"
+    },
+    "instruction": {
+      "global": "Rotate the wind turbine blades clockwise in a continuous motion.",
+      "steps": [
+        "Rotate the three turbine blades clockwise by approximately 15 degrees.",
+        "Continue the clockwise rotation of the blades by another 20 degrees.",
+        "Rotate the blades further clockwise to complete the sequence."
+      ]
+    },
+    "explain": [
+      "The wind pushes against the pitched blades, initiating a clockwise rotation around the hub.",
+      "Kinetic energy from the wind is converted into rotational motion, moving the blades further along their circular path.",
+      "The blades continue their steady angular displacement due to sustained wind force and inertia."
+    ],
+    "invariants": [
+      "Static camera angle and position.",
+      "Uniform clear blue sky background.",
+      "Fixed position and structure of the turbine tower and nacelle.",
+      "Consistent bright, direct sunlight and shadows on the turbine structure."
+    ]
+  },
+  {
+    "id": "186",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Rotation & Rolling"
+    },
+    "frames": {
+      "input": "input/data_186.png",
+      "intermediate_1": "intermediate_1/data_186.png",
+      "intermediate_2": "intermediate_2/data_186.png",
+      "output": "output/data_186.png"
+    },
+    "instruction": {
+      "global": "Spin the green fidget spinner held between the thumb and finger to create a continuous rotational motion blur.",
+      "steps": [
+        "Apply a tangential force to the edge of the fidget spinner to initiate a fast clockwise rotation, causing the blades to blur.",
+        "Continue the rotation of the spinner so that the blurred lobes shift their angular position clockwise.",
+        "Progress the rotation further, showing the blurred lobes in a new orientation while maintaining the same speed and blur intensity."
+      ]
+    },
+    "explain": [
+      "Torque is applied to the outer frame of the spinner, overcoming static friction and initiating rotational kinetic energy, which results in motion blur due to the high angular velocity.",
+      "The spinner rotates around its central bearing; the motion blur visually represents the path of the lobes as they move to new coordinates in the frame.",
+      "Angular momentum keeps the spinner rotating at a consistent speed, with the blurred regions following the circular trajectory of the lobes."
+    ],
+    "invariants": [
+      "Solid grey background color and texture.",
+      "Position of the thumb and index finger holding the central cap.",
+      "Camera viewpoint and focal length.",
+      "Lighting direction and intensity.",
+      "The green color of the spinner body and the black color of the outer bearings."
+    ]
+  },
+  {
+    "id": "187",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Rotation & Rolling"
+    },
+    "frames": {
+      "input": "input/data_187.png",
+      "intermediate_1": "intermediate_1/data_187.png",
+      "intermediate_2": "intermediate_2/data_187.png",
+      "output": "output/data_187.png"
+    },
+    "instruction": {
+      "global": "Rotate the wooden water wheel clockwise as water falls from the flume onto the buckets.",
+      "steps": [
+        "Rotate the water wheel clockwise by a small increment, shifting the top buckets downward.",
+        "Continue the clockwise rotation of the wheel, moving the spokes and buckets further along their circular path.",
+        "Advance the rotation further clockwise to the final position, ensuring the wet texture on the wood remains consistent."
+      ]
+    },
+    "explain": [
+      "Gravity pulls the water-filled buckets downward, creating torque that initiates the clockwise rotation of the wheel.",
+      "The angular momentum of the heavy wooden structure and the continuous weight of falling water maintain the steady rotation.",
+      "The wheel continues its circular motion around the central axle as water begins to discharge from the lower buckets."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Background wooden structure and surrounding foliage",
+      "Position and flow of the water stream from the flume",
+      "Lighting conditions and shadows on the wood",
+      "Structural integrity and texture of the wooden wheel"
+    ]
+  },
+  {
+    "id": "188",
+    "class": {
+      "primary": "Rigid Body & Interaction",
+      "sub": "Rotation & Rolling"
+    },
+    "frames": {
+      "input": "input/data_188.png",
+      "intermediate_1": "intermediate_1/data_188.png",
+      "intermediate_2": "intermediate_2/data_188.png",
+      "output": "output/data_188.png"
+    },
+    "instruction": {
+      "global": "Start the turntable to make the vinyl record spin clockwise while the tonearm tracks the grooves.",
+      "steps": [
+        "Begin the clockwise rotation of the vinyl record, causing the light reflections on the surface to shift.",
+        "Continue the rotation of the record, moving the center label and the surface highlights further.",
+        "Maintain the steady angular velocity of the record as the tonearm remains engaged in the groove."
+      ]
+    },
+    "explain": [
+      "The turntable motor initiates rotation, causing the platter and the vinyl disc to spin around the center spindle.",
+      "As the record rotates, the anisotropic reflections on the grooved plastic surface change position relative to the fixed light source.",
+      "Kinetic friction and the physical track of the groove keep the needle in place while the disc completes its revolution."
+    ],
+    "invariants": [
+      "Static camera viewpoint and framing.",
+      "Warm, low-key lighting and bokeh background.",
+      "Position and structure of the tonearm and headshell.",
+      "The physical properties and appearance of the turntable base."
+    ]
+  }
+]

@@ -1,0 +1,580 @@
+[
+  {
+    "id": "102",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Splashing & Impact"
+    },
+    "frames": {
+      "input": "input/data_102.png",
+      "intermediate_1": "intermediate_1/data_102.png",
+      "intermediate_2": "intermediate_2/data_102.png",
+      "output": "output/data_102.png"
+    },
+    "instruction": {
+      "global": "Show lime slices falling into water, sinking, and dispersing while creating a trail of bubbles.",
+      "steps": [
+        "Add more lime slices entering the water from the top, increasing the splash and bubble density as they begin to sink.",
+        "Disperse the lime slices further down into the frame, increasing the volume of small air bubbles throughout the water.",
+        "Remove the peripheral lime slices as they sink out of view, leaving two central pieces surrounded by a fine mist of rising bubbles."
+      ]
+    },
+    "explain": [
+      "Gravity pulls the lime slices into the water, displacing fluid and trapping air to create initial turbulence and large bubbles.",
+      "Drag and buoyancy forces act on the sinking slices, causing them to tumble and disperse while the trapped air breaks into smaller bubbles.",
+      "The denser lime slices continue to sink toward the bottom, while the smaller, less dense air bubbles begin to rise toward the surface."
+    ],
+    "invariants": [
+      "Teal-colored water background",
+      "Underwater camera viewpoint",
+      "Bright, diffused lighting",
+      "Visual texture of the lime flesh and green rinds"
+    ]
+  },
+  {
+    "id": "103",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Splashing & Impact"
+    },
+    "frames": {
+      "input": "input/data_103.png",
+      "intermediate_1": "intermediate_1/data_103.png",
+      "intermediate_2": "intermediate_2/data_103.png",
+      "output": "output/data_103.png"
+    },
+    "instruction": {
+      "global": "Move the motorboat from the right side of the frame to the left, leaving a consistent white wake behind it until it exits the frame.",
+      "steps": [
+        "Move the boat from the right edge toward the center, extending the white wake trail behind it.",
+        "Advance the boat further to the left side of the frame, lengthening the wake trail across the water.",
+        "Remove the boat from the left edge of the frame, leaving only the dissipating wake visible on the water surface."
+      ]
+    },
+    "explain": [
+      "The boat's hull displaces water as it moves, creating a V-shaped wake and white foam from the motor's propulsion.",
+      "As the boat maintains speed, the wake trail lengthens and the older sections of the wake begin to spread outward.",
+      "The boat has exited the field of view, but the kinetic energy transferred to the water remains visible as a lingering wake pattern."
+    ],
+    "invariants": [
+      "Camera viewpoint (aerial top-down)",
+      "Water color and surface texture",
+      "Sunlight glint and lighting direction",
+      "Absence of other vessels or landmasses"
+    ]
+  },
+  {
+    "id": "104",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Splashing & Impact"
+    },
+    "frames": {
+      "input": "input/data_104.png",
+      "intermediate_1": "intermediate_1/data_104.png",
+      "intermediate_2": "intermediate_2/data_104.png",
+      "output": "output/data_104.png"
+    },
+    "instruction": {
+      "global": "Fill the glass with more liquid by pouring it over the ice cube until the ice is submerged.",
+      "steps": [
+        "Begin pouring liquid directly onto the top surface of the ice cube, creating wet reflections and ripples.",
+        "Continue pouring liquid to raise the level in the glass, causing the ice cube to become mostly submerged.",
+        "Stop the pour and allow the liquid to settle, with the ice cube now fully surrounded by the increased volume of liquid."
+      ]
+    },
+    "explain": [
+      "Liquid hitting the solid surface of the ice creates a thin film and specular highlights due to surface wetting.",
+      "As the liquid volume increases, the buoyant force acts on the ice cube while the rising fluid level covers more of its surface area.",
+      "Once the external force of the pour is removed, the fluid surface returns to a state of rest and the ice cube reaches hydrostatic equilibrium."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "The specific glass container",
+      "The dark, minimalist background",
+      "Monochrome color palette",
+      "The presence of a single large ice cube"
+    ]
+  },
+  {
+    "id": "105",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Splashing & Impact"
+    },
+    "frames": {
+      "input": "input/data_105.png",
+      "intermediate_1": "intermediate_1/data_105.png",
+      "intermediate_2": "intermediate_2/data_105.png",
+      "output": "output/data_105.png"
+    },
+    "instruction": {
+      "global": "Show a water droplet falling onto a dark liquid surface, creating a splash and concentric ripples that gradually dissipate.",
+      "steps": [
+        "The falling droplet impacts the surface, generating a central vertical splash and expanding concentric ripples.",
+        "The central splash collapses back into the liquid while the ripples continue to travel outward from the center.",
+        "The ripples flatten and spread further across the surface until the water returns to a nearly still state."
+      ]
+    },
+    "explain": [
+      "The kinetic energy of the falling drop is transferred to the surface upon impact, displacing liquid upwards and initiating surface waves.",
+      "Gravity pulls the central column of liquid back down, while the energy continues to propagate outward as transverse waves.",
+      "Viscous damping and the dispersion of energy cause the wave amplitude to decrease as the ripples move away from the impact point."
+    ],
+    "invariants": [
+      "Pitch-black background",
+      "Fixed camera viewpoint",
+      "High-contrast lighting on the water surface",
+      "Monochromatic color palette"
+    ]
+  },
+  {
+    "id": "106",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Splashing & Impact"
+    },
+    "frames": {
+      "input": "input/data_106.png",
+      "intermediate_1": "intermediate_1/data_106.png",
+      "intermediate_2": "intermediate_2/data_106.png",
+      "output": "output/data_106.png"
+    },
+    "instruction": {
+      "global": "Animate the sequence of strawberries falling into a dark tank of water, from initial impact to sinking and bubble formation.",
+      "steps": [
+        "Push the strawberries further underwater and generate a tall, vertical splash column at the surface with a trail of bubbles.",
+        "Deepen the strawberries' position, creating a distinct air cavity around them, and show the splash column starting to break apart.",
+        "Distribute the strawberries at varying depths as they settle, replacing the large splash with surface ripples and a dense cloud of small bubbles."
+      ]
+    },
+    "explain": [
+      "Gravity pulls the strawberries down while the impact momentum displaces water upwards, forming a splash and dragging air down to form bubbles.",
+      "As the strawberries sink, the air dragged down forms a cavity around them; the surface splash reaches its peak height and begins to fall back due to gravity.",
+      "Buoyancy and drag slow the strawberries' descent; the surface splash dissipates into ripples, and the air cavity breaks up into smaller rising bubbles."
+    ],
+    "invariants": [
+      "Black background",
+      "Horizontal water surface level",
+      "High-contrast lighting",
+      "Side-view camera perspective",
+      "Strawberry texture and color"
+    ]
+  },
+  {
+    "id": "107",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Splashing & Impact"
+    },
+    "frames": {
+      "input": "input/data_107.png",
+      "intermediate_1": "intermediate_1/data_107.png",
+      "intermediate_2": "intermediate_2/data_107.png",
+      "output": "output/data_107.png"
+    },
+    "instruction": {
+      "global": "Drop lemons and limes into a dark tank of water and let them settle at various depths.",
+      "steps": [
+        "Introduce more citrus fruits into the water, pushing them deeper and creating a large trail of bubbles and surface turbulence.",
+        "Allow the fruits to drift and rotate as the dense trail of bubbles begins to rise and disperse.",
+        "Let the fruits reach a state of near-equilibrium at different depths while the water surface and remaining bubbles stabilize."
+      ]
+    },
+    "explain": [
+      "The kinetic energy of the falling fruit displaces water and traps air, creating a downward wake of bubbles and significant surface splashing.",
+      "Buoyancy forces begin to counteract the initial momentum, causing the fruits to slow down and change direction while air bubbles rise rapidly due to their low density.",
+      "Drag and buoyancy reach a balance, resulting in slower fruit movement, while surface tension and gravity work to smooth the water's surface."
+    ],
+    "invariants": [
+      "Pitch-black background",
+      "Side-view camera perspective",
+      "Consistent lighting from the side",
+      "Presence of lemons and limes",
+      "Water tank environment"
+    ]
+  },
+  {
+    "id": "108",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Splashing & Impact"
+    },
+    "frames": {
+      "input": "input/data_108.png",
+      "intermediate_1": "intermediate_1/data_108.png",
+      "intermediate_2": "intermediate_2/data_108.png",
+      "output": "output/data_108.png"
+    },
+    "instruction": {
+      "global": "A small stone is thrown into the water, creating a splash and subsequent ripples.",
+      "steps": [
+        "Place a small stone at the moment of impact with the water surface, showing a small initial splash.",
+        "Evolve the impact into a vertical water splash with droplets rising into the air.",
+        "Replace the vertical splash with a widening circular ripple and surface foam as the water settles."
+      ]
+    },
+    "explain": [
+      "Kinetic energy from the falling stone is transferred to the water surface upon contact, initiating a displacement.",
+      "The displacement of water by the sinking stone creates a cavity that collapses, forcing a column of water and droplets upwards due to momentum.",
+      "Gravity pulls the splash back down, and the energy dissipates outwards as concentric surface waves while air trapped during the impact forms bubbles."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Dark water color and ambient lighting",
+      "Overall water surface texture"
+    ]
+  },
+  {
+    "id": "109",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Splashing & Impact"
+    },
+    "frames": {
+      "input": "input/data_109.png",
+      "intermediate_1": "intermediate_1/data_109.png",
+      "intermediate_2": "intermediate_2/data_109.png",
+      "output": "output/data_109.png"
+    },
+    "instruction": {
+      "global": "Simulate a sequence of water drops falling into a still liquid surface, resulting in expanding concentric ripples.",
+      "steps": [
+        "Move the falling drops downward and show the first drop impacting the surface to create a small crater.",
+        "Remove the remaining falling drops as they impact the surface and generate the initial set of concentric ripples.",
+        "Expand the concentric ripples outward across the surface while maintaining the central point of impact."
+      ]
+    },
+    "explain": [
+      "Gravity accelerates the drops downward; the leading drop hits the surface, displacing the liquid and creating an impact site.",
+      "The kinetic energy of the falling drops is transferred to the surface liquid, initiating wave propagation in the form of ripples.",
+      "The waves travel radially from the source, increasing the ripple diameter as the energy dissipates across the surface."
+    ],
+    "invariants": [
+      "Blue gradient background",
+      "Lighting direction and intensity",
+      "Camera viewpoint and angle",
+      "Horizon line position"
+    ]
+  },
+  {
+    "id": "110",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Splashing & Impact"
+    },
+    "frames": {
+      "input": "input/data_110.png",
+      "intermediate_1": "intermediate_1/data_110.png",
+      "intermediate_2": "intermediate_2/data_110.png",
+      "output": "output/data_110.png"
+    },
+    "instruction": {
+      "global": "Animate the water surface as a secondary droplet falls and creates a new set of ripples while the initial ripples expand and dissipate.",
+      "steps": [
+        "Lower the suspended water droplet towards the center of the ripples while expanding the existing concentric wave patterns.",
+        "Make the falling droplet impact the water surface, creating a small central peak and a new set of inner ripples.",
+        "Flatten the central impact point and continue the outward propagation of all ripple rings, reducing their amplitude."
+      ]
+    },
+    "explain": [
+      "Gravity pulls the secondary droplet downward while the energy from the initial impact continues to travel outward as transverse waves.",
+      "The kinetic energy of the falling droplet is transferred to the surface, causing a displacement and initiating a new wave front.",
+      "Surface tension and gravity work to restore the water surface to equilibrium, causing the ripples to spread out and lose height."
+    ],
+    "invariants": [
+      "Camera viewpoint and oblique angle",
+      "Blue-toned lighting and reflective surface properties",
+      "Concentric nature of the ripple patterns",
+      "Central point of impact"
+    ]
+  },
+  {
+    "id": "111",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Splashing & Impact"
+    },
+    "frames": {
+      "input": "input/data_111.png",
+      "intermediate_1": "intermediate_1/data_111.png",
+      "intermediate_2": "intermediate_2/data_111.png",
+      "output": "output/data_111.png"
+    },
+    "instruction": {
+      "global": "Simulate a single drop of coffee falling into the cup, generating a splash and ripples that gradually dissipate until the surface is still.",
+      "steps": [
+        "Introduce a falling droplet and a central splash peak on the coffee surface with concentric ripples.",
+        "Remove the droplet and the splash peak, showing the ripples expanding and losing height.",
+        "Flatten the remaining ripples until the coffee surface is perfectly still and reflective."
+      ]
+    },
+    "explain": [
+      "A drop of liquid impacts the surface, causing a vertical splash peak and initiating concentric capillary waves.",
+      "The central splash peak collapses due to gravity and surface tension, while the ripples propagate outward.",
+      "Viscosity and surface tension dampen the ripples until the kinetic energy is dissipated and the surface returns to equilibrium."
+    ],
+    "invariants": [
+      "Camera viewpoint and framing",
+      "White ceramic cup position and geometry",
+      "Neutral background lighting and color",
+      "Dark coffee color and opacity"
+    ]
+  },
+  {
+    "id": "112",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Splashing & Impact"
+    },
+    "frames": {
+      "input": "input/data_112.png",
+      "intermediate_1": "intermediate_1/data_112.png",
+      "intermediate_2": "intermediate_2/data_112.png",
+      "output": "output/data_112.png"
+    },
+    "instruction": {
+      "global": "Simulate a water droplet falling into a calm surface, creating a splash, a vertical jet, and expanding ripples.",
+      "steps": [
+        "The falling droplet impacts the water surface, creating a crown-shaped splash and a small central crater.",
+        "The impact crater collapses, forcing a vertical column of water to rise as a Worthington jet.",
+        "The vertical jet collapses back into the surface, leaving behind expanding concentric ripples."
+      ]
+    },
+    "explain": [
+      "Kinetic energy from the falling droplet displaces the surface water, forming a crown splash due to surface tension and impact force.",
+      "Hydrostatic pressure causes the cavity formed by the impact to collapse, shooting a column of water upward.",
+      "Gravity pulls the water column back down, and the energy dissipates into outward-propagating surface waves."
+    ],
+    "invariants": [
+      "Teal color palette and atmospheric lighting",
+      "Background silhouette of hills or clouds",
+      "Position and intensity of the bright light source",
+      "Static camera viewpoint"
+    ]
+  },
+  {
+    "id": "113",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Splashing & Impact"
+    },
+    "frames": {
+      "input": "input/data_113.png",
+      "intermediate_1": "intermediate_1/data_113.png",
+      "intermediate_2": "intermediate_2/data_113.png",
+      "output": "output/data_113.png"
+    },
+    "instruction": {
+      "global": "Drop a strawberry into a glass of water, capturing the initial splash, the submerged bubble phase, and the fruit rising back to the surface.",
+      "steps": [
+        "Introduce a strawberry impacting the water surface, generating a high vertical splash and scattered droplets.",
+        "Depict the strawberry fully submerged at the base of the glass, surrounded by a dense cloud of white air bubbles.",
+        "Show the strawberry bobbing back up toward the water surface as the bubbles begin to dissipate."
+      ]
+    },
+    "explain": [
+      "The impact of the strawberry's mass on the water surface displaces the liquid, creating a crown-like splash and upward-moving droplets due to kinetic energy transfer.",
+      "As the strawberry sinks, it carries air down with it, creating a trail of bubbles; the turbulence of the entry causes cavitation and aeration within the water.",
+      "Buoyancy forces the strawberry to rise because its density is close to or less than water, while the air bubbles float upward and pop at the surface."
+    ],
+    "invariants": [
+      "Solid black background",
+      "Clear glass shape and position",
+      "Static camera viewpoint",
+      "Consistent lighting and reflections on the glass surface"
+    ]
+  },
+  {
+    "id": "114",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Splashing & Impact"
+    },
+    "frames": {
+      "input": "input/data_114.png",
+      "intermediate_1": "intermediate_1/data_114.png",
+      "intermediate_2": "intermediate_2/data_114.png",
+      "output": "output/data_114.png"
+    },
+    "instruction": {
+      "global": "Pop the black water balloon and show the water dispersing until only a few droplets remain.",
+      "steps": [
+        "Pierce the balloon with a needle, causing the rubber to retract and the water to explode outwards in a radial spray.",
+        "Allow the water mass to fall under gravity, breaking apart into a central splash and numerous smaller droplets.",
+        "Let the remaining water fall out of the frame, leaving only a few scattered droplets against the dark background."
+      ]
+    },
+    "explain": [
+      "The balloon's surface tension is broken by a needle, causing the elastic skin to snap back and the internal water to expand rapidly due to pressure.",
+      "Gravity pulls the water mass downward, while air resistance and internal turbulence cause the water to fragment into smaller droplets.",
+      "The bulk of the water has fallen below the camera's field of view, leaving only residual mist and small droplets suspended in the air."
+    ],
+    "invariants": [
+      "Black background",
+      "Camera viewpoint",
+      "Side-lit lighting",
+      "Dark environment"
+    ]
+  },
+  {
+    "id": "115",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Splashing & Impact"
+    },
+    "frames": {
+      "input": "input/data_115.png",
+      "intermediate_1": "intermediate_1/data_115.png",
+      "intermediate_2": "intermediate_2/data_115.png",
+      "output": "output/data_115.png"
+    },
+    "instruction": {
+      "global": "Show a smoke-filled bubble popping on a dark surface and the smoke dissipating into the air.",
+      "steps": [
+        "Rupture the bubble membrane, causing the internal smoke to burst outward and the liquid film to shatter into visible fragments.",
+        "Expand the smoke into a larger, wispy cloud while the liquid fragments settle into small bubbles on the surface.",
+        "Thin out the smoke cloud into a faint haze across the frame, leaving only the small soap remnants on the dark surface."
+      ]
+    },
+    "explain": [
+      "The surface tension of the bubble is broken, releasing the trapped smoke and causing the liquid film to fragment into droplets due to rapid retraction.",
+      "The released smoke particles diffuse into the surrounding air through turbulence, while the liquid fragments coalesce into small, stable bubbles on the surface.",
+      "The smoke continues to diffuse and decrease in density as it mixes with the ambient air, while the remaining liquid droplets stay stationary."
+    ],
+    "invariants": [
+      "Camera viewpoint and focal length",
+      "Dark background and surface texture",
+      "Lighting direction and intensity",
+      "Presence of the dark horizontal surface"
+    ]
+  },
+  {
+    "id": "116",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Splashing & Impact"
+    },
+    "frames": {
+      "input": "input/data_116.png",
+      "intermediate_1": "intermediate_1/data_116.png",
+      "intermediate_2": "intermediate_2/data_116.png",
+      "output": "output/data_116.png"
+    },
+    "instruction": {
+      "global": "Transform the falling white droplet into a fully developed crown splash on the liquid surface.",
+      "steps": [
+        "Show the droplet impacting the surface and forming the initial shallow rim of a splash.",
+        "Extend the rim upwards to form a taller, more vertical crown with small beads at the peaks.",
+        "Expand the diameter of the crown splash while the walls begin to thin and the central depression deepens."
+      ]
+    },
+    "explain": [
+      "Kinetic energy from the falling droplet is transferred to the surface liquid, displacing it outwards and upwards upon impact.",
+      "Surface tension and momentum cause the displaced liquid to rise into a crown shape, with Rayleigh-Plateau instability forming droplets at the rim.",
+      "Gravity and outward momentum cause the crown to widen and start collapsing back towards the surface as the energy dissipates."
+    ],
+    "invariants": [
+      "Camera viewpoint",
+      "Background color and texture",
+      "Lighting direction and intensity",
+      "Liquid color and opacity"
+    ]
+  },
+  {
+    "id": "117",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Splashing & Impact"
+    },
+    "frames": {
+      "input": "input/data_117.png",
+      "intermediate_1": "intermediate_1/data_117.png",
+      "intermediate_2": "intermediate_2/data_117.png",
+      "output": "output/data_117.png"
+    },
+    "instruction": {
+      "global": "Transform the falling water droplet into a crown splash that evolves into a central Worthington jet.",
+      "steps": [
+        "Impact the droplet onto the surface to create a wide crown splash with thin upward-reaching filaments.",
+        "Expand the crown splash and break the thin filaments into smaller, detached droplets due to surface tension.",
+        "Collapse the splash rim and generate a tall, vertical central jet of water rising from the impact point."
+      ]
+    },
+    "explain": [
+      "The kinetic energy of the falling droplet is transferred to the liquid surface upon impact, pushing fluid outward and upward to form a crown-like rim.",
+      "Surface tension and Rayleigh-Plateau instability cause the thin liquid filaments at the edge of the crown to break apart into individual droplets.",
+      "The initial impact cavity collapses inward, and the converging fluid is forced upward by hydrostatic pressure to form a vertical column called a Worthington jet."
+    ],
+    "invariants": [
+      "Dark blue-grey gradient background",
+      "Macro side-view camera angle",
+      "Soft, diffused lighting from above",
+      "Reflective dark surface material"
+    ]
+  },
+  {
+    "id": "118",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Splashing & Impact"
+    },
+    "frames": {
+      "input": "input/data_118.png",
+      "intermediate_1": "intermediate_1/data_118.png",
+      "intermediate_2": "intermediate_2/data_118.png",
+      "output": "output/data_118.png"
+    },
+    "instruction": {
+      "global": "Transform the falling chocolate drop into a central Worthington jet following a crown splash impact.",
+      "steps": [
+        "Impact the chocolate drop into the surface to create a high-rimmed crown splash with radiating filaments.",
+        "Expand the crown splash outward and begin the collapse of the rim, with small droplets breaking off the tips.",
+        "Collapse the central cavity to form a tall, thin vertical jet of chocolate rising from the center."
+      ]
+    },
+    "explain": [
+      "Kinetic energy from the falling drop is transferred to the liquid surface, displacing it and forming a crown-shaped rim due to inertia and surface tension.",
+      "The crown continues to expand due to momentum, while surface tension starts pulling the liquid back, causing the rim to destabilize and shed droplets.",
+      "The air cavity formed by the initial impact collapses inward, and the converging liquid forces a vertical column, known as a Worthington jet, upward."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Brown gradient background",
+      "Glossy material properties of the chocolate",
+      "Soft overhead lighting and specular highlights"
+    ]
+  },
+  {
+    "id": "119",
+    "class": {
+      "primary": "Fluid Dynamics",
+      "sub": "Splashing & Impact"
+    },
+    "frames": {
+      "input": "input/data_119.png",
+      "intermediate_1": "intermediate_1/data_119.png",
+      "intermediate_2": "intermediate_2/data_119.png",
+      "output": "output/data_119.png"
+    },
+    "instruction": {
+      "global": "Simulate a large impact on a calm water surface, creating a violent splash and underwater air cavity, followed by the rising of bubbles and the return to a calm state.",
+      "steps": [
+        "Create a violent splash on the water surface with droplets flying upwards and a large, turbulent air cavity forming beneath the surface.",
+        "Settle the large splash into surface ripples and replace the large air cavity with a dense cloud of small rising air bubbles.",
+        "Clear the rising bubbles and smooth the water surface back to a nearly calm state."
+      ]
+    },
+    "explain": [
+      "An impact on the surface displaces water, creating an upward splash and dragging air down to form a transient cavity due to kinetic energy.",
+      "Gravity and surface tension collapse the splash and cavity, breaking the trapped air into numerous small bubbles that rise due to buoyancy.",
+      "The bubbles reach the surface and pop, while the kinetic energy of the water dissipates, restoring the equilibrium of the calm surface."
+    ],
+    "invariants": [
+      "Camera viewpoint (side-on, split level)",
+      "Plain white background",
+      "Bright, diffused lighting",
+      "Water transparency and neutral color"
+    ]
+  }
+]

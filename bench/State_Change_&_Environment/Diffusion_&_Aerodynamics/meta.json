@@ -1,0 +1,648 @@
+[
+  {
+    "id": "197",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Diffusion & Aerodynamics"
+    },
+    "frames": {
+      "input": "input/data_197.png",
+      "intermediate_1": "intermediate_1/data_197.png",
+      "intermediate_2": "intermediate_2/data_197.png",
+      "output": "output/data_197.png"
+    },
+    "instruction": {
+      "global": "Animate the white sheer curtain blowing in a gentle breeze coming through the window.",
+      "steps": [
+        "Slightly lift the bottom edge of the white sheer curtain and introduce a subtle curve as it begins to catch the wind.",
+        "Increase the billowing effect of the white curtain, creating more pronounced folds and moving the fabric further into the room.",
+        "Shift the folds of the white curtain slightly to show continuous movement, maintaining the lifted position of the bottom hem."
+      ]
+    },
+    "explain": [
+      "Air pressure from outside pushes against the lightweight fabric, overcoming gravity and causing the bottom edge to lift.",
+      "Sustained wind pressure causes the flexible fabric to deform further, creating aerodynamic drag and deeper vertical folds.",
+      "Turbulent air currents cause the fabric to oscillate and shift its shape while remaining suspended by the airflow."
+    ],
+    "invariants": [
+      "Static camera viewpoint",
+      "Position and appearance of the dark pink curtain on the left",
+      "Window frame and windowsill geometry",
+      "Outdoor background scenery and lighting",
+      "Fabric texture and transparency"
+    ]
+  },
+  {
+    "id": "198",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Diffusion & Aerodynamics"
+    },
+    "frames": {
+      "input": "input/data_198.png",
+      "intermediate_1": "intermediate_1/data_198.png",
+      "intermediate_2": "intermediate_2/data_198.png",
+      "output": "output/data_198.png"
+    },
+    "instruction": {
+      "global": "Animate the kite flying through the sky, showing it dipping, turning, and stabilizing as it catches the wind.",
+      "steps": [
+        "Lower the kite's altitude and tilt its nose further down and to the right, causing the tail to curve upwards.",
+        "Shift the kite upwards and to the left, rotating the body so the nose points towards the top left, with the tail trailing behind in a long arc.",
+        "Rotate the kite back to a more upright position and center it, allowing the tail to ripple naturally in the wind."
+      ]
+    },
+    "explain": [
+      "A change in wind pressure and gravity causes the kite to lose lift and pitch forward.",
+      "Aerodynamic forces from a gust of wind push the kite upward and change its orientation as it catches the air.",
+      "The tension on the kite string and steady wind flow stabilize the kite's flight path, returning it to a balanced gliding state."
+    ],
+    "invariants": [
+      "Cloud patterns and sky background",
+      "Kite colors and geometric patterns",
+      "Camera viewpoint and focal length",
+      "Overall lighting and sun position"
+    ]
+  },
+  {
+    "id": "199",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Diffusion & Aerodynamics"
+    },
+    "frames": {
+      "input": "input/data_199.png",
+      "intermediate_1": "intermediate_1/data_199.png",
+      "intermediate_2": "intermediate_2/data_199.png",
+      "output": "output/data_199.png"
+    },
+    "instruction": {
+      "global": "Simulate a poppy flower swaying in a gentle breeze, tilting it to the right and then beginning to return it to its original position.",
+      "steps": [
+        "Tilt the head and stem of the central poppy flower slightly to the right.",
+        "Increase the bend in the stem to move the flower head further to the right.",
+        "Shift the flower head slightly back toward the left as the sway begins to reverse."
+      ]
+    },
+    "explain": [
+      "A light breeze exerts lateral force on the flower, causing the flexible stem to bend in the direction of the wind.",
+      "Continued wind pressure increases the angular displacement of the flower head from its vertical equilibrium.",
+      "As the wind pressure fluctuates or decreases, the elastic potential energy in the stem pulls the flower back toward its resting state."
+    ],
+    "invariants": [
+      "Static camera viewpoint and framing.",
+      "Background field of blurred poppies and green grass.",
+      "Consistent natural lighting and soft shadows.",
+      "The specific color, texture, and petal structure of the central poppy."
+    ]
+  },
+  {
+    "id": "200",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Diffusion & Aerodynamics"
+    },
+    "frames": {
+      "input": "input/data_200.png",
+      "intermediate_1": "intermediate_1/data_200.png",
+      "intermediate_2": "intermediate_2/data_200.png",
+      "output": "output/data_200.png"
+    },
+    "instruction": {
+      "global": "Simulate the cosmos flowers swaying in a gentle breeze with a small insect flying nearby.",
+      "steps": [
+        "Bend the flower stems and tilt the petals slightly to the right.",
+        "Increase the rightward tilt of the flowers and add a small flying insect near the center cluster.",
+        "Move the flowers slightly back toward the center as the breeze eases, keeping the insect in flight."
+      ]
+    },
+    "explain": [
+      "A light wind exerts lateral force on the flexible stems, causing them to lean in the direction of the airflow.",
+      "Sustained wind pressure increases the mechanical strain on the stems, while an insect approaches the flowers for pollination.",
+      "The reduction in wind force allows the elastic potential energy in the stems to pull them back toward their vertical resting position."
+    ],
+    "invariants": [
+      "camera position",
+      "dark background with top bokeh",
+      "warm side-lighting",
+      "flower count and color"
+    ]
+  },
+  {
+    "id": "201",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Diffusion & Aerodynamics"
+    },
+    "frames": {
+      "input": "input/data_201.png",
+      "intermediate_1": "intermediate_1/data_201.png",
+      "intermediate_2": "intermediate_2/data_201.png",
+      "output": "output/data_201.png"
+    },
+    "instruction": {
+      "global": "Show the dandelion seeds being blown away by the wind until only the bare receptacle and a single seed remain.",
+      "steps": [
+        "Detach the seeds from the top and right side of the dandelion head and scatter them into the air towards the right.",
+        "Remove most of the remaining seeds from the stem and move the airborne seeds further away and out of the frame.",
+        "Clear the floating seeds from the air, leaving only the central core of the dandelion with one seed still attached at the top."
+      ]
+    },
+    "explain": [
+      "Wind force overcomes the attachment of the seeds to the receptacle, causing them to lift off and travel downwind.",
+      "Continued wind pressure strips more seeds away, and the initial group of seeds disperses further into the atmosphere.",
+      "The majority of seeds have been carried away by the wind, leaving the dandelion head nearly bare."
+    ],
+    "invariants": [
+      "Hand position holding the stem",
+      "Background landscape and hills",
+      "Sunset lighting and sky colors",
+      "Camera viewpoint and depth of field"
+    ]
+  },
+  {
+    "id": "202",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Diffusion & Aerodynamics"
+    },
+    "frames": {
+      "input": "input/data_202.png",
+      "intermediate_1": "intermediate_1/data_202.png",
+      "intermediate_2": "intermediate_2/data_202.png",
+      "output": "output/data_202.png"
+    },
+    "instruction": {
+      "global": "Show the wind flipping the pages of a book lying on a sandy beach from left to right.",
+      "steps": [
+        "Lift several pages from the left side of the book into a fanned position.",
+        "Curl the topmost page further towards the right as the pages behind it spread out.",
+        "Arch the leading page over the spine toward the right side while keeping the other pages fanned out."
+      ]
+    },
+    "explain": [
+      "Wind catches the edges of the paper, creating aerodynamic lift that overcomes gravity and raises multiple pages.",
+      "The air pressure continues to push the pages, causing them to bend and move across the center of the book.",
+      "The momentum and wind force push the primary page past the vertical axis, causing it to begin falling toward the opposite side."
+    ],
+    "invariants": [
+      "Low-angle camera viewpoint",
+      "Sandy beach background and horizon line",
+      "Bright sunlight and lens flare position",
+      "Position of the book's spine and cover on the sand",
+      "Footprints and texture in the foreground sand"
+    ]
+  },
+  {
+    "id": "203",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Diffusion & Aerodynamics"
+    },
+    "frames": {
+      "input": "input/data_203.png",
+      "intermediate_1": "intermediate_1/data_203.png",
+      "intermediate_2": "intermediate_2/data_203.png",
+      "output": "output/data_203.png"
+    },
+    "instruction": {
+      "global": "Close the open book resting on the sandy beach.",
+      "steps": [
+        "Shift the fanned-out pages from the left side toward the center and right.",
+        "Distribute the pages evenly into a wide, semi-circular arc across the spine.",
+        "Collapse all the pages and close the green cover flat against the sand."
+      ]
+    },
+    "explain": [
+      "External force or wind causes the upright, flexible paper pages to lean and cluster toward one side.",
+      "The pages are spread out further, increasing the surface area of the fan shape as they rotate around the spine.",
+      "Gravity and the tension of the binding cause the pages to stack together, allowing the front cover to fall shut."
+    ],
+    "invariants": [
+      "Low-angle camera viewpoint",
+      "Sandy beach background with blurred horizon",
+      "Bright, warm backlighting from the sun",
+      "Green book cover and yellowish paper texture",
+      "Consistent depth of field"
+    ]
+  },
+  {
+    "id": "204",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Diffusion & Aerodynamics"
+    },
+    "frames": {
+      "input": "input/data_204.png",
+      "intermediate_1": "intermediate_1/data_204.png",
+      "intermediate_2": "intermediate_2/data_204.png",
+      "output": "output/data_204.png"
+    },
+    "instruction": {
+      "global": "Animate the smoke plume as it billows diagonally upward and to the right across the blue sky, showing natural expansion and turbulent movement.",
+      "steps": [
+        "Shift the existing smoke mass slightly to the right while generating new, dense billows from the bottom-left source.",
+        "Expand the central volume of the smoke plume, creating more pronounced cauliflower-like textures and wispy edges as it mixes with the air.",
+        "Continue the diagonal trajectory of the plume, thinning the leading edge and increasing the internal contrast of the shadows within the smoke clouds."
+      ]
+    },
+    "explain": [
+      "Convection and wind force the particulate matter away from the source, causing the plume to elongate along a diagonal path.",
+      "Turbulent mixing with the surrounding atmosphere causes the smoke to expand in volume and develop irregular, high-frequency surface details.",
+      "Diffusion and varying wind speeds cause the outer edges of the plume to disperse and become more transparent while the core remains dense."
+    ],
+    "invariants": [
+      "Clear blue sky background",
+      "Static camera viewpoint",
+      "Consistent sunlight direction from the upper left",
+      "Smoke source location in the bottom-left corner"
+    ]
+  },
+  {
+    "id": "205",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Diffusion & Aerodynamics"
+    },
+    "frames": {
+      "input": "input/data_205.png",
+      "intermediate_1": "intermediate_1/data_205.png",
+      "intermediate_2": "intermediate_2/data_205.png",
+      "output": "output/data_205.png"
+    },
+    "instruction": {
+      "global": "Animate the mist drifting across the autumn hills under the warm glow of the setting sun.",
+      "steps": [
+        "Shift the mist layers horizontally to the right, allowing some of the lower valley details to emerge.",
+        "Continue the rightward drift of the mist, thinning the central cloud bank while thickening the mist on the far left.",
+        "Further advance the mist flow, causing the clouds to swirl around the ridges and settle into new pockets of the valley."
+      ]
+    },
+    "explain": [
+      "Wind currents push the low-lying fog across the terrain, causing it to flow like a fluid over the ridges.",
+      "Advection causes the mist to move from one area to another, while local temperature changes cause some vapor to dissipate.",
+      "The mist continues its lateral movement, interacting with the topography of the hills, which creates turbulence and shifting density."
+    ],
+    "invariants": [
+      "Static camera viewpoint",
+      "Topography of the hills and mountains",
+      "Autumn foliage colors on the trees",
+      "Warm golden hour lighting and sky gradient",
+      "Small distant buildings in the valley"
+    ]
+  },
+  {
+    "id": "206",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Diffusion & Aerodynamics"
+    },
+    "frames": {
+      "input": "input/data_206.png",
+      "intermediate_1": "intermediate_1/data_206.png",
+      "intermediate_2": "intermediate_2/data_206.png",
+      "output": "output/data_206.png"
+    },
+    "instruction": {
+      "global": "Simulate a gust of wind blowing seeds away from a dandelion until the head is partially bare.",
+      "steps": [
+        "Apply a strong wind force from the left, causing seeds to detach and fly towards the right with motion blur.",
+        "Remove the airborne seeds from the frame, leaving the dandelion head significantly thinned on the right side.",
+        "Further reduce the density of the remaining seeds on the dandelion head to show the exposed central receptacle."
+      ]
+    },
+    "explain": [
+      "Aerodynamic drag from a gust of wind overcomes the mechanical attachment of the dandelion seeds, lifting them into the air.",
+      "The detached seeds are carried out of the field of view by the continuing air current, leaving a gap in the seed head.",
+      "Continued air movement or the initial gust results in a progressively sparser seed head as more seeds are dislodged."
+    ],
+    "invariants": [
+      "Camera viewpoint and focal length.",
+      "Background park scenery with blurred trees and pavement.",
+      "Position and color of the dandelion stem.",
+      "Natural outdoor lighting and shadows."
+    ]
+  },
+  {
+    "id": "207",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Diffusion & Aerodynamics"
+    },
+    "frames": {
+      "input": "input/data_207.png",
+      "intermediate_1": "intermediate_1/data_207.png",
+      "intermediate_2": "intermediate_2/data_207.png",
+      "output": "output/data_207.png"
+    },
+    "instruction": {
+      "global": "Animate the steam plume as it billows out of the smokestack and drifts towards the upper left corner of the frame.",
+      "steps": [
+        "Shift the existing steam plume slightly to the left and expand its volume.",
+        "Continue the leftward drift of the plume, making the outer edges more wispy and diffuse.",
+        "Extend the plume further towards the top-left edge while generating new, dense steam at the mouth of the smokestack."
+      ]
+    },
+    "explain": [
+      "The hot steam rises due to buoyancy and is pushed horizontally by a steady wind.",
+      "Atmospheric turbulence causes the edges of the plume to mix with the surrounding air, increasing its volume and decreasing its density.",
+      "Advection carries the older parts of the plume away from the source, while constant emission replenishes the base of the plume."
+    ],
+    "invariants": [
+      "Camera viewpoint and focal length",
+      "The position and structure of the industrial smokestack",
+      "The background landscape including the river and forested hills",
+      "Daylight illumination and shadow patterns"
+    ]
+  },
+  {
+    "id": "208",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Diffusion & Aerodynamics"
+    },
+    "frames": {
+      "input": "input/data_208.png",
+      "intermediate_1": "intermediate_1/data_208.png",
+      "intermediate_2": "intermediate_2/data_208.png",
+      "output": "output/data_208.png"
+    },
+    "instruction": {
+      "global": "The wind stops blowing, causing the flag to transition from flying horizontally to hanging vertically against the pole.",
+      "steps": [
+        "Reduce the wind force so the flag begins to sag and fold inwards away from the horizontal position.",
+        "Further decrease the wind speed, allowing gravity to pull the fabric down closer to the flagpole.",
+        "Remove all wind influence so the flag hangs completely limp and vertical against the pole."
+      ]
+    },
+    "explain": [
+      "A decrease in aerodynamic drag and lift forces causes the fabric to lose its horizontal tension and start drooping under the influence of gravity.",
+      "As the wind speed continues to drop, the gravitational force overcomes the remaining air pressure, causing the flag to collapse further towards the center.",
+      "In the absence of wind, the flag reaches a state of static equilibrium where it hangs vertically due to its own weight."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "The flagpole and the golden trident ornament on top",
+      "The clear blue sky background",
+      "The blue and yellow colors of the flag",
+      "Consistent bright daylight lighting"
+    ]
+  },
+  {
+    "id": "209",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Diffusion & Aerodynamics"
+    },
+    "frames": {
+      "input": "input/data_209.png",
+      "intermediate_1": "intermediate_1/data_209.png",
+      "intermediate_2": "intermediate_2/data_209.png",
+      "output": "output/data_209.png"
+    },
+    "instruction": {
+      "global": "Animate the European Union flag waving in the wind until it is fully extended horizontally.",
+      "steps": [
+        "Lift the flag and spread the fabric as the wind begins to catch it.",
+        "Allow the flag to ripple and dip slightly as the air pressure fluctuates.",
+        "Extend the flag fully to the left, pulling the fabric taut against the wind."
+      ]
+    },
+    "explain": [
+      "Aerodynamic lift and drag forces from the wind cause the flexible fabric to rise and unfurl from its resting state.",
+      "Turbulent airflow creates oscillating pressure differences, causing the trailing edge of the flag to wave and curl.",
+      "A sustained gust of wind increases the tension across the fabric, overcoming gravity and holding the flag in a horizontal position."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Flagpole position and material",
+      "Background sky and cloud patterns",
+      "Flag colors and the circle of yellow stars",
+      "Lighting and shadows on the fabric"
+    ]
+  },
+  {
+    "id": "210",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Diffusion & Aerodynamics"
+    },
+    "frames": {
+      "input": "input/data_210.png",
+      "intermediate_1": "intermediate_1/data_210.png",
+      "intermediate_2": "intermediate_2/data_210.png",
+      "output": "output/data_210.png"
+    },
+    "instruction": {
+      "global": "Simulate the natural drift and deformation of clouds across a blue sky as they are carried by wind.",
+      "steps": [
+        "Shift the large cloud mass slightly to the right and allow the smaller wispy clouds on the left to begin dispersing and moving upward.",
+        "Continue the rightward drift of the main cloud body while further thinning the wispy clouds on the left edge.",
+        "Move the entire cloud formation further to the right, revealing more of the blue sky background on the left side of the frame."
+      ]
+    },
+    "explain": [
+      "Atmospheric wind currents push the cloud particles, causing the entire mass to drift while internal turbulence changes the shape of the edges.",
+      "As the clouds move, variations in air pressure and temperature cause the water vapor to condense or evaporate, altering the density and texture of the cloud fringes.",
+      "Continued wind force results in a significant lateral displacement of the cloud formation relative to the fixed camera frame."
+    ],
+    "invariants": [
+      "Camera viewpoint",
+      "Sky color and hue",
+      "Overall lighting direction",
+      "Absence of non-cloud objects"
+    ]
+  },
+  {
+    "id": "211",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Diffusion & Aerodynamics"
+    },
+    "frames": {
+      "input": "input/data_211.png",
+      "intermediate_1": "intermediate_1/data_211.png",
+      "intermediate_2": "intermediate_2/data_211.png",
+      "output": "output/data_211.png"
+    },
+    "instruction": {
+      "global": "Inject blue and orange ink into clear water and let them diffuse into large, turbulent plumes.",
+      "steps": [
+        "Introduce two distinct plumes of blue and orange ink at the top of the frame.",
+        "Expand the ink plumes downwards, allowing them to grow in volume and begin overlapping in the center.",
+        "Continue the downward expansion and diffusion until the blue ink forms a large, dense cloud that dominates the lower half of the frame."
+      ]
+    },
+    "explain": [
+      "Ink is injected into the water, forming initial turbulent plumes as the pigment particles begin to disperse.",
+      "Gravity and fluid dynamics cause the ink to move downwards and spread out, creating intricate swirls and mixing at the boundaries.",
+      "Continued diffusion and convection lead to larger, more complex cloud-like structures as the ink occupies more volume and the blue pigment becomes more prominent."
+    ],
+    "invariants": [
+      "Plain white background",
+      "Static camera viewpoint",
+      "Consistent soft lighting",
+      "Absence of visible containers or external objects"
+    ]
+  },
+  {
+    "id": "212",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Diffusion & Aerodynamics"
+    },
+    "frames": {
+      "input": "input/data_212.png",
+      "intermediate_1": "intermediate_1/data_212.png",
+      "intermediate_2": "intermediate_2/data_212.png",
+      "output": "output/data_212.png"
+    },
+    "instruction": {
+      "global": "Drop a red liquid bead into a test tube of water and show the resulting splash and diffusion process.",
+      "steps": [
+        "Impact the red drop onto the water surface, creating an initial splash and a downward-moving plume of dye.",
+        "Form a small secondary droplet rebounding upwards from the center while the main red plume sinks deeper.",
+        "Diffuse the red dye further into the water column, creating complex, swirling fluid patterns."
+      ]
+    },
+    "explain": [
+      "Gravity pulls the red drop into the water, where kinetic energy causes an initial splash and the dye begins to penetrate the surface.",
+      "Surface tension and momentum create a central Worthington jet that rebounds a small droplet, while the denser dye continues to sink.",
+      "The dye spreads through the liquid via diffusion and convection, forming intricate plume structures as it mixes."
+    ],
+    "invariants": [
+      "Position and shape of the glass test tube",
+      "White background and studio lighting",
+      "Camera viewpoint and framing",
+      "Initial water level in the tube"
+    ]
+  },
+  {
+    "id": "213",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Diffusion & Aerodynamics"
+    },
+    "frames": {
+      "input": "input/data_213.png",
+      "intermediate_1": "intermediate_1/data_213.png",
+      "intermediate_2": "intermediate_2/data_213.png",
+      "output": "output/data_213.png"
+    },
+    "instruction": {
+      "global": "Introduce green ink into the water containing blue ink and allow it to diffuse until the green pigment fills the entire frame, overtaking the blue ink.",
+      "steps": [
+        "Introduce a plume of green ink from the top right while the initial blue ink plume expands and drifts towards the center.",
+        "Expand the green ink plume significantly to occupy the left and center of the frame, pushing the thinning blue ink towards the right edge.",
+        "Diffuse the green ink completely across the entire frame until it forms a uniform, hazy cloud, making the blue ink nearly indistinguishable."
+      ]
+    },
+    "explain": [
+      "Fluid dynamics cause the initial blue ink to spread via diffusion while a new green ink source is injected, creating a second interacting plume.",
+      "The green ink continues to disperse through the water, its volume and momentum displacing the blue ink as both substances mix and spread.",
+      "Molecular diffusion reaches a state where the green pigment particles are distributed throughout the volume of water, resulting in a homogeneous, cloudy appearance."
+    ],
+    "invariants": [
+      "Static camera viewpoint",
+      "White background of the water container",
+      "Consistent soft lighting",
+      "Fluid medium properties"
+    ]
+  },
+  {
+    "id": "214",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Diffusion & Aerodynamics"
+    },
+    "frames": {
+      "input": "input/data_214.png",
+      "intermediate_1": "intermediate_1/data_214.png",
+      "intermediate_2": "intermediate_2/data_214.png",
+      "output": "output/data_214.png"
+    },
+    "instruction": {
+      "global": "Animate the rising smoke as it drifts upward and develops turbulent patterns against the black background.",
+      "steps": [
+        "Extend the smoke trails upward, increasing the volume and complexity of the wisps.",
+        "Further develop the rising smoke into more intricate, swirling patterns and thin filaments.",
+        "Shift the main body of smoke higher and allow the lower trails to dissipate or thin out."
+      ]
+    },
+    "explain": [
+      "Convection currents push the smoke upward, causing it to expand and begin forming turbulent structures.",
+      "Fluid dynamics and air resistance create complex vortices and swirling motions as the smoke continues its ascent.",
+      "The smoke particles disperse into the surrounding air, leading to a loss of density and the movement of the main mass out of the lower frame."
+    ],
+    "invariants": [
+      "Solid black background",
+      "Side-lit lighting direction",
+      "Static camera viewpoint",
+      "Monochromatic color palette of the smoke"
+    ]
+  },
+  {
+    "id": "215",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Diffusion & Aerodynamics"
+    },
+    "frames": {
+      "input": "input/data_215.png",
+      "intermediate_1": "intermediate_1/data_215.png",
+      "intermediate_2": "intermediate_2/data_215.png",
+      "output": "output/data_215.png"
+    },
+    "instruction": {
+      "global": "Transform the simple, thin smoke trail into a complex, turbulent plume with intricate swirls and wisps.",
+      "steps": [
+        "Increase the thickness of the smoke trail and introduce initial branching and widening at the top.",
+        "Expand the upper section of the smoke into larger, more defined curls and vortices.",
+        "Further disperse the smoke into delicate, intricate loops and wispy patterns as it rises higher."
+      ]
+    },
+    "explain": [
+      "The rising smoke begins to transition from laminar flow to turbulent flow as it interacts with the surrounding air.",
+      "Convection and air currents cause the smoke to expand and form distinct vortices or curls.",
+      "Continued turbulent mixing and diffusion break the smoke into finer, more complex structures as it loses momentum."
+    ],
+    "invariants": [
+      "Solid black background",
+      "Static camera viewpoint",
+      "Consistent lighting source highlighting the smoke",
+      "General upward trajectory of the smoke"
+    ]
+  },
+  {
+    "id": "216",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Diffusion & Aerodynamics"
+    },
+    "frames": {
+      "input": "input/data_216.png",
+      "intermediate_1": "intermediate_1/data_216.png",
+      "intermediate_2": "intermediate_2/data_216.png",
+      "output": "output/data_216.png"
+    },
+    "instruction": {
+      "global": "Reveal a mountain landscape from a black screen, add a bird in flight, and then transition the scene to a dark, low-light state.",
+      "steps": [
+        "Increase the exposure from total darkness to reveal a bright mountain landscape with white clouds and a blue sky.",
+        "Add a small bird flying in the sky above the mountain range.",
+        "Reduce the overall lighting and exposure to transition the scene into a dark, underexposed state."
+      ]
+    },
+    "explain": [
+      "The introduction of light reveals the physical features of the landscape and sky from a state of zero visibility.",
+      "A bird is introduced as a dynamic object moving through the atmospheric space above the terrain.",
+      "The reduction in ambient light intensity simulates a loss of illumination, obscuring details and darkening the environment."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Mountain topography and ridge lines",
+      "Cloud formations and positions",
+      "Background landscape composition"
+    ]
+  }
+]

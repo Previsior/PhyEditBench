@@ -1,0 +1,713 @@
+[
+  {
+    "id": "217",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Phase Changes"
+    },
+    "frames": {
+      "input": "input/data_217.png",
+      "intermediate_1": "intermediate_1/data_217.png",
+      "intermediate_2": "intermediate_2/data_217.png",
+      "output": "output/data_217.png"
+    },
+    "instruction": {
+      "global": "Melt the pat of butter on the hot pan surface until it is surrounded by a large area of bubbling liquid.",
+      "steps": [
+        "Generate a ring of white foam and translucent liquid butter around the base of the solid pat.",
+        "Expand the diameter of the bubbling liquid ring and slightly reduce the volume of the central solid butter.",
+        "Increase the density and size of the bubbles in the liquid butter while the central solid piece continues to shrink."
+      ]
+    },
+    "explain": [
+      "Thermal energy from the pan breaks the solid structure of the butter at the contact point, creating a liquid phase with trapped air bubbles.",
+      "As the temperature rises, more butterfat melts and water content begins to sizzle, expanding the pool of liquid.",
+      "The phase transition continues, with the solid core diminishing as it turns into a bubbling, foaming liquid."
+    ],
+    "invariants": [
+      "Black pan surface texture",
+      "Top-down camera viewpoint",
+      "Consistent lighting and shadows",
+      "Central position of the butter"
+    ]
+  },
+  {
+    "id": "218",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Phase Changes"
+    },
+    "frames": {
+      "input": "input/data_218.png",
+      "intermediate_1": "intermediate_1/data_218.png",
+      "intermediate_2": "intermediate_2/data_218.png",
+      "output": "output/data_218.png"
+    },
+    "instruction": {
+      "global": "Show the candle burning down significantly, reducing its length and causing wax to drip down the side.",
+      "steps": [
+        "Slightly shorten the candle as it burns and curve the wick further.",
+        "Continue the burning process, further reducing the candle's length and smoothing the wax rim around the flame.",
+        "Significantly shorten the candle and add prominent wax drips running down the side."
+      ]
+    },
+    "explain": [
+      "Combustion of the wick and wax vapor causes the candle body to slowly decrease in height.",
+      "Heat from the flame melts the surrounding paraffin, creating a liquid pool and further lowering the solid candle level.",
+      "As the candle burns down, the accumulated molten wax overflows the rim and solidifies into drips along the side due to gravity."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Blurred background elements",
+      "The diagonal orientation of the candle",
+      "White color of the candle wax",
+      "Presence of a lit flame"
+    ]
+  },
+  {
+    "id": "219",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Phase Changes"
+    },
+    "frames": {
+      "input": "input/data_219.png",
+      "intermediate_1": "intermediate_1/data_219.png",
+      "intermediate_2": "intermediate_2/data_219.png",
+      "output": "output/data_219.png"
+    },
+    "instruction": {
+      "global": "Use a hot soldering iron to melt the tip of a solder wire, leaving a molten bead on the iron as it is pulled away.",
+      "steps": [
+        "Bring a hot soldering iron tip into contact with the end of the solder wire, initiating the release of smoke.",
+        "Maintain contact until the tip of the wire melts into a liquid bead that adheres to the soldering iron.",
+        "Pull the soldering iron away from the wire, keeping the molten solder bead on the iron's tip while smoke continues to rise."
+      ]
+    },
+    "explain": [
+      "Thermal energy transfers from the iron to the solder, causing the internal flux to vaporize and create smoke.",
+      "The solder reaches its melting point and undergoes a phase change from solid to liquid, wetting the metal tip of the iron.",
+      "Surface tension holds the liquid solder to the iron tip as it moves, while the remaining wire tip begins to cool."
+    ],
+    "invariants": [
+      "Wooden background texture and color.",
+      "Camera perspective and fixed focal plane.",
+      "Ambient lighting and shadows.",
+      "The position of the black component at the base of the wire."
+    ]
+  },
+  {
+    "id": "220",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Phase Changes"
+    },
+    "frames": {
+      "input": "input/data_220.png",
+      "intermediate_1": "intermediate_1/data_220.png",
+      "intermediate_2": "intermediate_2/data_220.png",
+      "output": "output/data_220.png"
+    },
+    "instruction": {
+      "global": "Pour hot water over the dry coffee grounds in the filter to initiate the bloom process.",
+      "steps": [
+        "Begin pouring a thin stream of water onto the center of the dry coffee grounds.",
+        "Continue pouring water in a circular motion to saturate the grounds, causing them to swell and rise.",
+        "Stop the water flow and allow the coffee to bloom, with bubbles forming on the surface of the wet slurry."
+      ]
+    },
+    "explain": [
+      "Water makes initial contact with the dry grounds, starting the wetting process and darkening the coffee.",
+      "The grounds absorb water and release trapped carbon dioxide, causing the coffee bed to expand and lift.",
+      "Surface tension and gas release create bubbles on the surface as the water begins to permeate the filter."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Background blur and environment",
+      "Position and metallic texture of the dripper",
+      "Shape and position of the paper filter",
+      "Lighting and shadows"
+    ]
+  },
+  {
+    "id": "221",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Phase Changes"
+    },
+    "frames": {
+      "input": "input/data_221.png",
+      "intermediate_1": "intermediate_1/data_221.png",
+      "intermediate_2": "intermediate_2/data_221.png",
+      "output": "output/data_221.png"
+    },
+    "instruction": {
+      "global": "Melt the scoops of chocolate and vanilla ice cream until they lose their structural integrity and form a large, viscous puddle on the dark surface.",
+      "steps": [
+        "Begin melting the ice cream scoops, causing liquid to pool around the base and softening the sharp edges of the chocolate portion.",
+        "Continue the melting process so the scoops lose their spherical shape and the liquid pool expands significantly across the surface.",
+        "Complete the melting until the scoops collapse into a thick, blended puddle of chocolate and vanilla liquid, with only small solid remnants remaining."
+      ]
+    },
+    "explain": [
+      "Heat causes the outer layers of the ice cream to undergo a phase change from solid to liquid, creating a small pool at the contact point with the surface due to gravity.",
+      "As the internal temperature rises, the solid crystalline structure weakens, leading to further liquefaction and the spreading of the melt across the flat plane.",
+      "The remaining solid cores lose all structural support and merge into the surrounding liquid pool, increasing the total volume and surface area of the puddle."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Black background and surface texture",
+      "Directional soft lighting and highlights",
+      "Color palette of chocolate, vanilla, and caramel"
+    ]
+  },
+  {
+    "id": "222",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Phase Changes"
+    },
+    "frames": {
+      "input": "input/data_222.png",
+      "intermediate_1": "intermediate_1/data_222.png",
+      "intermediate_2": "intermediate_2/data_222.png",
+      "output": "output/data_222.png"
+    },
+    "instruction": {
+      "global": "Animate the rising steam from the boiling pot, showing natural turbulent motion and dispersion.",
+      "steps": [
+        "Shift the steam plumes slightly to the right and extend the vapor trails upwards.",
+        "Increase the density of the steam on the left side and create more intricate swirling patterns in the center.",
+        "Thin out the steam at the very top and shift the main vapor column back toward the center of the pot."
+      ]
+    },
+    "explain": [
+      "Hot vapor rises due to buoyancy and is pushed by subtle lateral air currents.",
+      "Turbulence in the air above the pot causes the steam to form chaotic, swirling vortices.",
+      "Continued evaporation maintains the steam column while ambient air flow redistributes the vapor particles."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Position and appearance of the black pot",
+      "Background wall texture and color",
+      "Overhead lighting source and shadows"
+    ]
+  },
+  {
+    "id": "223",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Phase Changes"
+    },
+    "frames": {
+      "input": "input/data_223.png",
+      "intermediate_1": "intermediate_1/data_223.png",
+      "intermediate_2": "intermediate_2/data_223.png",
+      "output": "output/data_223.png"
+    },
+    "instruction": {
+      "global": "Dissolve the sugar crystals into the coffee foam until they are mostly submerged and wet.",
+      "steps": [
+        "Begin the dissolution process by making the sugar crystals absorb liquid and lose their bright white opacity.",
+        "Further dissolve the sugar, causing the crystals to lose their sharp edges and sink deeper into the foam.",
+        "Complete the dissolution until the sugar crystals are almost entirely integrated into the foam, appearing as a wet, brownish slush."
+      ]
+    },
+    "explain": [
+      "Capillary action draws coffee liquid into the gaps between sugar crystals, initiating dissolution and changing their refractive index.",
+      "As the sugar dissolves, the solid structure of the pile collapses and the crystals sink due to gravity and loss of solid volume.",
+      "The sugar crystals reach a state of high saturation and mostly liquefy, blending with the coffee foam's texture and color."
+    ],
+    "invariants": [
+      "Camera viewpoint and macro perspective",
+      "Surrounding foam bubble structure",
+      "Lighting and shadows",
+      "Overall color palette"
+    ]
+  },
+  {
+    "id": "224",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Phase Changes"
+    },
+    "frames": {
+      "input": "input/data_224.png",
+      "intermediate_1": "intermediate_1/data_224.png",
+      "intermediate_2": "intermediate_2/data_224.png",
+      "output": "output/data_224.png"
+    },
+    "instruction": {
+      "global": "Tin the soldering iron tip by melting a small amount of solder wire onto it and then removing the wire.",
+      "steps": [
+        "Bring a thin solder wire from the left into contact with the heated tip of the soldering iron.",
+        "Melt the end of the solder wire against the hot tip, generating a plume of white smoke from the vaporizing flux.",
+        "Withdraw the solder wire and clear the smoke, leaving a fresh, shiny bead of solder on the iron's tip."
+      ]
+    },
+    "explain": [
+      "The solder wire is positioned against the heated metal tip to initiate heat transfer.",
+      "The high temperature of the iron melts the solder alloy and vaporizes the internal flux core, creating visible smoke.",
+      "The wire is removed after depositing material, and the smoke dissipates as the flux finishes burning off, leaving a tinned surface."
+    ],
+    "invariants": [
+      "Camera viewpoint and focal length.",
+      "Blurred blue circuit board background.",
+      "Position and orientation of the soldering iron shaft.",
+      "Ambient lighting and color temperature."
+    ]
+  },
+  {
+    "id": "225",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Phase Changes"
+    },
+    "frames": {
+      "input": "input/data_225.png",
+      "intermediate_1": "intermediate_1/data_225.png",
+      "intermediate_2": "intermediate_2/data_225.png",
+      "output": "output/data_225.png"
+    },
+    "instruction": {
+      "global": "Pour hot water over dry coffee grounds in a pour-over filter until the filter is filled with a blooming coffee foam.",
+      "steps": [
+        "Introduce a gooseneck kettle spout and pour a stream of hot water onto the center of the dry grounds, causing them to wet and start foaming.",
+        "Continue pouring water to raise the liquid level in the filter, increasing the volume of light brown foam and bubbles.",
+        "Remove the kettle and allow the foam to settle into a smooth, thick layer at the top of the filter."
+      ]
+    },
+    "explain": [
+      "Hot water hits the dry grounds, releasing trapped carbon dioxide which creates a light brown foam known as the bloom.",
+      "The continuous flow of water increases the hydrostatic pressure and volume, lifting the grounds and foam higher within the mesh filter.",
+      "With the cessation of the water stream, surface turbulence stops, allowing the bubbles to stabilize into a uniform layer of crema-like foam."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Background countertop texture and lighting",
+      "The black and silver coffee carafe base",
+      "The circular metal mesh filter frame"
+    ]
+  },
+  {
+    "id": "226",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Phase Changes"
+    },
+    "frames": {
+      "input": "input/data_226.png",
+      "intermediate_1": "intermediate_1/data_226.png",
+      "intermediate_2": "intermediate_2/data_226.png",
+      "output": "output/data_226.png"
+    },
+    "instruction": {
+      "global": "Show a water droplet forming at the tip of the icicle, elongating, and then detaching to fall downward.",
+      "steps": [
+        "Accumulate a small, rounded bead of liquid water at the bottom tip of the icicle.",
+        "Elongate the water droplet as it grows heavier, pulling it downward into a teardrop shape.",
+        "Stretch the connection into a thin neck until the droplet detaches and begins to fall, leaving a small residual amount of water at the tip."
+      ]
+    },
+    "explain": [
+      "Melting ice causes water to pool at the lowest point due to gravity and surface tension.",
+      "As the mass of the water increases, the gravitational force begins to overcome surface tension, causing the drop to hang and stretch.",
+      "The weight of the droplet exceeds the surface tension's holding capacity, resulting in Rayleigh-Taylor instability where the liquid neck breaks and the drop falls."
+    ],
+    "invariants": [
+      "Static camera viewpoint",
+      "Solid black background",
+      "Consistent rim lighting on the ice",
+      "The structure and texture of the upper icicle body"
+    ]
+  },
+  {
+    "id": "227",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Phase Changes"
+    },
+    "frames": {
+      "input": "input/data_227.png",
+      "intermediate_1": "intermediate_1/data_227.png",
+      "intermediate_2": "intermediate_2/data_227.png",
+      "output": "output/data_227.png"
+    },
+    "instruction": {
+      "global": "Show a water droplet forming at the tip of the icicle, detaching, and falling out of frame.",
+      "steps": [
+        "Accumulate a spherical water droplet at the bottom tip of the icicle.",
+        "Detach the droplet from the icicle tip and move it vertically downward.",
+        "Remove the falling droplet from the frame and restore the icicle tip to its resting state."
+      ]
+    },
+    "explain": [
+      "Meltwater flows down the icicle and accumulates at the tip due to surface tension, forming a droplet.",
+      "The weight of the droplet overcomes the surface tension holding it to the ice, causing it to break away and begin free fall.",
+      "Gravity accelerates the detached droplet downward until it exits the camera's field of view."
+    ],
+    "invariants": [
+      "Static camera viewpoint",
+      "Plain white background",
+      "Main icicle body structure and internal air bubbles",
+      "Consistent lighting and exposure"
+    ]
+  },
+  {
+    "id": "228",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Phase Changes"
+    },
+    "frames": {
+      "input": "input/data_228.png",
+      "intermediate_1": "intermediate_1/data_228.png",
+      "intermediate_2": "intermediate_2/data_228.png",
+      "output": "output/data_228.png"
+    },
+    "instruction": {
+      "global": "Show the continuous process of melted chocolate dripping and falling from the edge of a chocolate bar.",
+      "steps": [
+        "Elongate the chocolate droplet on the right side as it stretches downward under its own weight.",
+        "Detach the falling droplet completely and smooth the remaining melted chocolate edge.",
+        "Form a new, thin droplet of chocolate descending from the center-right of the melted mass."
+      ]
+    },
+    "explain": [
+      "Gravity pulls the viscous melted chocolate downward, causing the droplet to stretch and thin at the neck.",
+      "The cohesive forces of the liquid are overcome by gravity, leading to the droplet detaching and falling away.",
+      "Continued fluid flow causes chocolate to accumulate at a new low point, initiating a subsequent gravitational drip."
+    ],
+    "invariants": [
+      "Static camera viewpoint",
+      "Solid teal background color",
+      "The structural shape and position of the solid chocolate bar",
+      "Consistent glossy lighting and reflections on the chocolate surface"
+    ]
+  },
+  {
+    "id": "229",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Phase Changes"
+    },
+    "frames": {
+      "input": "input/data_229.png",
+      "intermediate_1": "intermediate_1/data_229.png",
+      "intermediate_2": "intermediate_2/data_229.png",
+      "output": "output/data_229.png"
+    },
+    "instruction": {
+      "global": "Animate the melting chocolate bar so that the liquid chocolate drips further down under gravity.",
+      "steps": [
+        "Elongate the drip on the right side and let the main bottom drip detach a droplet, making it appear shorter.",
+        "Continue the downward flow of the chocolate, making the bottom drip grow longer again.",
+        "Stretch the bottom drip into a thin, long stream and further elongate the drip on the right."
+      ]
+    },
+    "explain": [
+      "Gravity pulls the viscous chocolate down, causing the right drip to stretch while the bottom drip reaches a breaking point and sheds a drop.",
+      "The liquid chocolate continues to accumulate at the lowest points, causing the bottom drip to reform and extend downwards.",
+      "Persistent gravitational pull causes the liquid to thin out into a long filament as it falls."
+    ],
+    "invariants": [
+      "Teal background color",
+      "Solid chocolate bar structure on the left",
+      "Camera viewpoint and angle",
+      "Glossy lighting and specular highlights"
+    ]
+  },
+  {
+    "id": "230",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Phase Changes"
+    },
+    "frames": {
+      "input": "input/data_230.png",
+      "intermediate_1": "intermediate_1/data_230.png",
+      "intermediate_2": "intermediate_2/data_230.png",
+      "output": "output/data_230.png"
+    },
+    "instruction": {
+      "global": "Fill the upper chamber of the moka pot with brewed coffee as steam rises from the central column.",
+      "steps": [
+        "Increase the volume of coffee at the base of the central column and add more swirling steam.",
+        "Raise the coffee level halfway up the reservoir while intensifying the steam density.",
+        "Fill the upper chamber almost to the top with dark coffee, maintaining the steam and surface bubbles."
+      ]
+    },
+    "explain": [
+      "Steam pressure in the bottom chamber forces hot water through the coffee grounds and up the central tube.",
+      "The brewed coffee continues to flow out of the column, increasing the liquid volume in the upper reservoir.",
+      "As the brewing process nears completion, the reservoir fills with dark coffee while steam continues to escape."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Moka pot structure and metallic material",
+      "Background kitchen environment",
+      "Position of the open lid",
+      "Lighting and reflections on the metal surface"
+    ]
+  },
+  {
+    "id": "231",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Phase Changes"
+    },
+    "frames": {
+      "input": "input/data_231.png",
+      "intermediate_1": "intermediate_1/data_231.png",
+      "intermediate_2": "intermediate_2/data_231.png",
+      "output": "output/data_231.png"
+    },
+    "instruction": {
+      "global": "Show the candle burning down from its full length to a short stub near the base.",
+      "steps": [
+        "Reduce the height of the candle slightly and add a charred, curling wick extending from the side of the flame.",
+        "Further shorten the candle body and extend the charred wick into a circular loop.",
+        "Burn the candle down until only a small portion of the wax remains above the white base, maintaining the flame and the looped wick."
+      ]
+    },
+    "explain": [
+      "As the wax is consumed by combustion, the candle shortens and the exposed wick chars and begins to bend.",
+      "Continued burning further reduces the candle's height while the charred wick curls due to heat and structural changes.",
+      "The candle reaches its final stages of combustion, leaving only a stub as the wax is nearly depleted."
+    ],
+    "invariants": [
+      "Solid black background",
+      "White candle holder at the bottom",
+      "Camera viewpoint and framing",
+      "Spiral texture on the candle wax",
+      "Presence of a lit flame"
+    ]
+  },
+  {
+    "id": "232",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Phase Changes"
+    },
+    "frames": {
+      "input": "input/data_232.png",
+      "intermediate_1": "intermediate_1/data_232.png",
+      "intermediate_2": "intermediate_2/data_232.png",
+      "output": "output/data_232.png"
+    },
+    "instruction": {
+      "global": "Melt the pile of crushed ice completely until only a small residue remains on the surface.",
+      "steps": [
+        "Partially melt the crushed ice, reducing the height of the peaks and forming a thin layer of water at the base.",
+        "Continue the melting process so that the larger ice chunks shrink significantly and the overall volume of solid ice decreases.",
+        "Melt the remaining small ice fragments until the surface is nearly clear, leaving only a faint trace of slush or water."
+      ]
+    },
+    "explain": [
+      "Thermal energy causes the outer layers of the ice crystals to undergo a phase change from solid to liquid, resulting in structural collapse and runoff.",
+      "Continued heat absorption further reduces the surface area of the remaining ice solids, causing them to shrink and lose their sharp edges.",
+      "The final phase change completes as the last bits of solid ice reach their melting point and turn into liquid water."
+    ],
+    "invariants": [
+      "Static camera viewpoint",
+      "Solid black background",
+      "Consistent lighting direction and intensity",
+      "Horizontal surface plane"
+    ]
+  },
+  {
+    "id": "233",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Phase Changes"
+    },
+    "frames": {
+      "input": "input/data_233.png",
+      "intermediate_1": "intermediate_1/data_233.png",
+      "intermediate_2": "intermediate_2/data_233.png",
+      "output": "output/data_233.png"
+    },
+    "instruction": {
+      "global": "Pour water onto dry ice in a glass bowl to create a dense, billowing fog that overflows and covers the surface.",
+      "steps": [
+        "Increase the water flow and generate thick white vapor clouds that rise from the bowl and spill over the edges.",
+        "Expand the volume of the fog so it forms a large, turbulent mound and begins to spread across the dark surface.",
+        "Further increase the density and height of the fog until it obscures the bowl and pitcher, creating a thick layer of low-lying mist."
+      ]
+    },
+    "explain": [
+      "Sublimation of dry ice accelerates as water is added, causing a rapid release of CO2 gas which traps moisture to form thick white fog.",
+      "The cold CO2 gas is denser than the surrounding air, causing the fog to sink and flow over the rim of the container onto the table surface.",
+      "Continuous sublimation creates a high-volume cloud that pushes outward and upward, eventually masking the reaction source and filling the lower frame."
+    ],
+    "invariants": [
+      "Black background",
+      "Dark foreground surface",
+      "Camera viewpoint",
+      "Presence of the glass bowl and pitcher",
+      "High-contrast lighting"
+    ]
+  },
+  {
+    "id": "234",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Phase Changes"
+    },
+    "frames": {
+      "input": "input/data_234.png",
+      "intermediate_1": "intermediate_1/data_234.png",
+      "intermediate_2": "intermediate_2/data_234.png",
+      "output": "output/data_234.png"
+    },
+    "instruction": {
+      "global": "Simulate the continuous sublimation and turbulent dispersal of dry ice fog rising from a bowl.",
+      "steps": [
+        "Shift the central plume of fog to the right while maintaining the dense overflow at the base of the bowl.",
+        "Disperse the vertical plumes into more chaotic, swirling wisps with reduced height.",
+        "Settle the fog closer to the surface, making the rising plumes less defined and more fragmented."
+      ]
+    },
+    "explain": [
+      "Convection and ambient air currents cause the dense carbon dioxide fog to swirl and change its flow pattern.",
+      "Turbulent mixing with the surrounding air breaks the cohesive rising column into smaller, more dispersed vapor clouds.",
+      "As the gas loses momentum and mixes further, the fog becomes less concentrated in the center and spreads horizontally."
+    ],
+    "invariants": [
+      "Static camera viewpoint",
+      "Solid black background",
+      "Bowl position and material",
+      "Low-key lighting setup",
+      "Surface plane"
+    ]
+  },
+  {
+    "id": "235",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Phase Changes"
+    },
+    "frames": {
+      "input": "input/data_235.png",
+      "intermediate_1": "intermediate_1/data_235.png",
+      "intermediate_2": "intermediate_2/data_235.png",
+      "output": "output/data_235.png"
+    },
+    "instruction": {
+      "global": "Melt the chocolate coating off the ice cream bar until the inner cream core is mostly exposed.",
+      "steps": [
+        "Increase the melting of the chocolate coating, causing it to slide downwards and reveal more of the cream-colored interior.",
+        "Continue the melting process, forming a distinct, long drip of chocolate from the bottom-left tip.",
+        "Shed the majority of the outer chocolate layer, leaving only thin streaks of chocolate on the surface of the melting ice cream core."
+      ]
+    },
+    "explain": [
+      "Heat causes the chocolate shell to soften and lose adhesion to the ice cream, while gravity pulls the liquid chocolate downwards.",
+      "Surface tension and gravity cause the accumulated melted chocolate at the bottom to form a droplet and begin to fall away from the bar.",
+      "The outer chocolate layer has largely sloughed off due to melting, and the inner ice cream core begins to liquefy and drip as well."
+    ],
+    "invariants": [
+      "Camera viewpoint and angle",
+      "Dark grey background",
+      "Wooden stick position and texture",
+      "Directional lighting and shadows"
+    ]
+  },
+  {
+    "id": "236",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Phase Changes"
+    },
+    "frames": {
+      "input": "input/data_236.png",
+      "intermediate_1": "intermediate_1/data_236.png",
+      "intermediate_2": "intermediate_2/data_236.png",
+      "output": "output/data_236.png"
+    },
+    "instruction": {
+      "global": "Render the melting process of a popsicle, showing the formation, elongation, and detachment of liquid drips.",
+      "steps": [
+        "Elongate the existing droplets at the bottom of the popsicle into long, thin drips.",
+        "Remove the elongated drips as if they have fallen, and form new, small rounded droplets along the bottom edge.",
+        "Extend the droplet at the front tip into a single sharp drip while smoothing the other small beads of liquid."
+      ]
+    },
+    "explain": [
+      "Gravity pulls the melting cream downwards, causing the droplets to stretch into long, thin columns due to the liquid's viscosity.",
+      "The weight of the drips overcomes surface tension, causing them to detach and fall, leaving behind small residual beads of liquid on the surface.",
+      "Continued melting causes liquid to accumulate at the lowest point of the popsicle's curvature, forming a new primary drip."
+    ],
+    "invariants": [
+      "Static camera viewpoint",
+      "Solid dark gray background",
+      "Position and texture of the wooden popsicle stick",
+      "Overall color and speckled pattern of the popsicle coating",
+      "Consistent studio lighting and highlights"
+    ]
+  },
+  {
+    "id": "237",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Phase Changes"
+    },
+    "frames": {
+      "input": "input/data_237.png",
+      "intermediate_1": "intermediate_1/data_237.png",
+      "intermediate_2": "intermediate_2/data_237.png",
+      "output": "output/data_237.png"
+    },
+    "instruction": {
+      "global": "Melt the stick of butter in the black pan until it is mostly liquid and covered in white foam.",
+      "steps": [
+        "Begin melting the butter stick, surrounding it with a layer of white, bubbly foam on the pan surface.",
+        "Shrink the solid butter stick slightly and expand the area of the white foam bubbles across the pan.",
+        "Significantly reduce the size of the remaining solid butter stick and fill the pan with a dense layer of small white bubbles."
+      ]
+    },
+    "explain": [
+      "Heat from the pan causes the solid butter to undergo a phase change into liquid, while water content evaporates to create foam.",
+      "Continued thermal energy transfer further liquefies the solid mass, increasing the volume of liquid and the density of the surface bubbles.",
+      "The solid core continues to dissolve into the liquid phase as the emulsion breaks down, resulting in a thick layer of foam and a smaller solid remnant."
+    ],
+    "invariants": [
+      "Black non-stick pan surface",
+      "Top-down camera viewpoint",
+      "Pale yellow color of the butter",
+      "Consistent overhead lighting"
+    ]
+  },
+  {
+    "id": "238",
+    "class": {
+      "primary": "State Change & Environment",
+      "sub": "Phase Changes"
+    },
+    "frames": {
+      "input": "input/data_238.png",
+      "intermediate_1": "intermediate_1/data_238.png",
+      "intermediate_2": "intermediate_2/data_238.png",
+      "output": "output/data_238.png"
+    },
+    "instruction": {
+      "global": "Show the ice cube melting on a dark reflective surface, with the ice mass decreasing and a water puddle spreading outward.",
+      "steps": [
+        "Slightly reduce the size of the ice cube and begin spreading a thin layer of meltwater to the left on the reflective surface.",
+        "Further shrink the ice cube, rounding its sharp edges, and expand the water puddle significantly towards the left.",
+        "Continue the melting process by making the ice cube smaller and extending the puddle of water further along the surface."
+      ]
+    },
+    "explain": [
+      "Thermal energy from the environment causes the outer layer of the ice to undergo a phase transition from solid to liquid.",
+      "As melting continues, the volume of the solid ice decreases while the volume of liquid water increases, flowing outward due to gravity and surface tension.",
+      "The ice cube continues to lose mass as it absorbs heat, resulting in a larger footprint of meltwater on the non-porous surface."
+    ],
+    "invariants": [
+      "Black background",
+      "Camera viewpoint",
+      "Reflective surface properties",
+      "Lighting direction and intensity"
+    ]
+  }
+]
