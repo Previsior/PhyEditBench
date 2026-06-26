@@ -166,3 +166,11 @@ The code uses the official OpenAI Python SDK. For local debugging with an OpenAI
 <!-- 可以单独写一个说明 md 文件 -->
 
 ## Citation
+```
+@article{guo2026phyeditbench,
+  title={PhyEditBench: A Real-World Multi-Stage Benchmark for Physics-Aware Image Editing},
+  author={Guo, Shengbin and He, Shaokang and Meng, Chaoyue and Xiao, Shengpeng and Xiang, Xunzhi and Zhang, Shaofeng and Fan, Qi},
+  journal={arXiv preprint arXiv:2606.26551},
+  year={2026}
+}
+```
