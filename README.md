@@ -8,7 +8,7 @@
 <sup>* equal contribution &nbsp;&nbsp; † corresponding author</sup>
 
 <p align="center">
-    📖 <a href="https://github.com/Previsior/PhyEditBench"><b>Project Page</b></a> &nbsp&nbsp  | &nbsp&nbsp 🤗 <a href="https://huggingface.co/datasets/Previsior-PhyEdit/phyedit-bench">PhyEditBench</a> &nbsp&nbsp | &nbsp&nbsp 🤗 <a href="https://huggingface.co/datasets/Previsior-PhyEdit/phyedit-video">PhyEditVideo</a> &nbsp&nbsp | &nbsp&nbsp 📑 <a href="">Arxiv</a>
+    📖 <a href="https://github.com/Previsior/PhyEditBench"><b>Project Page</b></a> &nbsp&nbsp  | &nbsp&nbsp 🤗 <a href="https://huggingface.co/datasets/Previsior-PhyEdit/phyedit-bench">PhyEditBench</a> &nbsp&nbsp | &nbsp&nbsp 🤗 <a href="https://huggingface.co/datasets/Previsior-PhyEdit/phyedit-video">PhyEditVideo</a> &nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://arxiv.org/abs/2606.26551">Arxiv</a>
 </p>
 
 </div>
@@ -17,6 +17,7 @@
 PhyEditBench: A real-world multi-stage benchmark for evaluating physics-aware reasoning in instruction-guided image editing. -->
 
 ## 🪧 News
+- **[2026.6.26]** Our paper is released on arxiv!
 - **[2026.6.24]** The benchmark and evaluation code have been released!
 - **[2026.6.19]** 🎉 PhyEditBench is accepted by ECCV 2026!
 
