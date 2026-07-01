@@ -76,6 +76,26 @@ We evaluate representative image editing models on **PhyEditBench** using a unif
 | 13 | OmniGen2 | 5.36 | 3.71 | 6.32 | 5.51 | 6.05 |
 | 14 | FLUX.1-Kontext-dev | 5.27 | 5.40 | 5.37 | 4.99 | 5.44 |
 
+<p align="center">🧩 Performance on anti-physics subset</p>
+
+| Rank | Model              |  Overall | Consistency | Instruction Following | Physical Plausibility | Image Quality |
+| :--: | :----------------- | :------: | :---------: | :-------------------: | :-------------------: | :-----------: |
+| 🥇 1 | Gemini-2.5         | **7.07** |   **8.71**  |        **7.03**       |        **5.91**       |    **8.54**   |
+| 🥈 2 | GPT-Image-1.5      |   7.04   |     9.03    |          7.20         |          5.51         |      8.71     |
+| 🥉 3 | Seedream4.0        |   6.95   |     8.20    |          7.29         |          5.78         |      8.11     |
+|   4  | PhyWorld           |   6.39   |     7.91    |          6.34         |          5.29         |      7.86     |
+|   5  | Qwen-Image-Edit    |   6.16   |     7.74    |          6.29         |          4.83         |      7.91     |
+|   5  | BAGEL-Think        |   6.16   |     7.89    |          6.34         |          5.00         |      6.83     |
+|   7  | FLUX.1-Kontext-dev |   6.07   |     8.60    |          5.71         |          4.43         |      8.63     |
+|   8  | UniWorld-V2        |   5.79   |     8.17    |          5.77         |          4.06         |      8.06     |
+|   9  | Step1X-Edit        |   5.34   |     8.23    |          4.83         |          3.51         |      8.40     |
+|  10  | BAGEL              |   5.11   |     7.77    |          4.86         |          3.29         |      7.83     |
+|  11  | ChronoEdit-14B     |   4.99   |     6.89    |          4.66         |          3.63         |      7.69     |
+|  12  | OmniGen2           |   4.74   |     8.17    |          4.09         |          2.89         |      7.23     |
+|  13  | InstructPix2Pix    |   4.45   |     7.60    |          3.69         |          2.54         |      8.09     |
+|  14  | Frame2Frame        |   3.81   |     6.80    |          2.51         |          2.51         |      6.89     |
+
+
 ![visualization](assets/visualization.png)
 <p align="center">Qualitative results of some models.</p>
 
@@ -164,6 +184,7 @@ The code uses the official OpenAI Python SDK. For local debugging with an OpenAI
 
 ### PhyWorld
 <!-- 可以单独写一个说明 md 文件 -->
+Coming soon.
 
 ## Citation
 ```
