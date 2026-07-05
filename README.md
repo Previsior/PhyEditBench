@@ -17,6 +17,7 @@
 PhyEditBench: A real-world multi-stage benchmark for evaluating physics-aware reasoning in instruction-guided image editing. -->
 
 ## 🪧 News
+- **[2026.7.5]** GPT-Image-2 evaluation results have been added. It won first place on the list of normal data!
 - **[2026.6.26]** Our paper is released on arxiv!
 - **[2026.6.24]** The benchmark and evaluation code have been released!
 - **[2026.6.19]** 🎉 PhyEditBench is accepted by ECCV 2026!
@@ -42,39 +43,41 @@ We evaluate representative image editing models on **PhyEditBench** using a unif
 
 | Rank | Model | Overall | Consistency | Instruction Following | Physical Plausibility | Image Quality |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|
-| 🥇 1 | ChronoEdit-14B | **8.51** | **9.67** | **7.98** | **8.42** | **8.13** |
-| 🥈 2 | Seedream4.0 | 8.47 | 9.69 | 8.22 | 8.22 | 7.75 |
-| 🥉 3 | GPT-Image-1.5 | 8.23 | 8.84 | 8.21 | 8.30 | 6.78 |
-| 4 | UniWorld-V2 | 7.08 | 8.53 | 6.78 | 6.73 | 6.45 |
-| 5 | Step1X-Edit | 6.79 | 9.24 | 5.93 | 6.19 | 6.87 |
-| 6 | Qwen-Image-Edit | 6.71 | 8.41 | 6.35 | 6.37 | 5.79 |
-| 7 | Gemini-2.5 | 6.51 | 7.21 | 6.13 | 6.64 | 5.72 |
-| 8 | BAGEL-Think | 6.43 | 8.53 | 5.72 | 5.96 | 6.26 |
-| 8 | PhyWorld | 6.43 | 7.58 | 5.89 | 6.30 | 6.26 |
-| 10 | BAGEL | 6.09 | 7.82 | 5.47 | 5.69 | 6.04 |
-| 11 | InstructPix2Pix | 5.61 | 7.08 | 4.16 | 5.58 | 7.12 |
-| 12 | Frame2Frame | 5.38 | 7.96 | 4.08 | 4.73 | 6.65 |
-| 13 | OmniGen2 | 5.36 | 6.35 | 4.23 | 5.54 | 5.96 |
-| 14 | FLUX.1-Kontext-dev | 5.27 | 7.03 | 4.56 | 4.81 | 5.71 |
+| 🥇 1 | GPT-Image-2 | **9.34** | **9.99** | **9.57** | **9.13** | **8.19** |
+| 🥈 2 | ChronoEdit-14B | 8.51 | 9.67 | 7.98 | 8.42 | 8.13 |
+| 🥉 3 | Seedream4.0 | 8.47 | 9.69 | 8.22 | 8.22 | 7.75 |
+| 4 | GPT-Image-1.5 | 8.23 | 8.84 | 8.21 | 8.30 | 6.78 |
+| 5 | UniWorld-V2 | 7.08 | 8.53 | 6.78 | 6.73 | 6.45 |
+| 6 | Step1X-Edit | 6.79 | 9.24 | 5.93 | 6.19 | 6.87 |
+| 7 | Qwen-Image-Edit | 6.71 | 8.41 | 6.35 | 6.37 | 5.79 |
+| 8 | Gemini-2.5 | 6.51 | 7.21 | 6.13 | 6.64 | 5.72 |
+| 9 | BAGEL-Think | 6.43 | 8.53 | 5.72 | 5.96 | 6.26 |
+| 9 | PhyWorld | 6.43 | 7.58 | 5.89 | 6.30 | 6.26 |
+| 11 | BAGEL | 6.09 | 7.82 | 5.47 | 5.69 | 6.04 |
+| 12 | InstructPix2Pix | 5.61 | 7.08 | 4.16 | 5.58 | 7.12 |
+| 13 | Frame2Frame | 5.38 | 7.96 | 4.08 | 4.73 | 6.65 |
+| 14 | OmniGen2 | 5.36 | 6.35 | 4.23 | 5.54 | 5.96 |
+| 15 | FLUX.1-Kontext-dev | 5.27 | 7.03 | 4.56 | 4.81 | 5.71 |
 
 <p align="center">🧩 Performance across physical categories</p>
 
 | Rank | Model | Overall | Deformation & Fracture | Fluid Dynamics | Rigid Body & Interaction | State Change & Environment |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|
-| 🥇 1 | ChronoEdit-14B | **8.51** | **8.38** | **8.74** | **8.32** | **8.79** |
-| 🥈 2 | Seedream4.0 | 8.47 | 7.43 | 9.04 | 8.65 | 8.84 |
-| 🥉 3 | GPT-Image-1.5 | 8.23 | 8.36 | 8.30 | 7.91 | 8.51 |
-| 4 | UniWorld-V2 | 7.08 | 6.60 | 7.43 | 6.99 | 7.44 |
-| 5 | Step1X-Edit | 6.79 | 3.16 | 7.20 | 6.77 | 7.13 |
-| 6 | Qwen-Image-Edit | 6.71 | 6.41 | 7.38 | 6.10 | 7.33 |
-| 7 | Gemini-2.5 | 6.51 | 7.36 | 6.79 | 5.87 | 6.07 |
-| 8 | BAGEL-Think | 6.43 | 5.77 | 6.82 | 6.55 | 6.59 |
-| 8 | PhyWorld | 6.43 | 6.29 | 6.55 | 6.10 | 6.94 |
-| 10 | BAGEL | 6.09 | 5.55 | 6.43 | 6.21 | 6.14 |
-| 11 | InstructPix2Pix | 5.61 | 4.24 | 6.41 | 5.49 | 6.67 |
-| 12 | Frame2Frame | 5.38 | 5.25 | 5.43 | 5.17 | 5.86 |
-| 13 | OmniGen2 | 5.36 | 3.71 | 6.32 | 5.51 | 6.05 |
-| 14 | FLUX.1-Kontext-dev | 5.27 | 5.40 | 5.37 | 4.99 | 5.44 |
+| 🥇 1 | GPT-Image-2 | **9.34** | **9.31** | **9.38** | **9.34** | **9.33** |
+| 🥈 2 | ChronoEdit-14B | 8.51 | 8.38 | 8.74 | 8.32 | 8.79 |
+| 🥉 3 | Seedream4.0 | 8.47 | 7.43 | 9.04 | 8.65 | 8.84 |
+| 4 | GPT-Image-1.5 | 8.23 | 8.36 | 8.30 | 7.91 | 8.51 |
+| 5 | UniWorld-V2 | 7.08 | 6.60 | 7.43 | 6.99 | 7.44 |
+| 6 | Step1X-Edit | 6.79 | 3.16 | 7.20 | 6.77 | 7.13 |
+| 7 | Qwen-Image-Edit | 6.71 | 6.41 | 7.38 | 6.10 | 7.33 |
+| 8 | Gemini-2.5 | 6.51 | 7.36 | 6.79 | 5.87 | 6.07 |
+| 9 | BAGEL-Think | 6.43 | 5.77 | 6.82 | 6.55 | 6.59 |
+| 9 | PhyWorld | 6.43 | 6.29 | 6.55 | 6.10 | 6.94 |
+| 11 | BAGEL | 6.09 | 5.55 | 6.43 | 6.21 | 6.14 |
+| 12 | InstructPix2Pix | 5.61 | 4.24 | 6.41 | 5.49 | 6.67 |
+| 13 | Frame2Frame | 5.38 | 5.25 | 5.43 | 5.17 | 5.86 |
+| 14 | OmniGen2 | 5.36 | 3.71 | 6.32 | 5.51 | 6.05 |
+| 15 | FLUX.1-Kontext-dev | 5.27 | 5.40 | 5.37 | 4.99 | 5.44 |
 
 <p align="center">🧩 Performance on anti-physics subset</p>
 
@@ -83,17 +86,18 @@ We evaluate representative image editing models on **PhyEditBench** using a unif
 | 🥇 1 | Gemini-2.5         | **7.07** |   **8.71**  |        **7.03**       |        **5.91**       |    **8.54**   |
 | 🥈 2 | GPT-Image-1.5      |   7.04   |     9.03    |          7.20         |          5.51         |      8.71     |
 | 🥉 3 | Seedream4.0        |   6.95   |     8.20    |          7.29         |          5.78         |      8.11     |
-|   4  | PhyWorld           |   6.39   |     7.91    |          6.34         |          5.29         |      7.86     |
-|   5  | Qwen-Image-Edit    |   6.16   |     7.74    |          6.29         |          4.83         |      7.91     |
-|   5  | BAGEL-Think        |   6.16   |     7.89    |          6.34         |          5.00         |      6.83     |
-|   7  | FLUX.1-Kontext-dev |   6.07   |     8.60    |          5.71         |          4.43         |      8.63     |
-|   8  | UniWorld-V2        |   5.79   |     8.17    |          5.77         |          4.06         |      8.06     |
-|   9  | Step1X-Edit        |   5.34   |     8.23    |          4.83         |          3.51         |      8.40     |
-|  10  | BAGEL              |   5.11   |     7.77    |          4.86         |          3.29         |      7.83     |
-|  11  | ChronoEdit-14B     |   4.99   |     6.89    |          4.66         |          3.63         |      7.69     |
-|  12  | OmniGen2           |   4.74   |     8.17    |          4.09         |          2.89         |      7.23     |
-|  13  | InstructPix2Pix    |   4.45   |     7.60    |          3.69         |          2.54         |      8.09     |
-|  14  | Frame2Frame        |   3.81   |     6.80    |          2.51         |          2.51         |      6.89     |
+|   4  | GPT-Image-2        |   6.87   |     8.74    |          7.67         |          4.85         |      8.85     |
+|   5  | PhyWorld           |   6.39   |     7.91    |          6.34         |          5.29         |      7.86     |
+|   6  | Qwen-Image-Edit    |   6.16   |     7.74    |          6.29         |          4.83         |      7.91     |
+|   6  | BAGEL-Think        |   6.16   |     7.89    |          6.34         |          5.00         |      6.83     |
+|   8  | FLUX.1-Kontext-dev |   6.07   |     8.60    |          5.71         |          4.43         |      8.63     |
+|   9  | UniWorld-V2        |   5.79   |     8.17    |          5.77         |          4.06         |      8.06     |
+|  10  | Step1X-Edit        |   5.34   |     8.23    |          4.83         |          3.51         |      8.40     |
+|  11  | BAGEL              |   5.11   |     7.77    |          4.86         |          3.29         |      7.83     |
+|  12  | ChronoEdit-14B     |   4.99   |     6.89    |          4.66         |          3.63         |      7.69     |
+|  13  | OmniGen2           |   4.74   |     8.17    |          4.09         |          2.89         |      7.23     |
+|  14  | InstructPix2Pix    |   4.45   |     7.60    |          3.69         |          2.54         |      8.09     |
+|  15  | Frame2Frame        |   3.81   |     6.80    |          2.51         |          2.51         |      6.89     |
 
 
 ![visualization](assets/visualization.png)
